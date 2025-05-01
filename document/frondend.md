@@ -1,10 +1,5 @@
-# frondend
-react +taildwindcss
+# frondend rules
+react +taildwind css
 
 install package
-
 @ant-design/x": "^1.2.0",
-components
-https://x.ant.design/components/overview/
-
-ai chatbot component use ant-design 
