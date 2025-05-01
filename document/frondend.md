@@ -1,0 +1,2 @@
+# frondend
+react +taildwindcss
