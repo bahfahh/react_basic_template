@@ -1,9 +1,11 @@
 import { FC } from 'react';
+import { AttachmentsUpload } from '../AttachmentsUpload/AttachmentsUpload';
 
 interface ChatInputProps {
   value: string;
   onChange: (value: string) => void;
   onSend: () => void;
+  onFileSelect: (filename: string) => void;
   disabled?: boolean;
 }
 
@@ -11,6 +13,7 @@ export const ChatInput: FC<ChatInputProps> = ({
   value,
   onChange,
   onSend,
+  onFileSelect,
   disabled = false
 }) => {
   const handleKeyPress = (e: React.KeyboardEvent<HTMLTextAreaElement>) => {
@@ -23,15 +26,23 @@ export const ChatInput: FC<ChatInputProps> = ({
   return (
     <div className="p-4 border-t border-gray-200 bg-white">
       <div className="flex gap-2 max-w-4xl mx-auto">
-        <textarea
-          value={value}
-          onChange={(e) => onChange(e.target.value)}
-          onKeyPress={handleKeyPress}
-          disabled={disabled}
-          className="flex-1 p-2 h-[44px] min-h-[44px] max-h-[200px] border rounded-md resize-none focus:outline-none focus:ring-2 focus:ring-blue-500"
-          placeholder="Type your message here..."
-          rows={1}
-        />
+        <div className="flex-grow flex gap-2">
+          <textarea
+            value={value}
+            onChange={(e) => onChange(e.target.value)}
+            onKeyPress={handleKeyPress}
+            disabled={disabled}
+            className="flex-1 p-2 h-[44px] min-h-[44px] max-h-[200px] border rounded-md resize-none focus:outline-none focus:ring-2 focus:ring-blue-500"
+            placeholder="Type your message here..."
+            rows={1}
+          />
+          <div className="flex items-end">
+            <AttachmentsUpload
+              onFileSelect={onFileSelect}
+              disabled={disabled}
+            />
+          </div>
+        </div>
         <button
           onClick={onSend}
           disabled={disabled || !value.trim()}

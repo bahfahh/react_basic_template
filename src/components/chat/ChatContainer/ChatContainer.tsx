@@ -15,11 +15,23 @@ export const ChatContainer = () => {
   } = useChat();
 
   const [inputValue, setInputValue] = useState('');
+  const [selectedFiles, setSelectedFiles] = useState<string[]>([]);
+
+  const handleFileSelect = (filename: string) => {
+    setSelectedFiles(prev => [...prev, filename]);
+  };
 
   const handleSend = async () => {
-    if (inputValue.trim()) {
-      await sendMessage(inputValue.trim());
+    if (inputValue.trim() || selectedFiles.length > 0) {
+      // If there are files, add them to the message
+      const messageContent = inputValue.trim();
+      const filesText = selectedFiles.length > 0
+        ? `\nAttached files: ${selectedFiles.join(', ')}`
+        : '';
+
+      await sendMessage(messageContent + filesText);
       setInputValue('');
+      setSelectedFiles([]);
     }
   };
 
@@ -47,6 +59,14 @@ export const ChatContainer = () => {
           {loading && (
             <div className="text-gray-500 italic">Assistant is typing...</div>
           )}
+          {!currentSession && (
+            <div className="h-full flex items-center justify-center text-gray-500">
+              <div className="text-center">
+                <h2 className="text-xl font-medium mb-2">Welcome to AI Chat</h2>
+                <p>Start a new conversation or select an existing one</p>
+              </div>
+            </div>
+          )}
         </div>
 
         {/* Input Area */}
@@ -54,7 +74,8 @@ export const ChatContainer = () => {
           value={inputValue}
           onChange={setInputValue}
           onSend={handleSend}
-          disabled={loading}
+          onFileSelect={handleFileSelect}
+          disabled={loading || !currentSessionId}
         />
       </div>
     </div>
