@@ -66,3 +66,17 @@
     @apply bg-background text-foreground;
   }
 }
+
+/* Keyframes and utility for InfiniteSlider */
+@layer utilities {
+  @keyframes infinite-scroll {
+    from { transform: translateX(0); }
+    to { transform: translateX(-100%); }
+  }
+  .animate-infinite-scroll {
+    /* Apply the animation */
+    animation: infinite-scroll var(--scroll-duration, 40s) linear infinite;
+    /* Ensure the container is wide enough to hold two sets of children */
+    width: max-content;
+  }
+}

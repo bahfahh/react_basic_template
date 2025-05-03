@@ -1,55 +1,53 @@
 import { FC } from 'react';
 import { AttachmentsUpload } from '../AttachmentsUpload/AttachmentsUpload';
+import { AIInputWithSuggestions } from '@/components/ui/ai-input-with-suggestions'; // Import the new component
 
 interface ChatInputProps {
-  value: string;
-  onChange: (value: string) => void;
-  onSend: () => void;
+  // value: string; // No longer needed directly for the input text
+  // onChange: (value: string) => void; // Input manages its own state
+  onSend: (text: string, action?: string) => void; // Modified to potentially receive text/action
   onFileSelect: (filename: string) => void;
   disabled?: boolean;
 }
 
 export const ChatInput: FC<ChatInputProps> = ({
-  value,
-  onChange,
+  // value, // Removed
+  // onChange, // Removed
   onSend,
   onFileSelect,
-  disabled = false
+  disabled = false // Keep disabled prop for AttachmentsUpload for now
 }) => {
-  const handleKeyPress = (e: React.KeyboardEvent<HTMLTextAreaElement>) => {
-    if (e.key === 'Enter' && !e.shiftKey) {
-      e.preventDefault();
-      onSend();
-    }
+
+  // handleKeyPress removed as AIInputWithSuggestions handles Enter key
+
+  const handleSuggestionSubmit = (text: string, action?: string) => {
+    // Call the original onSend function passed from the parent
+    // The AIInputWithSuggestions component clears its own input value internally
+    onSend(text, action);
   };
 
   return (
-    <div className="p-4 border-t border-gray-200 bg-white">
-      <div className="flex gap-2 max-w-4xl mx-auto">
-        <div className="flex-grow flex gap-2">
-          <textarea
-            value={value}
-            onChange={(e) => onChange(e.target.value)}
-            onKeyPress={handleKeyPress}
+    // Reduced padding, border handled by AIInputWithSuggestions mostly
+    <div className="p-2 border-t border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800">
+      {/* Adjusted layout for new component */}
+      <div className="flex items-end gap-2 max-w-4xl mx-auto">
+        {/* AIInput takes flex-grow */}
+        <AIInputWithSuggestions
+          onSubmit={handleSuggestionSubmit}
+          placeholder="Type your message or select an action..."
+          className="flex-1 py-0" // Remove default padding to fit better
+          // We might need to pass min/maxHeight if defaults aren't suitable
+          // minHeight={44} // Example: Match original textarea min-height
+          // We could potentially pass the 'disabled' prop if we modify AIInputWithSuggestions
+        />
+        {/* Attachment button */}
+        <div className="flex-shrink-0 pb-1"> {/* Added padding bottom to align */}
+          <AttachmentsUpload
+            onFileSelect={onFileSelect}
             disabled={disabled}
-            className="flex-1 p-2 h-[44px] min-h-[44px] max-h-[200px] border rounded-md resize-none focus:outline-none focus:ring-2 focus:ring-blue-500"
-            placeholder="Type your message here..."
-            rows={1}
           />
-          <div className="flex items-end">
-            <AttachmentsUpload
-              onFileSelect={onFileSelect}
-              disabled={disabled}
-            />
-          </div>
         </div>
-        <button
-          onClick={onSend}
-          disabled={disabled || !value.trim()}
-          className="px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed"
-        >
-          Send
-        </button>
+        {/* Send button removed - handled by AIInputWithSuggestions */}
       </div>
     </div>
   );
