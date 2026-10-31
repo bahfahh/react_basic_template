@@ -1858,5 +1858,25 @@
       ],
       "estimatedSavings": 5490
     }
+  ],
+  "related": [
+    {
+      "id": "travel.jp-airport-transfer",
+      "title": "機場進市區交通",
+      "why": "關西機場到大阪、京都（HARUKA、南海、利木津巴士）",
+      "url": "https://raw.githubusercontent.com/bahfahh/react_basic_template/claude/react-prototype-a485u2/public/packs/travel.jp-airport-transfer.md"
+    },
+    {
+      "id": "travel.jp-rail-pass",
+      "title": "JR Pass 划算嗎",
+      "why": "行程還要去廣島、東京等關西以外的地方時",
+      "url": "https://raw.githubusercontent.com/bahfahh/react_basic_template/claude/react-prototype-a485u2/public/packs/travel.jp-rail-pass.md"
+    },
+    {
+      "id": "travel.jp-payment",
+      "title": "日本付款不吃虧",
+      "why": "ICOCA、感應式信用卡搭車與海外刷卡手續費",
+      "url": "https://raw.githubusercontent.com/bahfahh/react_basic_template/claude/react-prototype-a485u2/public/packs/travel.jp-payment.md"
+    }
   ]
 }

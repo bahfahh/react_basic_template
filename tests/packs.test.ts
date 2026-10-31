@@ -3,7 +3,7 @@ import { join } from 'node:path';
 import { describe, expect, it } from 'vitest';
 import { PACK_BASE_URL } from '../src/app/config';
 import { missingSourceRefs } from '../src/core/packages/guides';
-import { GUIDES, renderPackFiles } from '../src/core/packages/publish';
+import { GUIDES, renderPackFiles, TICKET_RELATED } from '../src/core/packages/publish';
 
 describe('agent-readable pack files', () => {
   const files = renderPackFiles(PACK_BASE_URL);
@@ -28,5 +28,18 @@ describe('agent-readable pack files', () => {
 
   it('every active pack has a published file', () => {
     for (const id of Object.keys(GUIDES)) expect(files[`packs/${id}.md`], id).toBeTruthy();
+  });
+
+  it('every related-pack link points at a published pack, never at itself', () => {
+    const lists: Array<[string, Array<{ id: string }>]> = [
+      ...Object.values(GUIDES).map((g): [string, Array<{ id: string }>] => [g.id, g.related ?? []]),
+      ['travel.jp-ticket-optimizer', TICKET_RELATED],
+    ];
+    for (const [from, related] of lists) {
+      for (const r of related) {
+        expect(r.id, from).not.toBe(from);
+        expect(files[`packs/${r.id}.md`], `${from} → ${r.id}`).toBeTruthy();
+      }
+    }
   });
 });

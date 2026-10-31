@@ -122,6 +122,7 @@ export const JP_TAX_REFUND: GuidePack = {
     '從港口或郵輪碼頭離境（例如沖繩到台灣的船）時的辦法。',
     '違規未出境的罰則金額。',
   ],
+  related: [{ id: 'travel.jp-payment', title: '日本付款不吃虧', why: '退款會退到卡片：海外手續費與匯率' }],
   sources: [
     { id: 'nta-overview', title: '国税庁 免税制度（リファンド方式）概要 Q&A', url: 'https://www.nta.go.jp/publication/pamph/shohi/menzei/201805/pdf/0025003-110_02.pdf', authority: '国税庁', checkedAt: '2026-10-31', verification: 'search_extract', confidence: 'high' },
     { id: 'nta-qa', title: '国税庁 免税販売手続に関する詳細 Q&A（2026-07 改訂）', url: 'https://www.nta.go.jp/publication/pamph/shohi/menzei/201805/pdf/0026006-152_01.pdf', authority: '国税庁', checkedAt: '2026-10-31', verification: 'search_extract', confidence: 'high' },

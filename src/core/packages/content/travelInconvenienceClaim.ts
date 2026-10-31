@@ -25,8 +25,10 @@ export const TRAVEL_INCONVENIENCE_CLAIM: GuidePack = {
   steps: [
     '**先確認有沒有保障**：多數卡要用同一張卡付全額公共運輸票款或 80% 以上團費 [S:fubon-claims][S:esun-travel][S:ctbc-incon]。被保險人通常是持卡人（正附卡）、配偶與未婚且未滿 25 歲的子女，父母、朋友不在內 [S:fubon-claims][S:ctbc-faq]。里程票只付稅金、或透過某些第三方平台付款，常常不符合「全額」[S:roo-card-insurance]。機票如果退刷，就不能申請 [S:fubon-claims]。保障每年更新，以事故當天有效的版本為準 [S:fubon-claims][S:cathay-travel]。',
     '**人還在機場（班機延誤或取消）**：向航空公司櫃台拿書面延誤／取消證明（要有原訂與實際時間、原因）；保留原班機與實際搭乘班機的登機證，兩張要是同一個機票號碼 [S:fubon-claims]。盡量改搭別的班機、不要退票，退票就不能理賠 [S:fubon-claims][S:esun-insurance]。只花合理的餐費、住宿、機場與飯店間交通，拿明細收據；日用品只有在需要過夜且行李已託運時才給付 [S:fubon-claims]。',
+    '**已經回國才想到要申請**：仍然可以，請求權 2 年 [S:law-65]。請使用者聯絡航空公司客服補申請書面延誤證明（方式依航空公司而定，未確認），找出登機證與收據；沒有收據的花費很可能無法給付。',
     '**人還在機場（行李沒到）**：離開行李提領區前，到行李服務櫃台填行李事故報告（PIR），拿副本與案件編號，保留行李條 [S:ita-pir][S:ctbc-incon]。抵達 6 小時後行李仍沒到，才在抵達後 24 小時內買必需品，留明細收據 [S:taishin-cert][S:esun-insurance]。行李送到時要拿到有日期與時間的送達證明。',
-    '**算門檻**：班機延誤多半是 4 小時以上，富邦是「逾四小時（不含四小時）」[S:fubon-claims][S:ctbc-incon]；起飛後因天候改降不算延誤 [S:esun-insurance]。行李延誤 6 小時、行李遺失是抵達後 24 小時仍未送達 [S:taishin-cert]。**回台灣的回程行李延誤不在保障內**，請向航空公司求償 [S:esun-insurance][S:cathay-ins-claim]。',
+    '**算門檻**：班機延誤多半是 4 小時以上，富邦是「逾四小時（不含四小時）」[S:fubon-claims][S:ctbc-incon]；起飛後因天候改降不算延誤 [S:esun-insurance]。行李延誤 6 小時、行李遺失是抵達後 24 小時仍未送達 [S:taishin-cert]。在日本機場的回程**班機延誤**通常在保障內（國泰世華明列海外機場）[S:cathay-travel]；排除的是**回到台灣後的行李延誤**，請向航空公司求償 [S:esun-insurance][S:cathay-ins-claim]。',
+    '**多人共用一張收據**：只能申請被保險人的部分；例如三人用餐、其中一人不在保障內，就按人數分攤，在申請書上寫清楚。',
     '**護照遺失**：在日本向警察報案、拿正本報案證明，保留補辦文件的收據 [S:dbs-form]。',
     '**回國後申請**：找出事故當年度的保險證、確認保險公司（見下表），下載該銀行版本的理賠申請書，照「文件清單」備齊後線上或掛號寄送。盡早申請：有些卡要求 60 天內通知（例如玉山行李事故）[S:esun-insurance]；法律上請求權 2 年內有效 [S:law-65]。資料齊全後，保險公司應在約定期限或 15 天內給付，延遲要付年息 10% [S:law-34]。',
     '**被拒絕時**：先書面向保險公司申訴，30 天內沒有回覆或不接受，60 天內向金融消費評議中心申請評議，不用費用 [S:foi-process]。',
@@ -36,7 +38,7 @@ export const TRAVEL_INCONVENIENCE_CLAIM: GuidePack = {
   rules: [
     '不要說「一定會拿到 NT$X」；保額是實支實付的上限，依卡別、等級、年度不同。',
     '不要說延誤剛好 4 小時一定符合，也不要說天候改降算延誤。',
-    '不要說父母、朋友、25 歲以上的子女在保障內。',
+    '不要說父母、朋友、25 歲以上的子女在保障內；父母本身是附卡持卡人時，是否在保障內以保險證為準。',
     '不要說里程票只付稅金、或已退刷的機票可以申請。',
     '不要說旅平險保延誤或行李；不要說行李遺失會賠行李本身的價值。',
     '不要說回台灣的回程行李延誤在保障內。',
@@ -49,7 +51,7 @@ export const TRAVEL_INCONVENIENCE_CLAIM: GuidePack = {
       body: `| 銀行 | 保險公司 | 來源 |
 | --- | --- | --- |
 | 國泰世華 | 國泰產險 | [S:cathay-travel] |
-| 花旗、滙豐、渣打 | 國泰產險（各有理賠申請書） | [S:cathay-ins-claim] |
+| 滙豐、渣打 | 國泰產險（各有理賠申請書） | [S:cathay-ins-claim] |
 | 玉山 | 新安東京海上產物 | [S:esun-insurance] |
 | 台新 | 新光產物 | [S:taishin-cert] |
 | 中國信託 | 中國信託產物 | [S:ctbc-cert] |
@@ -87,8 +89,8 @@ export const TRAVEL_INCONVENIENCE_CLAIM: GuidePack = {
   report: `## 你可以申請嗎
 （付款卡、被保險人、事件與門檻；不符合就說明原因）
 
-## 現在立刻要做的事（還在機場時）
-- 延誤證明、登機證、PIR、收據……
+## 現在要做的事
+（還在機場：延誤證明、登機證、PIR、收據；已回國：向航空公司補延誤證明、整理收據）
 
 ## 可以申請的項目與上限（以保險證為準）
 ## 文件清單（打勾）
@@ -105,7 +107,10 @@ export const TRAVEL_INCONVENIENCE_CLAIM: GuidePack = {
     '長榮、華航、星宇、台灣虎航、捷星的延誤承諾。',
     '透過 Trip.com、Klook 等平台訂的機票是否算「用該卡付全額」。',
     '金融消費評議中心的評議專線與保險公司必須接受的評議金額上限。',
+    '日圓收據換算新台幣用哪一天、哪個匯率。',
+    '航空公司事後補發延誤證明的方式。',
   ],
+  related: [{ id: 'travel.jp-payment', title: '日本付款不吃虧', why: '用哪張卡付機票、海外刷卡注意' }],
   sources: [
     { id: 'fubon-claims', title: '富邦產險：信用卡附加保險理賠說明', url: 'https://www.fubon.com/insurance/policyholder/claims-process/credit-card-claims/index.html', authority: '富邦產險', checkedAt: '2026-10-31', verification: 'search_extract', confidence: 'high' },
     { id: 'esun-travel', title: '玉山：信用卡旅遊保險', url: 'https://www.esunbank.com.tw/bank/personal/credit-card/benefit/travel-insurance', authority: '玉山銀行', checkedAt: '2026-10-31', verification: 'search_extract', confidence: 'high' },

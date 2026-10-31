@@ -24,6 +24,13 @@ export const GUIDES: Record<string, GuidePack> = Object.fromEntries(
  * Generated from the registry and catalog so the URL never drifts from the engine.
  */
 
+/** Related packs for the generated Osaka/Kyoto ticket pack (guide packs declare theirs inline). */
+export const TICKET_RELATED: NonNullable<GuidePack['related']> = [
+  { id: 'travel.jp-airport-transfer', title: '機場進市區交通', why: '關西機場到大阪、京都（HARUKA、南海、利木津巴士）' },
+  { id: 'travel.jp-rail-pass', title: 'JR Pass 划算嗎', why: '行程還要去廣島、東京等關西以外的地方時' },
+  { id: 'travel.jp-payment', title: '日本付款不吃虧', why: 'ICOCA、感應式信用卡搭車與海外刷卡手續費' },
+];
+
 const EXAMPLE_MONDAY = '2026-11-16';
 const EXAMPLE_AS_OF = '2026-10-31';
 const EXAMPLE_SCENARIOS = ['osaka-pass-wins', 'kyoto-light', 'osaka-two-days', 'weekend-metro', 'osaka-kyoto-family'];
@@ -34,7 +41,8 @@ export function renderPackFiles(baseUrl: string): Record<string, string> {
   for (const pkg of active) {
     const g = GUIDES[pkg.id];
     files[`packs/${pkg.id}.md`] = g ? renderGuideMarkdown(pkg, g, baseUrl) : renderJpTicketMarkdown(pkg, CATALOG, baseUrl);
-    files[`packs/${pkg.id}.json`] = JSON.stringify(g ? renderGuideJson(pkg, g) : renderJpTicketJson(pkg, CATALOG), null, 2) + '\n';
+    files[`packs/${pkg.id}.json`] =
+      JSON.stringify(g ? renderGuideJson(pkg, g, baseUrl) : renderJpTicketJson(pkg, CATALOG, baseUrl), null, 2) + '\n';
   }
   files['packs/index.json'] =
     JSON.stringify(
@@ -277,6 +285,10 @@ ${ex
   )
   .join('\n')}
 
+## 相關懶人包
+
+${TICKET_RELATED.map((r) => `- [${r.title}](${baseUrl}${r.id}.md)：${r.why}`).join('\n')}
+
 ## 回報格式
 
 \`\`\`
@@ -298,7 +310,7 @@ ${ex
 `;
 }
 
-function renderJpTicketJson(pkg: PackageManifest, catalog: Catalog) {
+function renderJpTicketJson(pkg: PackageManifest, catalog: Catalog, baseUrl: string) {
   return {
     packId: pkg.id,
     version: pkg.version,
@@ -311,6 +323,7 @@ function renderJpTicketJson(pkg: PackageManifest, catalog: Catalog) {
     sourceFreshnessDays: SOURCE_FRESHNESS_DAYS,
     catalog,
     examples: examples(catalog),
+    related: TICKET_RELATED.map((r) => ({ ...r, url: `${baseUrl}${r.id}.md` })),
   };
 }
 

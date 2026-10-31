@@ -163,6 +163,12 @@ packId: travel.jp-ticket-optimizer ・ 版本 0.1.0 ・ 資料核對日 2026-10-
   - 2026-11-18（平日）：清水寺、伏見稻荷大社、金閣寺；交通 京都市巴士 3 段、JR 京都→稻荷 1 段、阪急（大阪↔京都） 2 段
   - 結果：逐項單買 ¥20,470、Pass 優先 ¥16,160、最佳混合 ¥14,980。推薦：最佳混合（大阪周遊卡 1 日券、大阪地鐵一日券（Enjoy Eco Card）），預估可省 ¥5,490。
 
+## 相關懶人包
+
+- [機場進市區交通](https://raw.githubusercontent.com/bahfahh/react_basic_template/claude/react-prototype-a485u2/public/packs/travel.jp-airport-transfer.md)：關西機場到大阪、京都（HARUKA、南海、利木津巴士）
+- [JR Pass 划算嗎](https://raw.githubusercontent.com/bahfahh/react_basic_template/claude/react-prototype-a485u2/public/packs/travel.jp-rail-pass.md)：行程還要去廣島、東京等關西以外的地方時
+- [日本付款不吃虧](https://raw.githubusercontent.com/bahfahh/react_basic_template/claude/react-prototype-a485u2/public/packs/travel.jp-payment.md)：ICOCA、感應式信用卡搭車與海外刷卡手續費
+
 ## 回報格式
 
 ```
