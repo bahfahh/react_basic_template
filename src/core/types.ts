@@ -85,6 +85,8 @@ export interface Attraction {
   /** `free` = no admission; `null` = no verified price. */
   admission: PriceRule[] | 'free' | null;
   dynamicPrice?: DynamicPrice;
+  /** Age tiers as the attraction defines them (school levels differ from our three categories). */
+  ageNote?: string;
   /** Requires a timed reservation in advance (affects booking handoff, not price). */
   reservationRequired?: boolean;
   keywords: string[];

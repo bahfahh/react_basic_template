@@ -142,19 +142,19 @@ const attraction = (a: Omit<Attraction, 'keywords'> & { keywords?: string[] }): 
 const ATTRACTIONS: Attraction[] = [
   // ---- Osaka
   attraction({
-    id: 'osaka_castle', name: '大阪城天守閣', nameJa: '大阪城天守閣', city: 'osaka', area: 'osaka_castle', access: 'osaka_metro',
+    id: 'osaka_castle', ageNote: '高中・大學生 ¥600（需學生證）；國中生以下免費（需證明）', name: '大阪城天守閣', nameJa: '大阪城天守閣', city: 'osaka', area: 'osaka_castle', access: 'osaka_metro',
     admission: [{ appliesTo: 'any', adult: 1200, child: 0, infant: 0 }], keywords: ['大阪城', '天守閣'], sourceIds: ['src_osaka_castle'],
   }),
   attraction({
-    id: 'umeda_sky', name: '梅田藍天大廈 空中庭園', nameJa: '梅田スカイビル 空中庭園展望台', city: 'osaka', area: 'umeda', access: 'osaka_metro',
+    id: 'umeda_sky', ageNote: '國中生以上 ¥2,000；4 歲〜小學生 ¥500；未滿 4 歲免費', name: '梅田藍天大廈 空中庭園', nameJa: '梅田スカイビル 空中庭園展望台', city: 'osaka', area: 'umeda', access: 'osaka_metro',
     admission: [{ appliesTo: 'any', adult: 2000, child: 500, infant: null }], keywords: ['梅田藍天', '藍天大廈', '空中庭園', '梅田スカイ'], sourceIds: ['src_umeda_sky'],
   }),
   attraction({
-    id: 'hep_five_wheel', name: 'HEP FIVE 摩天輪', nameJa: 'HEP FIVE 観覧車', city: 'osaka', area: 'umeda', access: 'osaka_metro',
+    id: 'hep_five_wheel', ageNote: '6 歲以上每人 ¥1,000；5 歲以下免費', name: 'HEP FIVE 摩天輪', nameJa: 'HEP FIVE 観覧車', city: 'osaka', area: 'umeda', access: 'osaka_metro',
     admission: [{ appliesTo: 'any', adult: 1000, child: 1000, infant: 0 }], keywords: ['HEP FIVE', 'HEP', '紅色摩天輪'], sourceIds: ['src_hep_five'],
   }),
   attraction({
-    id: 'tombori_cruise', name: '道頓堀遊船', nameJa: 'とんぼりリバークルーズ', city: 'osaka', area: 'namba', access: 'osaka_metro',
+    id: 'tombori_cruise', ageNote: '國中〜大學生 ¥1,000；小學生 ¥500；每位大人可免費帶 1 名學齡前兒童', name: '道頓堀遊船', nameJa: 'とんぼりリバークルーズ', city: 'osaka', area: 'namba', access: 'osaka_metro',
     admission: [{ appliesTo: 'any', adult: 2000, child: 500, infant: 0 }], keywords: ['道頓堀遊船', '遊船', 'とんぼり', 'Tombori'], sourceIds: ['src_tombori'],
   }),
   attraction({
@@ -162,7 +162,7 @@ const ATTRACTIONS: Attraction[] = [
     admission: 'free', keywords: ['道頓堀', '心齋橋', '難波'], sourceIds: [],
   }),
   attraction({
-    id: 'tsutenkaku', name: '通天閣', nameJa: '通天閣', city: 'osaka', area: 'shinsekai', access: 'osaka_metro',
+    id: 'tsutenkaku', ageNote: '15 歲以上 ¥1,500；5–14 歲 ¥800', name: '通天閣', nameJa: '通天閣', city: 'osaka', area: 'shinsekai', access: 'osaka_metro',
     admission: [{ appliesTo: 'any', adult: 1500, child: 800, infant: null }], keywords: ['通天閣', '新世界'], sourceIds: ['src_tsutenkaku'],
   }),
   attraction({
@@ -170,42 +170,42 @@ const ATTRACTIONS: Attraction[] = [
     admission: null, keywords: ['御座船'], sourceIds: ['src_amazing_facilities'],
   }),
   attraction({
-    id: 'tempozan_wheel', name: '天保山大摩天輪', nameJa: '天保山大観覧車', city: 'osaka', area: 'bay', access: 'osaka_metro',
+    id: 'tempozan_wheel', ageNote: '3 歲以上一律 ¥900', name: '天保山大摩天輪', nameJa: '天保山大観覧車', city: 'osaka', area: 'bay', access: 'osaka_metro',
     admission: [{ appliesTo: 'any', adult: 900, child: 900, infant: null }], keywords: ['天保山'], sourceIds: ['src_tempozan'],
   }),
   attraction({
-    id: 'kaiyukan', name: '海遊館', nameJa: '海遊館', city: 'osaka', area: 'bay', access: 'osaka_metro', admission: null,
+    id: 'kaiyukan', ageNote: '16 歲以上大人價；小學・國中生 ¥1,400–¥1,650；3 歲以上 ¥700–¥800；2 歲以下免費', name: '海遊館', nameJa: '海遊館', city: 'osaka', area: 'bay', access: 'osaka_metro', admission: null,
     dynamicPrice: { adultMin: 2700, adultMax: 3500, childMin: 1400, childMax: 1650, note: '依日期浮動；以購票頁當日價格為準。' },
     reservationRequired: true, keywords: ['海遊館', '水族館'], sourceIds: ['src_kaiyukan'],
   }),
   attraction({
-    id: 'usj', name: '日本環球影城 USJ', nameJa: 'ユニバーサル・スタジオ・ジャパン', city: 'osaka', area: 'usj', access: 'jr_local', admission: null,
+    id: 'usj', ageNote: '12 歲以上大人價；4–11 歲兒童價；3 歲以下免費', name: '日本環球影城 USJ', nameJa: 'ユニバーサル・スタジオ・ジャパン', city: 'osaka', area: 'usj', access: 'jr_local', admission: null,
     dynamicPrice: { adultMin: 8400, adultMax: null, childMin: 5500, childMax: null, note: '依需求浮動，無公開上限；快速通關另計。' },
     reservationRequired: true, keywords: ['環球影城', 'USJ', '環球'], sourceIds: ['src_usj'],
   }),
   // ---- Kyoto
   attraction({
-    id: 'kiyomizu', name: '清水寺', nameJa: '清水寺', city: 'kyoto', area: 'higashiyama', access: 'kyoto_bus',
+    id: 'kiyomizu', ageNote: '高中生以上 ¥500；國中・小學生 ¥200', name: '清水寺', nameJa: '清水寺', city: 'kyoto', area: 'higashiyama', access: 'kyoto_bus',
     admission: [{ appliesTo: 'any', adult: 500, child: 200, infant: 0 }], keywords: ['清水寺'], sourceIds: ['src_kiyomizu'],
   }),
   attraction({
-    id: 'sanjusangendo', name: '三十三間堂', nameJa: '三十三間堂', city: 'kyoto', area: 'shichijo', access: 'kyoto_bus',
+    id: 'sanjusangendo', ageNote: '大人 ¥600；國中・高中生 ¥400；小學生 ¥300', name: '三十三間堂', nameJa: '三十三間堂', city: 'kyoto', area: 'shichijo', access: 'kyoto_bus',
     admission: [{ appliesTo: 'any', adult: 600, child: 300, infant: null }], keywords: ['三十三間堂'], sourceIds: ['src_sanjusangendo'],
   }),
   attraction({
-    id: 'kinkakuji', name: '金閣寺', nameJa: '金閣寺（鹿苑寺）', city: 'kyoto', area: 'kitayama', access: 'kyoto_bus',
+    id: 'kinkakuji', ageNote: '高中生以上 ¥500；國中・小學生 ¥300', name: '金閣寺', nameJa: '金閣寺（鹿苑寺）', city: 'kyoto', area: 'kitayama', access: 'kyoto_bus',
     admission: [{ appliesTo: 'any', adult: 500, child: 300, infant: null }], keywords: ['金閣寺', '鹿苑寺'], sourceIds: ['src_kinkakuji'],
   }),
   attraction({
-    id: 'ginkakuji', name: '銀閣寺', nameJa: '銀閣寺（慈照寺）', city: 'kyoto', area: 'ginkakuji', access: 'kyoto_bus',
+    id: 'ginkakuji', ageNote: '高中生以上 ¥1,000；國中・小學生 ¥500', name: '銀閣寺', nameJa: '銀閣寺（慈照寺）', city: 'kyoto', area: 'ginkakuji', access: 'kyoto_bus',
     admission: [{ appliesTo: 'any', adult: 1000, child: 500, infant: null }], keywords: ['銀閣寺', '哲學之道'], sourceIds: ['src_ginkakuji'],
   }),
   attraction({
-    id: 'nijo_castle', name: '二條城', nameJa: '元離宮二条城', city: 'kyoto', area: 'nijo', access: 'kyoto_subway',
+    id: 'nijo_castle', ageNote: '大人 ¥1,300；國中・高中生 ¥400；小學生 ¥300；學齡前免費', name: '二條城', nameJa: '元離宮二条城', city: 'kyoto', area: 'nijo', access: 'kyoto_subway',
     admission: [{ appliesTo: 'any', adult: 1300, child: 300, infant: 0 }], keywords: ['二條城', '二条城'], sourceIds: ['src_nijo'],
   }),
   attraction({
-    id: 'tenryuji', name: '天龍寺庭園', nameJa: '天龍寺', city: 'kyoto', area: 'arashiyama', access: 'kyoto_bus',
+    id: 'tenryuji', ageNote: '高中生以上 ¥500；國中・小學生 ¥300；學齡前免費', name: '天龍寺庭園', nameJa: '天龍寺', city: 'kyoto', area: 'arashiyama', access: 'kyoto_bus',
     admission: [{ appliesTo: 'any', adult: 500, child: 300, infant: 0 }], keywords: ['天龍寺', '嵐山'], sourceIds: ['src_tenryuji'],
   }),
   attraction({
