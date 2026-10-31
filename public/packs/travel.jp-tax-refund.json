@@ -120,7 +120,7 @@
         "Refund"
       ],
       "search": "Japan Customs tax refund kiosk departure foreign visitors",
-      "check": "尚未自動檢查"
+      "check": "2026-10-31：可直接讀取"
     },
     {
       "id": "customs-detail",
@@ -136,7 +136,7 @@
         "免税制度"
       ],
       "search": "Japan Customs Procedure Details Tax Exemption Refund Program",
-      "check": "尚未自動檢查"
+      "check": "2026-10-31：可直接讀取"
     },
     {
       "id": "nta",

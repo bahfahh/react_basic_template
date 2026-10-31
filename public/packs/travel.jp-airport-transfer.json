@@ -200,7 +200,7 @@
         "Monorail"
       ],
       "search": "Haneda Airport access official Keikyu Monorail bus",
-      "check": "尚未自動檢查"
+      "check": "2026-10-31：可直接讀取"
     },
     {
       "id": "monorail",
@@ -236,7 +236,7 @@
         "Fixed"
       ],
       "search": "成田空港 定額運賃 タクシー 東京 2026",
-      "check": "尚未自動檢查"
+      "check": "2026-10-31：可直接讀取"
     },
     {
       "id": "kix-access",
@@ -252,7 +252,7 @@
         "Kansai-Airport"
       ],
       "search": "Kansai Airport access Osaka Kyoto official",
-      "check": "尚未自動檢查"
+      "check": "2026-10-31：可直接讀取"
     },
     {
       "id": "kix-night",
@@ -269,7 +269,7 @@
         "関西空港"
       ],
       "search": "Kansai Airport late night bus access",
-      "check": "尚未自動檢查"
+      "check": "2026-10-31：一般瀏覽器 打不開；AI 讀取 可直接讀取"
     },
     {
       "id": "kix-limo",
@@ -286,7 +286,7 @@
         "Osaka Sta"
       ],
       "search": "Kansai Airport Limousine Bus KATE Umeda Kyoto",
-      "check": "尚未自動檢查"
+      "check": "2026-10-31：可直接讀取"
     },
     {
       "id": "haruka",
@@ -337,7 +337,7 @@
         "Airport"
       ],
       "search": "Meitetsu Centrair airport access μSKY fare",
-      "check": "2026-10-31：打得開，但沒讀到預期文字（可能要用瀏覽器開，或頁面改版）"
+      "check": "2026-10-31：可直接讀取"
     },
     {
       "id": "fukuoka",

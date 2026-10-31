@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-10-31T12:20:18.050Z",
+  "checkedAt": "2026-10-31T12:25:23.112Z",
   "runner": "github-actions",
   "results": {
     "benefit.tw-income-tax#bls": {
@@ -312,22 +312,14 @@
       }
     },
     "benefit.tw-subsidy-checkup#rent": {
-      "url": "https://www.nlma.gov.tw/%E6%9C%80%E6%96%B0%E6%B6%88%E6%81%AF/%E6%B3%95%E8%A6%8F%E5%85%AC%E5%91%8A/29-%E4%BD%8F%E5%AE%85%E7%AF%87/37314-%E4%B8%89%E7%99%BE%E5%84%84%E5%85%83%E4%B8%AD%E5%A4%AE%E6%93%B4%E5%A4%A7%E7%A7%9F%E9%87%91%E8%A3%9C%E8%B2%BC%E5%B0%88%E6%A1%88%E8%A8%88%E7%95%AB%E4%BD%9C%E6%A5%AD%E8%A6%8F%E5%AE%9A.html",
+      "url": "https://www.gov.tw/News_Content_37_561179",
       "browser": {
-        "verdict": "blocked",
-        "http": 200,
-        "missing": [
-          "租金補貼"
-        ],
-        "note": "轉址到 https://www.nlma.gov.tw/ch"
+        "verdict": "ok",
+        "http": 200
       },
       "bot": {
-        "verdict": "blocked",
-        "http": 200,
-        "missing": [
-          "租金補貼"
-        ],
-        "note": "轉址到 https://www.nlma.gov.tw/ch"
+        "verdict": "ok",
+        "http": 200
       }
     },
     "benefit.tw-subsidy-checkup#studentloan": {
@@ -776,20 +768,14 @@
       }
     },
     "travel.jp-airport-transfer#haneda": {
-      "url": "https://tokyo-haneda.com/en/access/index.html",
+      "url": "https://tokyo-haneda.com/en/access/train/index.html",
       "browser": {
-        "verdict": "no_text",
-        "http": 200,
-        "missing": [
-          "Keikyu"
-        ]
+        "verdict": "ok",
+        "http": 200
       },
       "bot": {
-        "verdict": "no_text",
-        "http": 200,
-        "missing": [
-          "Keikyu"
-        ]
+        "verdict": "ok",
+        "http": 200
       }
     },
     "travel.jp-airport-transfer#haruka": {
@@ -815,36 +801,36 @@
       }
     },
     "travel.jp-airport-transfer#kix-access": {
-      "url": "https://www.kansai-airport.or.jp/en/access/faq",
+      "url": "https://www.nankai.co.jp/en_railway/traffic/kix.html",
       "browser": {
-        "verdict": "blocked",
-        "http": 403
+        "verdict": "ok",
+        "http": 200
       },
       "bot": {
-        "verdict": "blocked",
-        "http": 403
+        "verdict": "ok",
+        "http": 200
       }
     },
     "travel.jp-airport-transfer#kix-limo": {
-      "url": "https://www.kansai-airport.or.jp/en/node/3532",
+      "url": "https://www.kate.co.jp/en/timetable/detail/um",
       "browser": {
-        "verdict": "blocked",
-        "http": 403
+        "verdict": "ok",
+        "http": 200
       },
       "bot": {
-        "verdict": "blocked",
-        "http": 403
+        "verdict": "ok",
+        "http": 200
       }
     },
     "travel.jp-airport-transfer#kix-night": {
-      "url": "https://www.kansai-airport.or.jp/en/morning-midnight/access",
+      "url": "https://www.flypeach.com/lm/ai/airports/transit/kix_transit",
       "browser": {
-        "verdict": "blocked",
-        "http": 403
+        "verdict": "error",
+        "note": "The operation was aborted due to timeout"
       },
       "bot": {
-        "verdict": "blocked",
-        "http": 403
+        "verdict": "ok",
+        "http": 200
       }
     },
     "travel.jp-airport-transfer#limo": {
@@ -861,18 +847,12 @@
     "travel.jp-airport-transfer#meitetsu": {
       "url": "https://www.meitetsu.co.jp/eng/airport-access/index.html",
       "browser": {
-        "verdict": "no_text",
-        "http": 200,
-        "missing": [
-          "Centrair"
-        ]
+        "verdict": "ok",
+        "http": 200
       },
       "bot": {
-        "verdict": "no_text",
-        "http": 200,
-        "missing": [
-          "Centrair"
-        ]
+        "verdict": "ok",
+        "http": 200
       }
     },
     "travel.jp-airport-transfer#monorail": {
@@ -953,14 +933,14 @@
       }
     },
     "travel.jp-airport-transfer#taxi": {
-      "url": "https://www.taxi-tokyo.or.jp/english/teigaku/narita.html",
+      "url": "https://www.narita-airport.jp/en/access/taxi/",
       "browser": {
-        "verdict": "error",
-        "note": "ConnectTimeoutError: Connect Timeout Error (attempted address: www.taxi-tokyo.or.jp:443, timeout: 10000ms)"
+        "verdict": "ok",
+        "http": 200
       },
       "bot": {
-        "verdict": "error",
-        "note": "ConnectTimeoutError: Connect Timeout Error (attempted address: www.taxi-tokyo.or.jp:443, timeout: 10000ms)"
+        "verdict": "ok",
+        "http": 200
       }
     },
     "travel.jp-airport-transfer#tyo-nrt": {
@@ -1008,14 +988,14 @@
       }
     },
     "travel.jp-kansai-transit#hankyu-1day": {
-      "url": "https://enjoy-osaka-kyoto-kobe.com/ja/ticket/hankyu-hanshin-1day-pass/",
+      "url": "https://www.hankyu.co.jp/en/ticket/otoku/013806.html",
       "browser": {
-        "verdict": "blocked",
-        "http": 503
+        "verdict": "ok",
+        "http": 200
       },
       "bot": {
-        "verdict": "blocked",
-        "http": 503
+        "verdict": "ok",
+        "http": 200
       }
     },
     "travel.jp-kansai-transit#holidays": {
@@ -1166,20 +1146,14 @@
       }
     },
     "travel.jp-payment#nankai-tap": {
-      "url": "https://www.nankai.co.jp/contents/contactless/en/",
+      "url": "https://www.nankai.co.jp/contents/contactless/",
       "browser": {
-        "verdict": "no_text",
-        "http": 200,
-        "missing": [
-          "contactless"
-        ]
+        "verdict": "ok",
+        "http": 200
       },
       "bot": {
-        "verdict": "no_text",
-        "http": 200,
-        "missing": [
-          "contactless"
-        ]
+        "verdict": "ok",
+        "http": 200
       }
     },
     "travel.jp-payment#paypay-tw": {
@@ -1228,20 +1202,14 @@
       }
     },
     "travel.jp-payment#taishin-fee": {
-      "url": "https://www.taishinbank.com.tw/TSB/personal/credit/intro/rights/notice/right0904/",
+      "url": "https://www.esunbank.com/zh-tw/about/faq/content?q=credit_card%2F018",
       "browser": {
-        "verdict": "no_text",
-        "http": 200,
-        "missing": [
-          "國外交易服務費"
-        ]
+        "verdict": "ok",
+        "http": 200
       },
       "bot": {
-        "verdict": "no_text",
-        "http": 200,
-        "missing": [
-          "國外交易服務費"
-        ]
+        "verdict": "ok",
+        "http": 200
       }
     },
     "travel.jp-payment#tap-list": {
@@ -1256,20 +1224,14 @@
       }
     },
     "travel.jp-payment#toei-tap": {
-      "url": "https://www.kotsu.metro.tokyo.jp/eng/guides/contactless/",
+      "url": "https://www.metro.tokyo.lg.jp/information/press/2025/12/2025121615",
       "browser": {
-        "verdict": "blocked",
-        "http": 200,
-        "missing": [
-          "Tap-and-go"
-        ]
+        "verdict": "ok",
+        "http": 200
       },
       "bot": {
-        "verdict": "blocked",
-        "http": 200,
-        "missing": [
-          "Tap-and-go"
-        ]
+        "verdict": "ok",
+        "http": 200
       }
     },
     "travel.jp-payment#welcome-suica": {
@@ -1309,17 +1271,14 @@
       }
     },
     "travel.jp-rail-pass#fare-search": {
-      "url": "https://www.jorudan.co.jp/norikae/",
+      "url": "https://transit.yahoo.co.jp/search/result?from=%E6%9D%B1%E4%BA%AC&to=%E6%96%B0%E5%A4%A7%E9%98%AA",
       "browser": {
-        "verdict": "no_text",
-        "http": 200,
-        "missing": [
-          "乗換案内"
-        ]
+        "verdict": "ok",
+        "http": 200
       },
       "bot": {
-        "verdict": "blocked",
-        "http": 403
+        "verdict": "ok",
+        "http": 200
       }
     },
     "travel.jp-rail-pass#fare-table": {
@@ -1380,14 +1339,14 @@
       }
     },
     "travel.jp-rail-pass#kansai-qr": {
-      "url": "https://explore.osaka/kansai-rail-passes/",
+      "url": "https://www.westjr.co.jp/global/en/ticket/westqr/kansaiarea/",
       "browser": {
-        "verdict": "blocked",
-        "http": 403
+        "verdict": "ok",
+        "http": 200
       },
       "bot": {
-        "verdict": "blocked",
-        "http": 403
+        "verdict": "ok",
+        "http": 200
       }
     },
     "travel.jp-rail-pass#kansai-wide": {
@@ -1435,25 +1394,25 @@
       }
     },
     "travel.jp-tax-refund#customs-detail": {
-      "url": "https://www.customs.go.jp/kaigairyoko/tetsuzukishousai_e.html",
+      "url": "https://www.customs.go.jp/kaigairyoko/taxrefund/jpn.htm",
       "browser": {
-        "verdict": "error",
-        "http": 404
+        "verdict": "ok",
+        "http": 200
       },
       "bot": {
-        "verdict": "error",
-        "http": 404
+        "verdict": "ok",
+        "http": 200
       }
     },
     "travel.jp-tax-refund#customs-e": {
-      "url": "https://www.customs.go.jp/kaigairyoko/taxrefund_e.html",
+      "url": "https://www.customs.go.jp/kaigairyoko/taxrefund.htm",
       "browser": {
-        "verdict": "error",
-        "http": 404
+        "verdict": "ok",
+        "http": 200
       },
       "bot": {
-        "verdict": "error",
-        "http": 404
+        "verdict": "ok",
+        "http": 200
       }
     },
     "travel.jp-tax-refund#jta-en": {
@@ -1501,17 +1460,14 @@
       }
     },
     "travel.jp-tokyo-transit#fare-search": {
-      "url": "https://www.jorudan.co.jp/norikae/",
+      "url": "https://transit.yahoo.co.jp/search/result?from=%E6%96%B0%E5%AE%BF&to=%E6%B5%85%E8%8D%89",
       "browser": {
-        "verdict": "no_text",
-        "http": 200,
-        "missing": [
-          "乗換案内"
-        ]
+        "verdict": "ok",
+        "http": 200
       },
       "bot": {
-        "verdict": "blocked",
-        "http": 403
+        "verdict": "ok",
+        "http": 200
       }
     },
     "travel.jp-tokyo-transit#jr-passes": {
@@ -1559,20 +1515,14 @@
       }
     },
     "travel.jp-tokyo-transit#tap": {
-      "url": "https://www.kotsu.metro.tokyo.jp/eng/guides/contactless/",
+      "url": "https://www.metro.tokyo.lg.jp/information/press/2025/12/2025121615",
       "browser": {
-        "verdict": "blocked",
-        "http": 200,
-        "missing": [
-          "Tap-and-go"
-        ]
+        "verdict": "ok",
+        "http": 200
       },
       "bot": {
-        "verdict": "blocked",
-        "http": 200,
-        "missing": [
-          "Tap-and-go"
-        ]
+        "verdict": "ok",
+        "http": 200
       }
     },
     "travel.jp-tokyo-transit#tap-list": {
@@ -1744,22 +1694,14 @@
       }
     },
     "travel.tw-travel-inconvenience-claim#foi": {
-      "url": "https://www.foi.org.tw/",
+      "url": "https://www.foi.org.tw/article.aspx?Arti=44&Lang=1",
       "browser": {
-        "verdict": "no_text",
-        "http": 200,
-        "missing": [
-          "評議"
-        ],
-        "note": "轉址到 https://www.foi.org.tw/index.html"
+        "verdict": "ok",
+        "http": 200
       },
       "bot": {
-        "verdict": "no_text",
-        "http": 200,
-        "missing": [
-          "評議"
-        ],
-        "note": "轉址到 https://www.foi.org.tw/index.html"
+        "verdict": "ok",
+        "http": 200
       }
     },
     "travel.tw-travel-inconvenience-claim#foi-law": {
@@ -1774,22 +1716,14 @@
       }
     },
     "travel.tw-travel-inconvenience-claim#fubon-claims": {
-      "url": "https://www.fubon.com/insurance/policyholder/claims-process/credit-card-claims/index.html",
+      "url": "https://www.fubon.com/banking/Personal/credit_card/trip_insurance/trip_insurance.htm",
       "browser": {
-        "verdict": "no_text",
-        "http": 200,
-        "missing": [
-          "旅遊不便"
-        ],
-        "note": "轉址到 https://www.fubon.com/financialholdings/home/not_found.html"
+        "verdict": "ok",
+        "http": 200
       },
       "bot": {
-        "verdict": "no_text",
-        "http": 200,
-        "missing": [
-          "旅遊不便"
-        ],
-        "note": "轉址到 https://www.fubon.com/financialholdings/home/not_found.html"
+        "verdict": "ok",
+        "http": 200
       }
     },
     "travel.tw-travel-inconvenience-claim#law-34": {

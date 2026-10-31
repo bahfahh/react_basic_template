@@ -73,7 +73,7 @@
         "國外交易服務費"
       ],
       "search": "〈銀行名〉 信用卡 國外交易服務費",
-      "check": "尚未自動檢查"
+      "check": "2026-10-31：可直接讀取"
     },
     {
       "id": "taishin-dcc",
@@ -278,7 +278,7 @@
         "都営地下鉄"
       ],
       "search": "Toei Subway tap-and-go credit card payment",
-      "check": "尚未自動檢查"
+      "check": "2026-10-31：可直接讀取"
     },
     {
       "id": "metro-tap",
@@ -311,7 +311,7 @@
         "タッチ決済"
       ],
       "search": "Nankai contactless credit card payment",
-      "check": "尚未自動檢查"
+      "check": "2026-10-31：可直接讀取"
     },
     {
       "id": "paypay-tw",
