@@ -1,4 +1,4 @@
-import { BrowserRouter, HashRouter, Route, Routes } from 'react-router-dom';
+import { BrowserRouter, HashRouter, MemoryRouter, Route, Routes } from 'react-router-dom';
 import { ApiProvider } from '@/api/ApiProvider';
 import { AppShell } from '@/components/AppShell';
 import { AdminPage } from '@/pages/AdminPage';
@@ -11,7 +11,8 @@ import { PackagePage } from '@/pages/PackagePage';
 import { TaskListPage } from '@/pages/TaskListPage';
 import { TaskPage } from '@/pages/TaskPage';
 
-const Router = import.meta.env.VITE_ROUTER === 'hash' ? HashRouter : BrowserRouter;
+// Embedded demo hosts may not allow path-style hashes, so the demo build keeps routing in memory.
+const Router = { hash: HashRouter, memory: MemoryRouter, browser: BrowserRouter }[import.meta.env.VITE_ROUTER ?? 'browser'];
 
 export default function App() {
   return (

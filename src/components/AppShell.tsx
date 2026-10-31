@@ -36,7 +36,7 @@ export function AppShell() {
           )}
         </div>
       )}
-      <header className="sticky top-0 z-30 border-b bg-background/85 backdrop-blur">
+      <header className="sticky z-30 border-b bg-background/85 backdrop-blur" style={{ top: 'env(safe-area-inset-top, 0px)' }}>
         <div className="mx-auto flex max-w-6xl items-center gap-4 px-4 py-3">
           <Logo />
           <nav className="ml-auto hidden items-center gap-1 md:flex" aria-label="主要導覽">
@@ -83,7 +83,7 @@ export function AppShell() {
         </div>
       </footer>
 
-      <nav className="fixed inset-x-0 bottom-0 z-30 border-t bg-background/95 backdrop-blur md:hidden" aria-label="主要導覽">
+      <nav className="fixed inset-x-0 bottom-0 z-30 border-t bg-background/95 backdrop-blur md:hidden" style={{ paddingBottom: 'env(safe-area-inset-bottom, 0px)' }} aria-label="主要導覽">
         <div className="grid grid-cols-4">
           {NAV.map((n) => (
             <NavLink

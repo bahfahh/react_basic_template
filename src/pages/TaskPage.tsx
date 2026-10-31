@@ -111,21 +111,32 @@ export function TaskPage() {
       {tab === 'timeline' && <Timeline events={events} />}
       {tab === 'sources' && (task.comparison ? <SourcesAndMethod taskId={task.id} comparison={task.comparison} /> : <NoComparison task={task} />)}
 
-      {!terminal && (
-        <div className="flex justify-end">
-          <Button
-            variant="ghost"
-            size="sm"
-            className="text-muted-foreground"
-            onClick={async () => {
-              if (confirm('確定要取消這個任務嗎？未執行的動作會作廢。')) update(await api.cancel(task.id));
-            }}
-          >
-            <Ban className="h-4 w-4" aria-hidden />
-            取消任務
-          </Button>
-        </div>
-      )}
+      {!terminal && <CancelTask onConfirm={async () => update(await api.cancel(task.id))} />}
+    </div>
+  );
+}
+
+function CancelTask({ onConfirm }: { onConfirm: () => Promise<void> }) {
+  const [asking, setAsking] = useState(false);
+  if (!asking) {
+    return (
+      <div className="flex justify-end">
+        <Button variant="ghost" size="sm" className="text-muted-foreground" onClick={() => setAsking(true)}>
+          <Ban className="h-4 w-4" aria-hidden />
+          取消任務
+        </Button>
+      </div>
+    );
+  }
+  return (
+    <div className="flex flex-wrap items-center justify-end gap-2 text-sm">
+      <span className="text-muted-foreground">取消後，未執行的動作會作廢，核准一併失效。</span>
+      <Button variant="danger" size="sm" onClick={() => void onConfirm()}>
+        確定取消
+      </Button>
+      <Button variant="ghost" size="sm" onClick={() => setAsking(false)}>
+        保留任務
+      </Button>
     </div>
   );
 }
