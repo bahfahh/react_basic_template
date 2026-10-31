@@ -55,8 +55,9 @@ packId: travel.jp-ticket-optimizer ・ 版本 0.1.0 ・ 資料核對日 2026-10-
 | 大阪 Metro | ¥240 | ¥120 | ¥190–¥390 | 以 2 區 ¥240（例：梅田→難波）估算；兒童以半價估算。 | src_osaka_metro_fare |
 | 京都市巴士 | ¥230 | ¥120 | ¥230–¥230 | 均一區間票價；觀光急行 EX100/EX101 為 ¥500。 | src_kyoto_bus_fare |
 | 京都市營地下鐵 | ¥260 | ¥130 | ¥220–¥360 | 以 2 區 ¥260 估算。 | src_kyoto_subway_fare |
-| JR 短程 | ¥180 | ¥90 | ¥150–¥190 | 旅遊網站彙整的短程票價（可信度低）。 | src_jr_local |
-| 阪急（大阪↔京都） | ¥410 | ¥210 | ¥410–¥410 | 大阪梅田↔京都河原町；兒童以半價估算。 | src_hankyu_fare |
+| JR 京都→稻荷 | ¥150 | ¥70 | ¥150–¥150 | 京都站→稲荷站（伏見稻荷）。 | src_jr_local |
+| JR 大阪→環球影城 | ¥200 | ¥100 | ¥200–¥200 | 大阪站→ユニバーサルシティ站。 | src_jr_usj |
+| 阪急（大阪↔京都） | ¥410 | ¥210 | ¥410–¥410 | 大阪梅田↔京都河原町。 | src_hankyu_fare |
 
 交通票價的年齡：小學生（約 6–12 歲）買兒童票，國中生起買大人票；未上小學的幼兒（1–5 歲）每位大人最多帶 2 位免費。
 
@@ -64,36 +65,37 @@ packId: travel.jp-ticket-optimizer ・ 版本 0.1.0 ・ 資料核對日 2026-10-
 
 | 票券 | 大人 | 兒童 | 有效 | 涵蓋 | 資格與限制 | 購買 | 來源 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| 大阪周遊卡 1 日券 | ¥3,500 | 無此票種／未核實 | 1 日；使用當日首班車至末班車（不是 24 小時）。 | 大阪 Metro、大阪城天守閣（限 1 次）、梅田藍天大廈 空中庭園（15:00 前入場；限 1 次）、道頓堀遊船（限 1 次）、HEP FIVE 摩天輪（限 1 次）、大阪城御座船（限 1 次）、通天閣（限 1 次；未確認，計算時不算）、天保山大摩天輪（限 1 次；未確認，計算時不算） | 使用日 2026-04-01～2027-03-31；每個設施限免費一次；只有大人票，兒童需另買；1 日券不能升級成 2 日券 | [スルッとQRtto（官方數位票）](https://subway.osakametro.co.jp/guide/page/20260401_osaka_amazing_pass.php) | src_amazing_2026、src_amazing_facilities |
-| 大阪周遊卡 2 日券 | ¥5,000 | 無此票種／未核實 | 2 日；連續 2 個日曆日；每設施在兩天內只能免費一次。 | 大阪 Metro、大阪城天守閣（限 1 次）、梅田藍天大廈 空中庭園（15:00 前入場；限 1 次）、道頓堀遊船（限 1 次）、HEP FIVE 摩天輪（限 1 次）、大阪城御座船（限 1 次）、通天閣（限 1 次；未確認，計算時不算）、天保山大摩天輪（限 1 次；未確認，計算時不算） | 使用日 2026-04-01～2027-03-31；連續兩天使用；每個設施兩天內限免費一次；只有大人票 | [スルッとQRtto（官方數位票）](https://subway.osakametro.co.jp/guide/page/20260401_osaka_amazing_pass.php) | src_amazing_2026、src_amazing_facilities |
-| 大阪地鐵一日券（Enjoy Eco Card） | 平日 ¥820、週末假日 ¥620 | 平日 ¥310、週末假日 ¥310 | 1 日；使用當日有效，含地鐵與市巴士。 | 大阪 Metro | 使用日 2026-04-01～2027-03-31；週末假日比平日便宜；不含任何景點 | [地鐵站售票機](https://subway.osakametro.co.jp/guide/page/enjoy-eco.php) | src_enjoy_eco |
+| 大阪周遊卡 1 日券 | ¥3,500 | 無此票種／未核實 | 1 日；使用當天 03:00 至隔天 02:59；購買後 3 個月內任選一天。 | 大阪 Metro、大阪城天守閣（限 1 次）、梅田藍天大廈 空中庭園（15:00 前入場；限 1 次）、道頓堀遊船（限 1 次）、HEP FIVE 摩天輪（限 1 次）、大阪城御座船（限 1 次）、通天閣（限 1 次）、天保山大摩天輪（限 1 次） | 使用日 2026-04-01～2027-03-31；每個設施限免費一次；只有大人票，兒童需另買；1 日券不能升級成 2 日券；另有伊丹機場版（1 日 ¥3,800／2 日 ¥5,400）與關西機場版 28 小時券（¥5,300，含關西機場→難波一趟） | [スルッとQRtto（官方線上販售）](https://surutto-qrtto.com/) | src_amazing_2026、src_amazing_facilities |
+| 大阪周遊卡 2 日券 | ¥5,000 | 無此票種／未核實 | 2 日；連續 2 天（每天 03:00 至隔天 02:59）；每設施在兩天內只能免費一次；最晚可用到 2027-04-01。 | 大阪 Metro、大阪城天守閣（限 1 次）、梅田藍天大廈 空中庭園（15:00 前入場；限 1 次）、道頓堀遊船（限 1 次）、HEP FIVE 摩天輪（限 1 次）、大阪城御座船（限 1 次）、通天閣（限 1 次）、天保山大摩天輪（限 1 次） | 使用日 2026-04-01～2027-03-31；連續兩天使用；每個設施兩天內限免費一次；只有大人票 | [スルッとQRtto（官方線上販售）](https://surutto-qrtto.com/) | src_amazing_2026、src_amazing_facilities |
+| 大阪地鐵一日券（Enjoy Eco Card） | 平日 ¥820、週末假日 ¥620 | 平日 ¥310、週末假日 ¥310 | 1 日；使用當日有效，含地鐵與市巴士（不含夢洲站）。 | 大阪 Metro | 使用日 2026-04-01～2027-03-31；週末假日比平日便宜；不含任何景點 | [地鐵站售票機](https://subway.osakametro.co.jp/guide/page/enjoy-eco.php) | src_enjoy_eco |
+| 大阪地鐵 30 小時券（ようおこし30hパス） | ¥1,200 | ¥600 | 1 日；首次使用起 30 小時（例如下午開始可用到隔天晚上）；比較時保守只算一天，跨兩天的行程請另外比較。 | 大阪 Metro | 使用日 2026-10-01～2027-09-30；不含巴士；原 26 小時、48 小時券已於 2026-09-30 停售 | [e METRO App／スルッとQRtto](https://subway.osakametro.co.jp/news/news/ticket/20260924_youokoshi_30hpass.php) | src_youokoshi |
 | 京都地鐵・巴士一日券 | ¥1,100 | ¥550 | 1 日；當日末班車前有效（不是 24 小時）。 | 京都市巴士、京都市營地下鐵 | 不含 JR、阪急、京阪電車；非居民巴士票價調整預計 2027 年度內實施，一日券價格可能變動 | [地鐵站／市巴士服務處](https://www.city.kyoto.lg.jp/kotsu/page/0000028378.html) | src_kyoto_pass |
 | 京都地鐵一日券 | ¥800 | ¥400 | 1 日；當日有效。 | 京都市營地下鐵 | 只含地鐵，不含巴士 | [地鐵站售票機](https://www.city.kyoto.lg.jp/kotsu/page/0000028376.html) | src_kyoto_subway_pass |
 | 阪急一日券 | ¥1,300 | 無此票種／未核實 | 1 日；阪急全線（神戶高速線除外）當日有效。 | 阪急（大阪↔京都） | 使用日 2026-04-01～2027-03-31；只有大人票；單純大阪↔京都來回通常不划算 | [阪急官方數位票](https://www.hankyu.co.jp/en/ticket/otoku/013812.html) | src_hankyu_oneday |
-| KANSAI RAILWAY PASS LITE 2 日 | ¥5,200 | 無此票種／未核實 | 2 日；連續 2 日。 | 阪急（大阪↔京都）、大阪 Metro（未確認，計算時不算） | 限持外國護照的短期旅客；使用日 2026-10-01～2027-03-31；訪日旅客限定；不含 JR、京都市營地下鐵、巴士；兒童票價未確認 | [スルッとKANSAI 官方頁](https://www.surutto.com/kansai_rwpl/en/krp.html) | src_kansai_rw_lite |
+| KANSAI RAILWAY PASS LITE 2 日 | ¥5,200 | 無此票種／未核實 | 2 日；連續 2 天（每天 03:00 至隔天 02:59）；購買後 3 個月內使用。 | 阪急（大阪↔京都）、大阪 Metro | 限持外國護照的短期旅客；使用日 2026-10-01～2027-03-31；訪日短期旅客限定；不含 JR、京都市營地下鐵、京阪京津線、嵐電、巴士；兒童票價未確認（來源互相矛盾）；另有 3 日券 ¥6,500 | [スルッとKANSAI 官方頁](https://www.surutto.com/kansai_rwpl/en/krp.html) | src_kansai_rw_lite |
 
 ### 景點門票
 
-| 景點 | 城市 | 區域 | 交通 | 大人 | 兒童（6–11） | 幼兒（0–5） | 各年齡票價（以此為準） | 來源 |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 大阪城天守閣 | 大阪 | osaka_castle | 大阪 Metro | ¥1,200 | 免費 | 免費 | 高中・大學生 ¥600（需學生證）；國中生以下免費（需證明） | src_osaka_castle |
-| 梅田藍天大廈 空中庭園 | 大阪 | umeda | 大阪 Metro | ¥2,000 | ¥500 | 無此票種／未核實 | 國中生以上 ¥2,000；4 歲〜小學生 ¥500；未滿 4 歲免費 | src_umeda_sky |
-| HEP FIVE 摩天輪 | 大阪 | umeda | 大阪 Metro | ¥1,000 | ¥1,000 | 免費 | 6 歲以上每人 ¥1,000；5 歲以下免費 | src_hep_five |
-| 道頓堀遊船 | 大阪 | namba | 大阪 Metro | ¥2,000 | ¥500 | 免費 | 國中〜大學生 ¥1,000；小學生 ¥500；每位大人可免費帶 1 名學齡前兒童 | src_tombori |
-| 道頓堀・心齋橋散步 | 大阪 | namba | 大阪 Metro | 免費 | 免費 | 免費 | — | — |
-| 通天閣 | 大阪 | shinsekai | 大阪 Metro | ¥1,500 | ¥800 | 無此票種／未核實 | 15 歲以上 ¥1,500；5–14 歲 ¥800 | src_tsutenkaku |
-| 大阪城御座船 | 大阪 | osaka_castle | 大阪 Metro | 未核實（不計入） | 未核實（不計入） | 未核實（不計入） | — | src_amazing_facilities |
-| 天保山大摩天輪 | 大阪 | bay | 大阪 Metro | ¥900 | ¥900 | 無此票種／未核實 | 3 歲以上一律 ¥900 | src_tempozan |
-| 海遊館 | 大阪 | bay | 大阪 Metro | ¥2,700–¥3,500（日期浮動） | ¥1,400–¥1,650（日期浮動） | 未核實 | 16 歲以上大人價；小學・國中生 ¥1,400–¥1,650；3 歲以上 ¥700–¥800；2 歲以下免費 | src_kaiyukan |
-| 日本環球影城 USJ | 大阪 | usj | JR 短程 | ¥8,400 起（日期浮動） | ¥5,500 起（日期浮動） | 未核實 | 12 歲以上大人價；4–11 歲兒童價；3 歲以下免費 | src_usj |
-| 清水寺 | 京都 | higashiyama | 京都市巴士 | ¥500 | ¥200 | 免費 | 高中生以上 ¥500；國中・小學生 ¥200 | src_kiyomizu |
-| 三十三間堂 | 京都 | shichijo | 京都市巴士 | ¥600 | ¥300 | 無此票種／未核實 | 大人 ¥600；國中・高中生 ¥400；小學生 ¥300 | src_sanjusangendo |
-| 金閣寺 | 京都 | kitayama | 京都市巴士 | ¥500 | ¥300 | 無此票種／未核實 | 高中生以上 ¥500；國中・小學生 ¥300 | src_kinkakuji |
-| 銀閣寺 | 京都 | ginkakuji | 京都市巴士 | ¥1,000 | ¥500 | 無此票種／未核實 | 高中生以上 ¥1,000；國中・小學生 ¥500 | src_ginkakuji |
-| 二條城 | 京都 | nijo | 京都市營地下鐵 | ¥1,300 | ¥300 | 免費 | 大人 ¥1,300；國中・高中生 ¥400；小學生 ¥300；學齡前免費 | src_nijo |
-| 天龍寺庭園 | 京都 | arashiyama | 京都市巴士 | ¥500 | ¥300 | 免費 | 高中生以上 ¥500；國中・小學生 ¥300；學齡前免費 | src_tenryuji |
-| 嵐山竹林 | 京都 | arashiyama | 京都市巴士 | 免費 | 免費 | 免費 | — | — |
-| 伏見稻荷大社 | 京都 | fushimi | JR 短程 | 免費 | 免費 | 免費 | — | src_fushimi_inari |
+| 景點 | 城市 | 區域 | 交通 | 大人 | 兒童（6–11） | 幼兒（0–5） | 各年齡票價（以此為準） | 注意 | 來源 |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 大阪城天守閣 | 大阪 | osaka_castle | 大阪 Metro | ¥1,200 | 免費 | 免費 | 高中・大學生 ¥600（需學生證）；國中生以下免費（需證明） | 9:00–18:00（17:30 最後入館）；12/28–1/1 休館 | src_osaka_castle |
+| 梅田藍天大廈 空中庭園 | 大阪 | umeda | 大阪 Metro | ¥2,000 | ¥500 | 無此票種／未核實 | 國中生以上 ¥2,000；4 歲〜小學生 ¥500；未滿 4 歲免費 | 周遊卡 15:00 前入場免費，15:00 後只有 9 折 | src_umeda_sky |
+| HEP FIVE 摩天輪 | 大阪 | umeda | 大阪 Metro | ¥1,000 | ¥1,000 | 免費 | 6 歲以上每人 ¥1,000；5 歲以下免費 | — | src_hep_five |
+| 道頓堀遊船 | 大阪 | namba | 大阪 Metro | ¥2,000 | ¥500 | 免費 | 國中〜大學生 ¥1,000；小學生 ¥500；每位大人可免費帶 1 名學齡前兒童 | 11:00–21:00 每整點與半點出發；周遊卡當天到櫃台換指定時段船票，晚上班次易滿 | src_tombori |
+| 道頓堀・心齋橋散步 | 大阪 | namba | 大阪 Metro | 免費 | 免費 | 免費 | — | — | — |
+| 通天閣 | 大阪 | shinsekai | 大阪 Metro | ¥1,500 | ¥800 | 無此票種／未核實 | 15 歲以上 ¥1,500；5–14 歲 ¥800 | 周遊卡持有者當天到 1F 櫃台預約入場時間；12/30–1/3 票價 ¥1,800／¥900；特別屋外展望台是否含在周遊卡內未確認 | src_tsutenkaku |
+| 大阪城御座船 | 大阪 | osaka_castle | 大阪 Metro | ¥1,800 | ¥900 | 無此票種／未核實 | 大人 ¥1,800；國中・小學生 ¥900 | 最後一班 16:30；12/28–1/3 停航；周遊卡在售票處換指定時段乘船券，額滿即無法搭乘 | src_gozabune、src_amazing_facilities |
+| 天保山大摩天輪 | 大阪 | bay | 大阪 Metro | ¥1,000 | ¥1,000 | 無此票種／未核實 | 3 歲以上一律 ¥1,000 | 平日 10:00–21:00、週末假日 10:00–22:00 | src_tempozan |
+| 海遊館 | 大阪 | bay | 大阪 Metro | ¥2,700–¥3,500（日期浮動） | ¥1,400–¥1,650（日期浮動） | 未核實 | 16 歲以上大人價；小學・國中生 ¥1,400–¥1,650；3 歲以上 ¥700–¥800；2 歲以下免費 | — | src_kaiyukan |
+| 日本環球影城 USJ | 大阪 | usj | JR 大阪→環球影城 | ¥8,400 起（日期浮動） | ¥5,500 起（日期浮動） | 未核實 | 12 歲以上大人價；4–11 歲兒童價；3 歲以下免費 | — | src_usj |
+| 清水寺 | 京都 | higashiyama | 京都市巴士 | ¥500 | ¥200 | 免費 | 高中生以上 ¥500；國中・小學生 ¥200 | 秋季夜間參拜 11/21–11/30（另收費，21:00 最後入場）；只收現金 | src_kiyomizu |
+| 三十三間堂 | 京都 | shichijo | 京都市巴士 | ¥600 | ¥300 | 無此票種／未核實 | 大人 ¥600；國中・高中生 ¥400；小學生 ¥300 | — | src_sanjusangendo |
+| 金閣寺 | 京都 | kitayama | 京都市巴士 | ¥500 | ¥300 | 無此票種／未核實 | 高中生以上 ¥500；國中・小學生 ¥300 | — | src_kinkakuji |
+| 銀閣寺 | 京都 | ginkakuji | 京都市巴士 | ¥1,000 | ¥500 | 無此票種／未核實 | 高中生以上 ¥1,000；國中・小學生 ¥500 | — | src_ginkakuji |
+| 二條城 | 京都 | nijo | 京都市營地下鐵 | ¥1,300 | ¥300 | 免費 | 大人 ¥1,300；國中・高中生 ¥400；小學生 ¥300；學齡前免費 | — | src_nijo |
+| 天龍寺庭園 | 京都 | arashiyama | 京都市巴士 | ¥500 | ¥300 | 免費 | 高中生以上 ¥500；國中・小學生 ¥300；學齡前免費 | — | src_tenryuji |
+| 嵐山竹林 | 京都 | arashiyama | 京都市巴士 | 免費 | 免費 | 免費 | — | — | — |
+| 伏見稻荷大社 | 京都 | fushimi | JR 京都→稻荷 | 免費 | 免費 | 免費 | — | — | src_fushimi_inari |
 
 門票的年齡分級各景點不同（日本多以學制區分）。旅客有 12–17 歲的青少年時，請依「各年齡票價」欄計算，例如國中生在大阪城免費、在清水寺是 ¥200。
 
@@ -102,15 +104,18 @@ packId: travel.jp-ticket-optimizer ・ 版本 0.1.0 ・ 資料核對日 2026-10-
 | ID | 名稱 | 單位 | 核對日 | 可信度 | 核對方式 | 網址 |
 | --- | --- | --- | --- | --- | --- | --- |
 | src_amazing_2026 | 大阪周遊パス 2026 年度版 | Osaka Metro | 2026-10-31 | 高 | 搜尋摘錄，待人工抽查 | https://subway.osakametro.co.jp/guide/page/20260401_osaka_amazing_pass.php |
-| src_amazing_facilities | 大阪周遊パス 免費設施 | 大阪周遊パス官方網站 | 2026-10-31 | 中 | 搜尋摘錄，待人工抽查 | https://www.osp.osaka-info.jp/jp/guide/guide.html |
+| src_amazing_facilities | 大阪周遊パス 2026 免費設施一覽 | 大阪周遊パス官方網站 | 2026-10-31 | 高 | 搜尋摘錄，待人工抽查 | https://osaka-amazing-pass.com/service_free.html |
+| src_amazing_faq | 大阪周遊パス FAQ（購買方式、兒童票） | 大阪周遊パス官方網站 | 2026-10-31 | 高 | 搜尋摘錄，待人工抽查 | https://osaka-amazing-pass.com/faq.html |
 | src_enjoy_eco | エンジョイエコカード（地鐵一日券） | Osaka Metro | 2026-10-31 | 高 | 搜尋摘錄，待人工抽查 | https://subway.osakametro.co.jp/guide/page/enjoy-eco.php |
 | src_osaka_metro_fare | Osaka Metro 普通運賃 | Osaka Metro | 2026-10-31 | 中 | 搜尋摘錄，待人工抽查 | https://subway.osakametro.co.jp/guide/fare/fare/price.php |
 | src_osaka_castle | 大阪城天守閣 入館料 | 大阪城天守閣 | 2026-10-31 | 高 | 搜尋摘錄，待人工抽查 | https://www.osakacastle.net/guide/ |
 | src_umeda_sky | 梅田藍天大廈 空中庭園展望台 料金 | 梅田スカイビル | 2026-10-31 | 高 | 搜尋摘錄，待人工抽查 | https://www.skybldg.co.jp/observatory/information/ |
 | src_tombori | とんぼりリバークルーズ 料金 | 一本松海運 | 2026-10-31 | 高 | 搜尋摘錄，待人工抽查 | https://www.ipponmatsu.co.jp/cruise/tombori.html |
-| src_hep_five | HEP FIVE 觀覽車 | HEP FIVE | 2026-10-31 | 中 | 需覆核 | https://www.hepfive.jp/ferriswheel |
+| src_hep_five | HEP FIVE 觀覽車 | HEP FIVE | 2026-10-31 | 中 | 搜尋摘錄，待人工抽查 | https://www.hepfive.jp/ferriswheel |
 | src_tsutenkaku | 通天閣 料金 | 通天閣観光 | 2026-10-31 | 中 | 搜尋摘錄，待人工抽查 | https://www.tsutenkaku.co.jp/annai/index.html |
-| src_tempozan | 天保山大觀覽車 | 大阪觀光局 | 2026-10-31 | 中 | 搜尋摘錄，待人工抽查 | https://osaka-info.jp/en/spot/tempozan-ferris-wheel/ |
+| src_tempozan | 天保山大觀覽車 票價（周遊卡官網參考價） | 大阪周遊パス官方網站 | 2026-10-31 | 中 | 搜尋摘錄，待人工抽查 | https://osaka-amazing-pass.com/service_free.html |
+| src_gozabune | 大阪城御座船 票價 | 旅遊網站 | 2026-10-31 | 中 | 搜尋摘錄，待人工抽查 | https://tabinear.levecolle.co.jp/osakacastle-gozabune/ |
+| src_youokoshi | ようおこし30hパス（大阪地鐵 30 小時券） | Osaka Metro | 2026-10-31 | 高 | 搜尋摘錄，待人工抽查 | https://subway.osakametro.co.jp/news/news/ticket/20260924_youokoshi_30hpass.php |
 | src_kaiyukan | 海遊館 入館料（日期浮動） | 海遊館 | 2026-10-31 | 中 | 搜尋摘錄，待人工抽查 | https://www.kaiyukan.com/info/group/ |
 | src_usj | USJ 1デイ・スタジオ・パス | Universal Studios Japan | 2026-10-31 | 中 | 搜尋摘錄，待人工抽查 | https://www.usj.co.jp/web/ja/jp/tickets/lineup |
 | src_kyoto_pass | 地下鉄・バス1日券 | 京都市交通局 | 2026-10-31 | 高 | 搜尋摘錄，待人工抽查 | https://www.city.kyoto.lg.jp/kotsu/page/0000028378.html |
@@ -124,10 +129,11 @@ packId: travel.jp-ticket-optimizer ・ 版本 0.1.0 ・ 資料核對日 2026-10-
 | src_tenryuji | 天龍寺 庭園参拝料 | 天龍寺 | 2026-10-31 | 高 | 搜尋摘錄，待人工抽查 | https://www.tenryuji.com/visit/ |
 | src_fushimi_inari | 伏見稻荷大社 | 京都市觀光協會 | 2026-10-31 | 中 | 搜尋摘錄，待人工抽查 | https://kyoto.travel/en/shrine_temple/180.html |
 | src_sanjusangendo | 三十三間堂 拝観料 | 三十三間堂 | 2026-10-31 | 中 | 搜尋摘錄，待人工抽查 | https://www.sanjusangendo.jp/visit/ |
-| src_hankyu_fare | 阪急 大阪梅田↔京都河原町 運賃 | JR西日本 Fact Sheet 2025 | 2026-10-31 | 中 | 搜尋摘錄，待人工抽查 | https://www.westjr.co.jp/company/ir/library/fact/pdf/2025/fact09.pdf |
+| src_hankyu_fare | 阪急 大阪梅田↔京都河原町 運賃（駅探） | 駅探 | 2026-10-31 | 高 | 搜尋摘錄，待人工抽查 | https://ekitan.com/transit/fare/sf-4958/st-5128 |
 | src_hankyu_oneday | 阪急1日乗車券 2026 年度 | 阪急電鉄 | 2026-10-31 | 高 | 搜尋摘錄，待人工抽查 | https://www.hankyu.co.jp/en/ticket/otoku/013812.html |
 | src_kansai_rw_lite | KANSAI RAILWAY PASS LITE | スルッとKANSAI | 2026-10-31 | 中 | 搜尋摘錄，待人工抽查 | https://www.surutto.com/kansai_rwpl/en/krp.html |
-| src_jr_local | JR 短程（大阪→ユニバーサルシティ 等） | 旅遊網站彙整 | 2026-10-31 | 低 | 搜尋摘錄，待人工抽查 | https://mileasia.com/japan/osaka-station-to-universal-studios-japan/ |
+| src_jr_local | JR 京都→稲荷 運賃（駅探） | 駅探 | 2026-10-31 | 高 | 搜尋摘錄，待人工抽查 | https://ekitan.com/rail-company/4/fare/sf-5198/st-4913 |
+| src_jr_usj | JR 大阪→ユニバーサルシティ 運賃（駅探） | 駅探 | 2026-10-31 | 高 | 搜尋摘錄，待人工抽查 | https://ekitan.com/transit/fare/sf-5006/st-9128 |
 | src_jp_holidays | 日本國民の祝日（2026-11～2027-03） | 內閣府 | 2026-10-31 | 中 | 依規則推算 | https://www8.cao.go.jp/chosei/shukujitsu/gaiyou.html |
 
 ## 範例（用來核對你的算法）
@@ -135,9 +141,9 @@ packId: travel.jp-ticket-optimizer ・ 版本 0.1.0 ・ 資料核對日 2026-10-
 - **大阪一日 3 景點**（2026-11-17）：2 位大人，週二白天在大阪跑大阪城天守閣、梅田藍天大廈、道頓堀遊船。
   逐項單買 ¥12,320、Pass 優先 ¥7,000、最佳混合 ¥7,000。推薦：最佳混合（大阪周遊卡 1 日券），預估可省 ¥5,320。
 - **京都散步行程**（2026-11-17）：2 位大人住京都，一天只去伏見稻荷和清水寺；搭車段數少，一日券不划算。
-  逐項單買 ¥2,280、Pass 優先 ¥3,560、最佳混合 ¥2,280。推薦：逐項單買，預估可省 ¥0。
+  逐項單買 ¥2,220、Pass 優先 ¥3,500、最佳混合 ¥2,220。推薦：逐項單買，預估可省 ¥0。
 - **大阪連續兩天**（2026-11-19 至 2026-11-20）：2 位大人，週四、週五都在大阪，景點分散在兩天。比較 2 日券、1 日券×2 與混搭。
-  逐項單買 ¥16,760、Pass 優先 ¥17,000、最佳混合 ¥13,000。推薦：最佳混合（大阪周遊卡 2 日券），預估可省 ¥3,760。
+  逐項單買 ¥20,360、Pass 優先 ¥14,000、最佳混合 ¥10,000。推薦：最佳混合（大阪周遊卡 2 日券），預估可省 ¥10,360。
 - **週六只搭地鐵**（2026-11-21）：1 位大人週六在大阪搭 4 段地鐵、去免門票的道頓堀與四天王寺周邊。週末地鐵一日券較便宜。
   逐項單買 ¥960、Pass 優先 ¥3,500、最佳混合 ¥620。推薦：最佳混合（大阪地鐵一日券（Enjoy Eco Card）），預估可省 ¥340。
 

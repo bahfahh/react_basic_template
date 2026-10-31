@@ -75,10 +75,19 @@ describe('calculation rules', () => {
   });
 
   it('unconfirmed coverage does not count towards savings', () => {
-    const r = ok('osaka-two-days');
-    const optimized = r.strategies.find((s) => s.id === 'optimized')!;
+    // Mark Tsutenkaku's pass coverage as unconfirmed and check it is priced as a single ticket.
+    const catalog = structuredClone(CATALOG);
+    for (const p of catalog.products) {
+      for (const rule of p.coverage) {
+        if (rule.target.type === 'attraction' && rule.target.attractionId === 'tsutenkaku') rule.confirmed = false;
+      }
+    }
+    const res = compareTickets(scenarioInput('osaka-two-days'), catalog, TODAY);
+    if (res.kind !== 'ok') throw new Error('expected ok');
+    const optimized = res.result.strategies.find((s) => s.id === 'optimized')!;
     expect(optimized.lines.some((l) => l.refId === 'tsutenkaku' && l.kind === 'admission')).toBe(true);
-    expect(r.warnings.some((w) => w.code === 'coverage_unconfirmed')).toBe(true);
+    expect(res.result.warnings.some((w) => w.code === 'coverage_unconfirmed')).toBe(true);
+    expect(ok('osaka-two-days').optimizedCost).toBeLessThan(res.result.optimizedCost);
   });
 
   it('weekday vs weekend prices differ for the same itinerary', () => {

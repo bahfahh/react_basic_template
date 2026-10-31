@@ -1,29 +1,30 @@
 # 資料核對清單
 
-`src/core/catalog/data.ts` 的每個來源目前為 `verification: 'search_extract'`（2026-10-31 由搜尋結果摘錄，未開啟原頁）。
-真實使用者測試前，逐項開啟官方頁面核對，核對後把該來源改為 `verification: 'manual'`、更新 `checkedAt`，並保存截圖。
+所有懶人包的事實都附來源與核對日。2026-10-31 的資料由搜尋結果摘錄整理（建置環境的網路設定擋住了官方網站，無法逐頁開啟），因此每個來源都標示 `search_extract`。真實使用者測試前，請逐項開啟官方頁面核對，核對後把來源改為 `manual`、更新核對日並保存截圖。
 
-## 優先核對（影響推薦結果）
+要直接讀官方頁面，需在 session 的網路設定允許這些網域：`www.nta.go.jp`、`www.customs.go.jp`、`www.mlit.go.jp`、`www.gov.tw`、`www.nlma.gov.tw`、`gazette.nat.gov.tw`、`subway.osakametro.co.jp`、`osaka-amazing-pass.com`、`surutto-qrtto.com`、`www.surutto.com`、`support.apple.com`、`support.google.com`。
 
-- [ ] 大阪周遊パス 2026：1 日 ¥3,500／2 日 ¥5,000、僅大人票、交通涵蓋（1 日與 2 日是否相同）、購買管道 URL
-- [ ] 周遊パス 免費設施清單（2026 年度）：大阪城天守閣、梅田藍天大廈（15:00 前）、道頓堀遊船、御座船、HEP FIVE
-- [ ] 通天閣 2026-04 合併票是否仍含在周遊パス（目前 `confirmed: false`）
-- [ ] 天保山大摩天輪是否有平日限定條件（目前 `confirmed: false`）
-- [ ] HEP FIVE 摩天輪整修後是否已重新開放（目前來源標記 `needs_review`）
-- [ ] エンジョイエコカード：平日 ¥820／假日 ¥620／兒童 ¥310
-- [ ] 京都 地下鉄・バス1日券 ¥1,100／¥550；地下鉄1日券 ¥800／¥400；市巴士 ¥230／¥120
+## 日本票券（travel.jp-ticket-optimizer）
 
-## 其次
+2026-10-31 第二輪查證已修正：周遊卡購買網址（只在 スルッとQRtto 線上販售）、通天閣與天保山摩天輪確認免費、梅田藍天大廈 15:00 後 9 折、天保山 ¥1,000、JR 改依路線（京都→稲荷 ¥150／¥70、大阪→ユニバーサルシティ ¥200／¥100）、阪急兒童 ¥210、御座船 ¥1,800／¥900、HEP FIVE 已重新開放、KANSAI RAILWAY PASS LITE 含 Osaka Metro、新增ようおこし30hパス、各景點休館與季節票價。
 
-- [ ] Osaka Metro 中間區間票價（240／290／340）與兒童票價（目前以半價估算）
-- [ ] 各景點門票：大阪城 ¥1,200、梅田藍天 ¥2,000、道頓堀遊船 ¥2,000、通天閣 ¥1,500、清水寺 ¥500（目前只有新聞來源）、金閣寺 ¥500、銀閣寺 ¥1,000、二條城 ¥1,300、天龍寺 ¥500、三十三間堂 ¥600
-- [ ] 海遊館日期浮動區間；USJ 價格下限
-- [ ] 阪急 梅田↔河原町 ¥410 與兒童票價；阪急1日乗車券 ¥1,300
-- [ ] KANSAI RAILWAY PASS LITE：價格、資格、是否含 Osaka Metro、使用期限
-- [ ] JR 短程（大阪→ユニバーサルシティ、京都→稲荷）：目前只有第三方來源（可信度低）
-- [ ] 2027 年日本祝日（含春分之日）
+仍未確認：
+- [ ] KANSAI RAILWAY PASS LITE 兒童票（來源互相矛盾）
+- [ ] 通天閣「特別屋外展望台」是否含在周遊卡內
+- [ ] 天保山摩天輪營運商公告的新票價（¥1,000 來自周遊卡官網參考價）
+- [ ] エンジョイエコカード 數位版是否仍販售
+- [ ] 清水寺官方收費頁
+- [ ] Osaka Metro 3–5 區兒童票價
+- [ ] 二條城、天龍寺、三十三間堂、海遊館、USJ、阪急一日券、2027 年祝日（第二輪未查到）
 
-## 已知會變動
+## 日本退稅新制（travel.jp-tax-refund）
 
-- 京都市巴士「市民優先価格」預計 2027 年度內實施，非居民票價與一日券可能調整。
-- FY2026 版票券（周遊パス、エンジョイエコカード、阪急1日乗車券）使用期限到 2027-03-31，之後需要新年度資料。
+見 `src/core/packages/content/jpTaxRefund.ts` 的 `openQuestions`：6 個月滯在限制、轉售排除、各業者手續費與入帳時間、市區先退款的追回方式、Visit Japan Web 顯示內容、機場終端機位置、港口出境、罰則金額。
+
+## 租金補貼（benefit.tw-rent-subsidy）
+
+見 `src/core/packages/content/twRentSubsidy.ts` 的 `openQuestions`：無自有住宅是否全國判斷、線上申請網址與身分驗證、補貼起算月份、申訴管道、房東稅務、各縣市 3.5 倍門檻、額度表年度、116 年度公告。
+
+## 訂閱取消（finance.subscription-cancel）
+
+見 `src/core/packages/content/subscriptionCancel.ts` 的 `openQuestions`：串流是否屬 7 天解除權例外、數位發展部草案、各服務台灣退款條款、Amazon Prime Video、電信自助頁面、中文選單名稱。

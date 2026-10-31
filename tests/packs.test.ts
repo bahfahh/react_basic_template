@@ -2,7 +2,8 @@ import { readFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { describe, expect, it } from 'vitest';
 import { PACK_BASE_URL } from '../src/app/config';
-import { renderPackFiles } from '../src/core/packages/publish';
+import { missingSourceRefs } from '../src/core/packages/guides';
+import { GUIDES, renderPackFiles } from '../src/core/packages/publish';
 
 describe('agent-readable pack files', () => {
   const files = renderPackFiles(PACK_BASE_URL);
@@ -19,5 +20,13 @@ describe('agent-readable pack files', () => {
     expect(md).toContain('不自己編價格');
     expect(md).toContain('¥3,500');
     expect(md).toContain('逐項單買 ¥12,320');
+  });
+
+  it('every guide fact cites a listed source', () => {
+    for (const g of Object.values(GUIDES)) expect(missingSourceRefs(g), g.id).toEqual([]);
+  });
+
+  it('every active pack has a published file', () => {
+    for (const id of Object.keys(GUIDES)) expect(files[`packs/${id}.md`], id).toBeTruthy();
   });
 });

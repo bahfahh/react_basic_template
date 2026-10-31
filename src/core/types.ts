@@ -22,6 +22,7 @@ export type TransitSystemId =
   | 'kyoto_bus'
   | 'kyoto_subway'
   | 'jr_local'
+  | 'jr_usj'
   | 'hankyu_intercity';
 
 export interface PolicySource {
@@ -87,6 +88,8 @@ export interface Attraction {
   dynamicPrice?: DynamicPrice;
   /** Age tiers as the attraction defines them (school levels differ from our three categories). */
   ageNote?: string;
+  /** Closures, booking steps or seasonal prices that affect a plan. */
+  notice?: string;
   /** Requires a timed reservation in advance (affects booking handoff, not price). */
   reservationRequired?: boolean;
   keywords: string[];

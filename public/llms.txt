@@ -1,17 +1,17 @@
 # 懶人包 LazyPack
 
-> 懶人包是給 AI agent 讀的省錢任務說明。讀取下方的懶人包網址，照裡面的步驟幫使用者完成；付款、登入、送出個資前先停下來問使用者。
+> 懶人包是給 AI agent 讀的任務說明。讀取下方的懶人包網址，照裡面的步驟幫使用者完成；付款、登入、送出個資前先停下來問使用者。
 
 ## 可用的懶人包
 
 - [日本票券省錢助手（大阪・京都）](https://raw.githubusercontent.com/bahfahh/react_basic_template/claude/react-prototype-a485u2/public/packs/travel.jp-ticket-optimizer.md): 比較交通單買、一日券／周遊卡與混搭組合，算出同等權益下的最低總價，附官方來源與查詢日期，並協助準備購買（停在付款前）。
+- [日本退稅新制助手（2026-11 起）](https://raw.githubusercontent.com/bahfahh/react_basic_template/claude/react-prototype-a485u2/public/packs/travel.jp-tax-refund.md): 2026-11-01 起日本改成先付含稅價、出境時海關確認、之後才退稅。幫你判斷是否適用、整理購物與出境當天要做的事、算出期限。
+- [租金補貼初判助手（115 年度）](https://raw.githubusercontent.com/bahfahh/react_basic_template/claude/react-prototype-a485u2/public/packs/benefit.tw-rent-subsidy.md): 依公開的 115 年度中央擴大租金補貼規定，初步判斷你可能符合哪些條件、估算每月金額，並整理文件與申請步驟。
+- [訂閱取消助手](https://raw.githubusercontent.com/bahfahh/react_basic_template/claude/react-prototype-a485u2/public/packs/finance.subscription-cancel.md): 找出正在扣款的訂閱，照官方路徑在下次扣款前取消，並說明退款與申訴管道。
 
 ## 規劃中
 
 - 機票比價與訂票準備（travel.flight-deal）：尚未開放
 - 住宿跨平台比價（travel.hotel-deal）：尚未開放
 - 景點多站點預約（travel.multi-booking）：尚未開放
-- 日本退稅準備（travel.jp-tax-refund）：尚未開放
-- 訂閱取消助手（finance.subscription-cancel）：尚未開放
-- 補助資格初判（benefit.eligibility）：尚未開放
 - 航班異動索賠準備（travel.flight-claim）：尚未開放

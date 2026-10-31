@@ -196,14 +196,79 @@ const planned = (
   mcpTools: [],
 });
 
+const guide = (
+  base: Pick<PackageManifest, 'id' | 'title' | 'summary' | 'category' | 'categoryLabel' | 'jurisdictions' | 'inputs' | 'outputs' | 'prohibited' | 'scope' | 'limitations'>,
+): PackageManifest => ({
+  schemaVersion: '1.0',
+  version: '0.1.0',
+  status: 'active',
+  locale: 'zh-TW',
+  maintainer: { name: 'LazyPack Core Team', contact: 'packages@lazypack.example' },
+  capabilities: ['policy_research', 'checklist', 'status_tracking'],
+  requiredConsents: ['privacy_processing'],
+  externalActions: { submit_application: 'unsupported', make_payment: 'unsupported' },
+  humanApproval: ['login_to_external_service', 'submit_personal_information', 'submit_application', 'any_payment'],
+  successCriteria: ['answer_with_sources_and_checked_at'],
+  sourcePolicy: { requireOfficialPrimarySource: true, showLastVerifiedAt: true, freshnessDays: 60 },
+  compatibility: [
+    { platform: 'Skill', surface: '懶人包網址（Markdown）', level: 'L1', testedAt: '2026-10-31', notes: '可公開讀取；尚未在任何 agent 平台實測。' },
+    ...NOT_VERIFIED_PLATFORMS,
+  ],
+  changelog: [{ version: '0.1.0', date: '2026-10-31', notes: '首版：依 2026-10-31 查證的公開資料撰寫。' }],
+  mcpTools: [],
+  ...base,
+});
+
+export const JP_TAX_REFUND_PACKAGE = guide({
+  id: 'travel.jp-tax-refund',
+  title: '日本退稅新制助手（2026-11 起）',
+  summary: '2026-11-01 起日本改成先付含稅價、出境時海關確認、之後才退稅。幫你判斷是否適用、整理購物與出境當天要做的事、算出期限。',
+  category: 'travel-savings',
+  categoryLabel: '旅遊省錢',
+  jurisdictions: ['JP'],
+  inputs: { required: ['purchase_dates', 'departure_airport', 'entry_status'], optional: ['stores_and_amounts', 'japanese_abroad'] },
+  outputs: ['eligibility_check', 'shopping_checklist', 'deadlines', 'departure_day_plan', 'refund_options', 'open_questions_and_sources'],
+  prohibited: ['guarantee_refund_amount', 'claim_confirmation_after_checkin', 'encourage_non_export_or_resale', 'collect_identity_numbers'],
+  scope: ['2026-11-01 起在日本免稅店的購物', '短期滯在的外國旅客（台灣護照觀光客）'],
+  limitations: ['不處理 2026-10-31 以前購物的舊制細節', '海關確認與領退稅只能由旅客本人完成', '各退稅業者的手續費與入帳時間未確認'],
+});
+
+export const TW_RENT_SUBSIDY_PACKAGE = guide({
+  id: 'benefit.tw-rent-subsidy',
+  title: '租金補貼初判助手（115 年度）',
+  summary: '依公開的 115 年度中央擴大租金補貼規定，初步判斷你可能符合哪些條件、估算每月金額，並整理文件與申請步驟。',
+  category: 'benefit',
+  categoryLabel: '權益補助',
+  jurisdictions: ['TW'],
+  inputs: { required: ['rental_location', 'applicant_status', 'household', 'home_ownership', 'household_income', 'building_status', 'landlord_relation'], optional: ['marriage_children', 'special_status'] },
+  outputs: ['eligibility_check', 'estimated_amount', 'documents', 'how_to_apply', 'after_approval_duties', 'open_questions_and_sources'],
+  prohibited: ['guarantee_approval', 'assist_fraud', 'collect_identity_numbers', 'submit_on_behalf'],
+  scope: ['中央 300 億租金補貼 115 年度（2026-12-31 17:00 前送件）'],
+  limitations: ['只是初判，資格與金額以主管機關審核為準', '116 年度（2027）規定尚未確認', '地方加碼只舉台北市為例'],
+});
+
+export const SUBSCRIPTION_CANCEL_PACKAGE = guide({
+  id: 'finance.subscription-cancel',
+  title: '訂閱取消助手',
+  summary: '找出正在扣款的訂閱，照官方路徑在下次扣款前取消，並說明退款與申訴管道。',
+  category: 'consumer',
+  categoryLabel: '消費省錢',
+  jurisdictions: ['TW'],
+  inputs: { required: ['services_to_cancel', 'billing_channel', 'next_charge_date'], optional: ['refund_wanted', 'plan_type'] },
+  outputs: ['subscription_list', 'cancel_steps', 'deadlines', 'confirmation', 'refund_and_dispute', 'open_questions_and_sources'],
+  prohibited: ['press_cancel_without_confirmation', 'collect_passwords_or_card', 'advise_stopping_card_payment', 'use_unofficial_phone_numbers'],
+  scope: ['台灣常見的串流、雲端、軟體、遊戲訂閱與電信代收'],
+  limitations: ['部分服務的台灣退款條款未確認', '數位發展部自動續訂新規仍是草案'],
+});
+
 export const PACKAGES: PackageManifest[] = [
   JP_TICKET_OPTIMIZER,
+  JP_TAX_REFUND_PACKAGE,
+  TW_RENT_SUBSIDY_PACKAGE,
+  SUBSCRIPTION_CANCEL_PACKAGE,
   planned('travel.flight-deal', '機票比價與訂票準備', 'travel-savings', '旅遊省錢', '比較同航線、票種、行李及退改條件的實際總價，準備訂票。', '即時價格與授權訂票 API；不承諾永遠最低價；停在付款前。'),
   planned('travel.hotel-deal', '住宿跨平台比價', 'travel-savings', '旅遊省錢', '同日期、房型、入住人數、取消政策下跨平台比價。', '稅費、會員價、取消條件不同；需標準化。'),
   planned('travel.multi-booking', '景點多站點預約', 'travel-savings', '旅遊省錢', '景點預約時段、排程衝突檢查、多站點預填。', 'CAPTCHA、庫存即時性、帳號及付款核准。'),
-  planned('travel.jp-tax-refund', '日本退稅準備', 'travel-savings', '旅遊省錢', '新制退稅資格提醒、收據整理、出境程序與退款追蹤。', '海關實體確認必須由旅客完成；VJW 可操作性須實測。'),
-  planned('finance.subscription-cancel', '訂閱取消助手', 'consumer', '消費省錢', '找取消路徑、提醒續費、協助取消及確認結果。', '帳號授權與服務條款；適合測試正常流程。'),
-  planned('benefit.eligibility', '補助資格初判', 'benefit', '權益補助', '公開補助查詢、資格初判、文件清單、預填草稿。', '不保證核准；正式送件需明確授權。'),
   planned('travel.flight-claim', '航班異動索賠準備', 'money-recovery', '退款理賠', '航班索賠證據整理、資格初判、申請草稿。', '依賴真實事故與外部裁定；延後驗證。'),
 ];
 

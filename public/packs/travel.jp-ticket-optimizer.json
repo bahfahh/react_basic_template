@@ -58,8 +58,8 @@
       },
       {
         "id": "src_amazing_facilities",
-        "title": "大阪周遊パス 免費設施",
-        "url": "https://www.osp.osaka-info.jp/jp/guide/guide.html",
+        "title": "大阪周遊パス 2026 免費設施一覽",
+        "url": "https://osaka-amazing-pass.com/service_free.html",
         "authority": "大阪周遊パス官方網站",
         "sourceType": "official",
         "jurisdiction": "JP",
@@ -67,8 +67,22 @@
         "status": "active",
         "version": "2026-10-31",
         "verification": "search_extract",
-        "confidence": "medium",
-        "notes": "每設施限用一次。設施頁面可能為 2023–24 年資料，2026 年度清單未取得。"
+        "confidence": "high",
+        "notes": "每設施限免費一次，須在當天有使用周遊卡搭車；含天保山大觀覽車（每天）、通天閣（當天到櫃台預約入場時間）。"
+      },
+      {
+        "id": "src_amazing_faq",
+        "title": "大阪周遊パス FAQ（購買方式、兒童票）",
+        "url": "https://osaka-amazing-pass.com/faq.html",
+        "authority": "大阪周遊パス官方網站",
+        "sourceType": "official",
+        "jurisdiction": "JP",
+        "checkedAt": "2026-10-31",
+        "status": "active",
+        "version": "2026-10-31",
+        "verification": "search_extract",
+        "confidence": "high",
+        "notes": "只在スルッとQRtto 線上販售，窗口不賣；沒有兒童票；每次最多 4 張；一天以 03:00 至隔天 02:59 計。"
       },
       {
         "id": "src_enjoy_eco",
@@ -82,7 +96,7 @@
         "version": "2026-10-31",
         "verification": "search_extract",
         "confidence": "high",
-        "notes": "平日 ¥820、週末假日 ¥620；兒童每日 ¥310；含地鐵與市巴士。"
+        "notes": "平日 ¥820、週末假日 ¥620；兒童每日 ¥310；含地鐵與市巴士，不含夢洲站。"
       },
       {
         "id": "src_osaka_metro_fare",
@@ -148,11 +162,11 @@
         "sourceType": "official",
         "jurisdiction": "JP",
         "checkedAt": "2026-10-31",
-        "status": "needs_review",
+        "status": "active",
         "version": "2026-10-31",
         "verification": "search_extract",
         "confidence": "medium",
-        "notes": "每人 ¥1,000；5 歲以下免費。2025-10-14 起整修，重新開放日期未確認。"
+        "notes": "2026-04-22 整修後重新開放；6 歲以上每人 ¥1,000，5 歲以下免費。"
       },
       {
         "id": "src_tsutenkaku",
@@ -170,9 +184,9 @@
       },
       {
         "id": "src_tempozan",
-        "title": "天保山大觀覽車",
-        "url": "https://osaka-info.jp/en/spot/tempozan-ferris-wheel/",
-        "authority": "大阪觀光局",
+        "title": "天保山大觀覽車 票價（周遊卡官網參考價）",
+        "url": "https://osaka-amazing-pass.com/service_free.html",
+        "authority": "大阪周遊パス官方網站",
         "sourceType": "official",
         "jurisdiction": "JP",
         "checkedAt": "2026-10-31",
@@ -180,7 +194,35 @@
         "version": "2026-10-31",
         "verification": "search_extract",
         "confidence": "medium",
-        "notes": "3 歲以上一律 ¥900。"
+        "notes": "2026-04-01 調整後 3 歲以上 ¥1,000（營運商公告金額未直接確認）。"
+      },
+      {
+        "id": "src_gozabune",
+        "title": "大阪城御座船 票價",
+        "url": "https://tabinear.levecolle.co.jp/osakacastle-gozabune/",
+        "authority": "旅遊網站",
+        "sourceType": "official",
+        "jurisdiction": "JP",
+        "checkedAt": "2026-10-31",
+        "status": "active",
+        "version": "2026-10-31",
+        "verification": "search_extract",
+        "confidence": "medium",
+        "notes": "2025-07-01 起大人 ¥1,800、國中小 ¥900；12/28–1/3 停航。"
+      },
+      {
+        "id": "src_youokoshi",
+        "title": "ようおこし30hパス（大阪地鐵 30 小時券）",
+        "url": "https://subway.osakametro.co.jp/news/news/ticket/20260924_youokoshi_30hpass.php",
+        "authority": "Osaka Metro",
+        "sourceType": "official",
+        "jurisdiction": "JP",
+        "checkedAt": "2026-10-31",
+        "status": "active",
+        "version": "2026-10-31",
+        "verification": "search_extract",
+        "confidence": "high",
+        "notes": "大人 ¥1,200、兒童 ¥600；首次使用起 30 小時，地鐵全線（含夢洲），不含巴士；2026-10-01～2027-09-30 販售。"
       },
       {
         "id": "src_kaiyukan",
@@ -250,7 +292,7 @@
         "version": "2026-10-31",
         "verification": "search_extract",
         "confidence": "high",
-        "notes": "均一區間大人 ¥230／兒童 ¥120。非居民票價調整（市民優先価格）預計 2027 年度內，尚未生效。"
+        "notes": "均一區間大人 ¥230／兒童 ¥120。非居民票價（市民優先価格，研議 ¥360）目標 2027 年度，需條例修正與國交省核准，尚未生效。"
       },
       {
         "id": "src_kyoto_subway_fare",
@@ -366,17 +408,17 @@
       },
       {
         "id": "src_hankyu_fare",
-        "title": "阪急 大阪梅田↔京都河原町 運賃",
-        "url": "https://www.westjr.co.jp/company/ir/library/fact/pdf/2025/fact09.pdf",
-        "authority": "JR西日本 Fact Sheet 2025",
+        "title": "阪急 大阪梅田↔京都河原町 運賃（駅探）",
+        "url": "https://ekitan.com/transit/fare/sf-4958/st-5128",
+        "authority": "駅探",
         "sourceType": "third_party",
         "jurisdiction": "JP",
         "checkedAt": "2026-10-31",
         "status": "active",
         "version": "2026-10-31",
         "verification": "search_extract",
-        "confidence": "medium",
-        "notes": "大人 ¥410（2025-04-01 時點）；兒童票價未確認，以半價估算。"
+        "confidence": "high",
+        "notes": "大人 ¥410、兒童 ¥210（紙本與 IC 相同）；阪急計畫 2030 年度前漲價，尚未生效。"
       },
       {
         "id": "src_hankyu_oneday",
@@ -404,21 +446,35 @@
         "version": "2026-10-31",
         "verification": "search_extract",
         "confidence": "medium",
-        "notes": "2 日 ¥5,200（連續）；訪日旅客限定；不含 JR、京都市營地下鐵、巴士。是否含 Osaka Metro 未確認。"
+        "notes": "2 日 ¥5,200、3 日 ¥6,500（連續）；訪日短期旅客限定；含 Osaka Metro 與關西私鐵，不含 JR、京都市營地下鐵、巴士；購買後 3 個月內、2027-03-31 前開始使用。"
       },
       {
         "id": "src_jr_local",
-        "title": "JR 短程（大阪→ユニバーサルシティ 等）",
-        "url": "https://mileasia.com/japan/osaka-station-to-universal-studios-japan/",
-        "authority": "旅遊網站彙整",
+        "title": "JR 京都→稲荷 運賃（駅探）",
+        "url": "https://ekitan.com/rail-company/4/fare/sf-5198/st-4913",
+        "authority": "駅探",
         "sourceType": "third_party",
         "jurisdiction": "JP",
         "checkedAt": "2026-10-31",
         "status": "active",
         "version": "2026-10-31",
         "verification": "search_extract",
-        "confidence": "low",
-        "notes": "大阪→ユニバーサルシティ 約 ¥180、京都→稲荷 約 ¥150；非 JR 官方票價表。"
+        "confidence": "high",
+        "notes": "大人 ¥150、兒童 ¥70。"
+      },
+      {
+        "id": "src_jr_usj",
+        "title": "JR 大阪→ユニバーサルシティ 運賃（駅探）",
+        "url": "https://ekitan.com/transit/fare/sf-5006/st-9128",
+        "authority": "駅探",
+        "sourceType": "third_party",
+        "jurisdiction": "JP",
+        "checkedAt": "2026-10-31",
+        "status": "active",
+        "version": "2026-10-31",
+        "verification": "search_extract",
+        "confidence": "high",
+        "notes": "大人 ¥200、兒童 ¥100（JR 西日本 2025-04-01 京阪神運賃調整後）。"
       },
       {
         "id": "src_jp_holidays",
@@ -492,20 +548,38 @@
       },
       {
         "id": "jr_local",
-        "name": "JR 短程",
-        "nameJa": "JR",
-        "city": "kansai",
+        "name": "JR 京都→稻荷",
+        "nameJa": "JR奈良線",
+        "city": "kyoto",
         "estimateFare": {
-          "adult": 180,
-          "child": 90
+          "adult": 150,
+          "child": 70
         },
         "fareRange": {
           "adultMin": 150,
-          "adultMax": 190
+          "adultMax": 150
         },
-        "estimateNote": "旅遊網站彙整的短程票價（可信度低）。",
+        "estimateNote": "京都站→稲荷站（伏見稻荷）。",
         "sourceIds": [
           "src_jr_local"
+        ]
+      },
+      {
+        "id": "jr_usj",
+        "name": "JR 大阪→環球影城",
+        "nameJa": "JRゆめ咲線",
+        "city": "osaka",
+        "estimateFare": {
+          "adult": 200,
+          "child": 100
+        },
+        "fareRange": {
+          "adultMin": 200,
+          "adultMax": 200
+        },
+        "estimateNote": "大阪站→ユニバーサルシティ站。",
+        "sourceIds": [
+          "src_jr_usj"
         ]
       },
       {
@@ -521,7 +595,7 @@
           "adultMin": 410,
           "adultMax": 410
         },
-        "estimateNote": "大阪梅田↔京都河原町；兒童以半價估算。",
+        "estimateNote": "大阪梅田↔京都河原町。",
         "sourceIds": [
           "src_hankyu_fare"
         ]
@@ -534,6 +608,7 @@
           "天守閣"
         ],
         "id": "osaka_castle",
+        "notice": "9:00–18:00（17:30 最後入館）；12/28–1/1 休館",
         "ageNote": "高中・大學生 ¥600（需學生證）；國中生以下免費（需證明）",
         "name": "大阪城天守閣",
         "nameJa": "大阪城天守閣",
@@ -560,6 +635,7 @@
           "梅田スカイ"
         ],
         "id": "umeda_sky",
+        "notice": "周遊卡 15:00 前入場免費，15:00 後只有 9 折",
         "ageNote": "國中生以上 ¥2,000；4 歲〜小學生 ¥500；未滿 4 歲免費",
         "name": "梅田藍天大廈 空中庭園",
         "nameJa": "梅田スカイビル 空中庭園展望台",
@@ -611,6 +687,7 @@
           "Tombori"
         ],
         "id": "tombori_cruise",
+        "notice": "11:00–21:00 每整點與半點出發；周遊卡當天到櫃台換指定時段船票，晚上班次易滿",
         "ageNote": "國中〜大學生 ¥1,000；小學生 ¥500；每位大人可免費帶 1 名學齡前兒童",
         "name": "道頓堀遊船",
         "nameJa": "とんぼりリバークルーズ",
@@ -650,6 +727,7 @@
           "新世界"
         ],
         "id": "tsutenkaku",
+        "notice": "周遊卡持有者當天到 1F 櫃台預約入場時間；12/30–1/3 票價 ¥1,800／¥900；特別屋外展望台是否含在周遊卡內未確認",
         "ageNote": "15 歲以上 ¥1,500；5–14 歲 ¥800",
         "name": "通天閣",
         "nameJa": "通天閣",
@@ -673,13 +751,23 @@
           "御座船"
         ],
         "id": "gozabune",
+        "ageNote": "大人 ¥1,800；國中・小學生 ¥900",
+        "notice": "最後一班 16:30；12/28–1/3 停航；周遊卡在售票處換指定時段乘船券，額滿即無法搭乘",
         "name": "大阪城御座船",
         "nameJa": "大阪城御座船",
         "city": "osaka",
         "area": "osaka_castle",
         "access": "osaka_metro",
-        "admission": null,
+        "admission": [
+          {
+            "appliesTo": "any",
+            "adult": 1800,
+            "child": 900,
+            "infant": null
+          }
+        ],
         "sourceIds": [
+          "src_gozabune",
           "src_amazing_facilities"
         ]
       },
@@ -688,7 +776,8 @@
           "天保山"
         ],
         "id": "tempozan_wheel",
-        "ageNote": "3 歲以上一律 ¥900",
+        "ageNote": "3 歲以上一律 ¥1,000",
+        "notice": "平日 10:00–21:00、週末假日 10:00–22:00",
         "name": "天保山大摩天輪",
         "nameJa": "天保山大観覧車",
         "city": "osaka",
@@ -697,8 +786,8 @@
         "admission": [
           {
             "appliesTo": "any",
-            "adult": 900,
-            "child": 900,
+            "adult": 1000,
+            "child": 1000,
             "infant": null
           }
         ],
@@ -743,7 +832,7 @@
         "nameJa": "ユニバーサル・スタジオ・ジャパン",
         "city": "osaka",
         "area": "usj",
-        "access": "jr_local",
+        "access": "jr_usj",
         "admission": null,
         "dynamicPrice": {
           "adultMin": 8400,
@@ -762,6 +851,7 @@
           "清水寺"
         ],
         "id": "kiyomizu",
+        "notice": "秋季夜間參拜 11/21–11/30（另收費，21:00 最後入場）；只收現金",
         "ageNote": "高中生以上 ¥500；國中・小學生 ¥200",
         "name": "清水寺",
         "nameJa": "清水寺",
@@ -940,7 +1030,7 @@
         "validity": {
           "days": 1,
           "consecutive": true,
-          "note": "使用當日首班車至末班車（不是 24 小時）。"
+          "note": "使用當天 03:00 至隔天 02:59；購買後 3 個月內任選一天。"
         },
         "prices": [
           {
@@ -977,7 +1067,7 @@
               "label": "15:00 前入場",
               "excludesEvening": true
             },
-            "note": "15:00 後僅有折扣（10% 或 20%，來源不一致）。"
+            "note": "15:00 後入場只有 9 折。"
           },
           {
             "target": {
@@ -1011,9 +1101,8 @@
               "attractionId": "tsutenkaku"
             },
             "included": true,
-            "confirmed": false,
             "usageLimit": 1,
-            "note": "2026-04 改為合併票後是否仍免費未確認。"
+            "note": "當天到 1F 櫃台預約入場時間。"
           },
           {
             "target": {
@@ -1021,9 +1110,8 @@
               "attractionId": "tempozan_wheel"
             },
             "included": true,
-            "confirmed": false,
             "usageLimit": 1,
-            "note": "可能有平日限定條件，未確認。"
+            "note": "每天皆可（平日限定的是 LEGOLAND，不是摩天輪）。"
           }
         ],
         "eligibility": {
@@ -1038,10 +1126,10 @@
         "purchaseChannels": [
           {
             "id": "ch_amazing_qrtto",
-            "name": "スルッとQRtto（官方數位票）",
+            "name": "スルッとQRtto（官方線上販售）",
             "sourceType": "official",
             "kind": "online",
-            "url": "https://subway.osakametro.co.jp/guide/page/20260401_osaka_amazing_pass.php",
+            "url": "https://surutto-qrtto.com/",
             "serviceFeeJpy": 0,
             "requiresLogin": true,
             "requiresPayment": true,
@@ -1050,14 +1138,15 @@
               "product",
               "quantity"
             ],
-            "notes": "需建立帳號、僅接受信用卡；購買後 3 個月內任選一天（或連續兩天）使用。"
+            "notes": "只在線上販售（車站、觀光服務處不賣）；需建立帳號、只收信用卡；每次最多 4 張；購買後 3 個月內使用；未使用可在期限內退。說明：https://osaka-amazing-pass.com/"
           }
         ],
         "cancellationPolicy": "依スルッとQRtto 規定；未使用前退款條件以官方為準。",
         "restrictions": [
           "每個設施限免費一次",
           "只有大人票，兒童需另買",
-          "1 日券不能升級成 2 日券"
+          "1 日券不能升級成 2 日券",
+          "另有伊丹機場版（1 日 ¥3,800／2 日 ¥5,400）與關西機場版 28 小時券（¥5,300，含關西機場→難波一趟）"
         ],
         "mainPassFor": "osaka",
         "sourceIds": [
@@ -1074,7 +1163,7 @@
         "validity": {
           "days": 2,
           "consecutive": true,
-          "note": "連續 2 個日曆日；每設施在兩天內只能免費一次。"
+          "note": "連續 2 天（每天 03:00 至隔天 02:59）；每設施在兩天內只能免費一次；最晚可用到 2027-04-01。"
         },
         "prices": [
           {
@@ -1111,7 +1200,7 @@
               "label": "15:00 前入場",
               "excludesEvening": true
             },
-            "note": "15:00 後僅有折扣（10% 或 20%，來源不一致）。"
+            "note": "15:00 後入場只有 9 折。"
           },
           {
             "target": {
@@ -1145,9 +1234,8 @@
               "attractionId": "tsutenkaku"
             },
             "included": true,
-            "confirmed": false,
             "usageLimit": 1,
-            "note": "2026-04 改為合併票後是否仍免費未確認。"
+            "note": "當天到 1F 櫃台預約入場時間。"
           },
           {
             "target": {
@@ -1155,9 +1243,8 @@
               "attractionId": "tempozan_wheel"
             },
             "included": true,
-            "confirmed": false,
             "usageLimit": 1,
-            "note": "可能有平日限定條件，未確認。"
+            "note": "每天皆可（平日限定的是 LEGOLAND，不是摩天輪）。"
           }
         ],
         "eligibility": {
@@ -1172,10 +1259,10 @@
         "purchaseChannels": [
           {
             "id": "ch_amazing2_qrtto",
-            "name": "スルッとQRtto（官方數位票）",
+            "name": "スルッとQRtto（官方線上販售）",
             "sourceType": "official",
             "kind": "online",
-            "url": "https://subway.osakametro.co.jp/guide/page/20260401_osaka_amazing_pass.php",
+            "url": "https://surutto-qrtto.com/",
             "serviceFeeJpy": 0,
             "requiresLogin": true,
             "requiresPayment": true,
@@ -1184,7 +1271,7 @@
               "product",
               "quantity"
             ],
-            "notes": "需建立帳號、僅接受信用卡；購買後 3 個月內任選一天（或連續兩天）使用。"
+            "notes": "只在線上販售（車站、觀光服務處不賣）；需建立帳號、只收信用卡；每次最多 4 張；購買後 3 個月內使用；未使用可在期限內退。說明：https://osaka-amazing-pass.com/"
           }
         ],
         "cancellationPolicy": "依スルッとQRtto 規定；未使用前退款條件以官方為準。",
@@ -1207,7 +1294,7 @@
         "validity": {
           "days": 1,
           "consecutive": true,
-          "note": "使用當日有效，含地鐵與市巴士。"
+          "note": "使用當日有效，含地鐵與市巴士（不含夢洲站）。"
         },
         "prices": [
           {
@@ -1260,6 +1347,68 @@
         ],
         "sourceIds": [
           "src_enjoy_eco"
+        ]
+      },
+      {
+        "id": "osaka_metro_30h",
+        "name": "大阪地鐵 30 小時券（ようおこし30hパス）",
+        "nameJa": "ようおこし30hパス",
+        "kind": "day_pass",
+        "area": "osaka",
+        "validity": {
+          "days": 1,
+          "consecutive": true,
+          "note": "首次使用起 30 小時（例如下午開始可用到隔天晚上）；比較時保守只算一天，跨兩天的行程請另外比較。"
+        },
+        "prices": [
+          {
+            "appliesTo": "any",
+            "adult": 1200,
+            "child": 600
+          }
+        ],
+        "coverage": [
+          {
+            "target": {
+              "type": "transit",
+              "systemId": "osaka_metro"
+            },
+            "included": true,
+            "note": "地鐵全線含夢洲站，不含巴士。"
+          }
+        ],
+        "eligibility": {
+          "foreignPassportOnly": false
+        },
+        "salesWindow": {
+          "from": "2026-10-01",
+          "to": "2027-09-30",
+          "note": "販售期間；購買後 30 天內開始使用"
+        },
+        "purchaseChannels": [
+          {
+            "id": "ch_youokoshi_online",
+            "name": "e METRO App／スルッとQRtto",
+            "sourceType": "official",
+            "kind": "online",
+            "url": "https://subway.osakametro.co.jp/news/news/ticket/20260924_youokoshi_30hpass.php",
+            "serviceFeeJpy": 0,
+            "requiresLogin": true,
+            "requiresPayment": true,
+            "requiresPassport": false,
+            "prefillable": [
+              "product",
+              "quantity"
+            ]
+          }
+        ],
+        "cancellationPolicy": "依 Osaka Metro 規定。",
+        "restrictions": [
+          "不含巴士",
+          "原 26 小時、48 小時券已於 2026-09-30 停售"
+        ],
+        "sourceIds": [
+          "src_youokoshi"
         ]
       },
       {
@@ -1450,7 +1599,7 @@
         "validity": {
           "days": 2,
           "consecutive": true,
-          "note": "連續 2 日。"
+          "note": "連續 2 天（每天 03:00 至隔天 02:59）；購買後 3 個月內使用。"
         },
         "prices": [
           {
@@ -1472,9 +1621,7 @@
               "type": "transit",
               "systemId": "osaka_metro"
             },
-            "included": true,
-            "confirmed": false,
-            "note": "是否含 Osaka Metro 未確認。"
+            "included": true
           }
         ],
         "eligibility": {
@@ -1484,7 +1631,7 @@
         "salesWindow": {
           "from": "2026-10-01",
           "to": "2027-03-31",
-          "note": "公告販售期間；使用期限待確認"
+          "note": "2027-03-31 前開始使用"
         },
         "purchaseChannels": [
           {
@@ -1505,9 +1652,10 @@
         ],
         "cancellationPolicy": "依スルッとKANSAI 規定。",
         "restrictions": [
-          "訪日旅客限定",
-          "不含 JR、京都市營地下鐵、巴士",
-          "兒童票價未確認"
+          "訪日短期旅客限定",
+          "不含 JR、京都市營地下鐵、京阪京津線、嵐電、巴士",
+          "兒童票價未確認（來源互相矛盾）",
+          "另有 3 日券 ¥6,500"
         ],
         "sourceIds": [
           "src_kansai_rw_lite"
@@ -1526,6 +1674,7 @@
     ],
     "executorAllowlist": [
       "subway.osakametro.co.jp",
+      "surutto-qrtto.com",
       "www.city.kyoto.lg.jp",
       "www.hankyu.co.jp",
       "www.surutto.com"
@@ -1554,9 +1703,9 @@
       "summary": "2 位大人住京都，一天只去伏見稻荷和清水寺；搭車段數少，一日券不划算。",
       "dates": "2026-11-17",
       "totals": {
-        "singles": 2280,
-        "pass_first": 3560,
-        "optimized": 2280
+        "singles": 2220,
+        "pass_first": 3500,
+        "optimized": 2220
       },
       "recommended": "逐項單買",
       "passes": [],
@@ -1568,15 +1717,15 @@
       "summary": "2 位大人，週四、週五都在大阪，景點分散在兩天。比較 2 日券、1 日券×2 與混搭。",
       "dates": "2026-11-19 至 2026-11-20",
       "totals": {
-        "singles": 16760,
-        "pass_first": 17000,
-        "optimized": 13000
+        "singles": 20360,
+        "pass_first": 14000,
+        "optimized": 10000
       },
       "recommended": "最佳混合",
       "passes": [
         "大阪周遊卡 2 日券"
       ],
-      "estimatedSavings": 3760
+      "estimatedSavings": 10360
     },
     {
       "id": "weekend-metro",

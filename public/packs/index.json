@@ -9,6 +9,33 @@
     "dataUrl": "https://raw.githubusercontent.com/bahfahh/react_basic_template/claude/react-prototype-a485u2/public/packs/travel.jp-ticket-optimizer.json"
   },
   {
+    "id": "travel.jp-tax-refund",
+    "title": "日本退稅新制助手（2026-11 起）",
+    "status": "active",
+    "version": "0.1.0",
+    "summary": "2026-11-01 起日本改成先付含稅價、出境時海關確認、之後才退稅。幫你判斷是否適用、整理購物與出境當天要做的事、算出期限。",
+    "url": "https://raw.githubusercontent.com/bahfahh/react_basic_template/claude/react-prototype-a485u2/public/packs/travel.jp-tax-refund.md",
+    "dataUrl": "https://raw.githubusercontent.com/bahfahh/react_basic_template/claude/react-prototype-a485u2/public/packs/travel.jp-tax-refund.json"
+  },
+  {
+    "id": "benefit.tw-rent-subsidy",
+    "title": "租金補貼初判助手（115 年度）",
+    "status": "active",
+    "version": "0.1.0",
+    "summary": "依公開的 115 年度中央擴大租金補貼規定，初步判斷你可能符合哪些條件、估算每月金額，並整理文件與申請步驟。",
+    "url": "https://raw.githubusercontent.com/bahfahh/react_basic_template/claude/react-prototype-a485u2/public/packs/benefit.tw-rent-subsidy.md",
+    "dataUrl": "https://raw.githubusercontent.com/bahfahh/react_basic_template/claude/react-prototype-a485u2/public/packs/benefit.tw-rent-subsidy.json"
+  },
+  {
+    "id": "finance.subscription-cancel",
+    "title": "訂閱取消助手",
+    "status": "active",
+    "version": "0.1.0",
+    "summary": "找出正在扣款的訂閱，照官方路徑在下次扣款前取消，並說明退款與申訴管道。",
+    "url": "https://raw.githubusercontent.com/bahfahh/react_basic_template/claude/react-prototype-a485u2/public/packs/finance.subscription-cancel.md",
+    "dataUrl": "https://raw.githubusercontent.com/bahfahh/react_basic_template/claude/react-prototype-a485u2/public/packs/finance.subscription-cancel.json"
+  },
+  {
     "id": "travel.flight-deal",
     "title": "機票比價與訂票準備",
     "status": "planned",
@@ -32,33 +59,6 @@
     "status": "planned",
     "version": "0.0.0",
     "summary": "景點預約時段、排程衝突檢查、多站點預填。",
-    "url": null,
-    "dataUrl": null
-  },
-  {
-    "id": "travel.jp-tax-refund",
-    "title": "日本退稅準備",
-    "status": "planned",
-    "version": "0.0.0",
-    "summary": "新制退稅資格提醒、收據整理、出境程序與退款追蹤。",
-    "url": null,
-    "dataUrl": null
-  },
-  {
-    "id": "finance.subscription-cancel",
-    "title": "訂閱取消助手",
-    "status": "planned",
-    "version": "0.0.0",
-    "summary": "找取消路徑、提醒續費、協助取消及確認結果。",
-    "url": null,
-    "dataUrl": null
-  },
-  {
-    "id": "benefit.eligibility",
-    "title": "補助資格初判",
-    "status": "planned",
-    "version": "0.0.0",
-    "summary": "公開補助查詢、資格初判、文件清單、預填草稿。",
     "url": null,
     "dataUrl": null
   },

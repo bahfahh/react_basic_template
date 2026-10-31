@@ -7,7 +7,7 @@ import { z } from 'zod';
  */
 
 const isoDate = z.string().regex(/^\d{4}-\d{2}-\d{2}$/, '日期格式需為 YYYY-MM-DD');
-const transitSystem = z.enum(['osaka_metro', 'kyoto_bus', 'kyoto_subway', 'jr_local', 'hankyu_intercity']);
+const transitSystem = z.enum(['osaka_metro', 'kyoto_bus', 'kyoto_subway', 'jr_local', 'jr_usj', 'hankyu_intercity']);
 
 export const simulationSchema = z
   .object({

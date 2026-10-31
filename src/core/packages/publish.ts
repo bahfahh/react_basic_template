@@ -2,7 +2,15 @@ import { CATALOG } from '../catalog/data';
 import { compareTickets, SOURCE_FRESHNESS_DAYS } from '../optimizer/compare';
 import { findScenario } from '../scenarios';
 import type { Attraction, Catalog, CoverageRule, PriceRule, TicketProduct, TransitSystemId } from '../types';
+import { SUBSCRIPTION_CANCEL } from './content/subscriptionCancel';
+import { JP_TAX_REFUND } from './content/jpTaxRefund';
+import { TW_RENT_SUBSIDY } from './content/twRentSubsidy';
+import { renderGuideJson, renderGuideMarkdown, type GuidePack } from './guides';
 import { PACKAGES, type PackageManifest } from './registry';
+
+export const GUIDES: Record<string, GuidePack> = Object.fromEntries(
+  [JP_TAX_REFUND, TW_RENT_SUBSIDY, SUBSCRIPTION_CANCEL].map((g) => [g.id, g]),
+);
 
 /**
  * Renders each active package as files an online agent can read from a plain URL:
@@ -19,8 +27,9 @@ export function renderPackFiles(baseUrl: string): Record<string, string> {
   const files: Record<string, string> = {};
   const active = PACKAGES.filter((p) => p.status === 'active');
   for (const pkg of active) {
-    files[`packs/${pkg.id}.md`] = renderJpTicketMarkdown(pkg, CATALOG, baseUrl);
-    files[`packs/${pkg.id}.json`] = JSON.stringify(renderJpTicketJson(pkg, CATALOG), null, 2) + '\n';
+    const g = GUIDES[pkg.id];
+    files[`packs/${pkg.id}.md`] = g ? renderGuideMarkdown(pkg, g, baseUrl) : renderJpTicketMarkdown(pkg, CATALOG, baseUrl);
+    files[`packs/${pkg.id}.json`] = JSON.stringify(g ? renderGuideJson(pkg, g) : renderJpTicketJson(pkg, CATALOG), null, 2) + '\n';
   }
   files['packs/index.json'] =
     JSON.stringify(
@@ -39,7 +48,7 @@ export function renderPackFiles(baseUrl: string): Record<string, string> {
   files['llms.txt'] = [
     '# 懶人包 LazyPack',
     '',
-    '> 懶人包是給 AI agent 讀的省錢任務說明。讀取下方的懶人包網址，照裡面的步驟幫使用者完成；付款、登入、送出個資前先停下來問使用者。',
+    '> 懶人包是給 AI agent 讀的任務說明。讀取下方的懶人包網址，照裡面的步驟幫使用者完成；付款、登入、送出個資前先停下來問使用者。',
     '',
     '## 可用的懶人包',
     '',
@@ -203,7 +212,7 @@ ${table(['票券', '大人', '兒童', '有效', '涵蓋', '資格與限制', '�
 ### 景點門票
 
 ${table(
-  ['景點', '城市', '區域', '交通', '大人', '兒童（6–11）', '幼兒（0–5）', '各年齡票價（以此為準）', '來源'],
+  ['景點', '城市', '區域', '交通', '大人', '兒童（6–11）', '幼兒（0–5）', '各年齡票價（以此為準）', '注意', '來源'],
   catalog.attractions.map((a) =>
     [
       a.name,
@@ -214,6 +223,7 @@ ${table(
       admissionText(a, 'child'),
       admissionText(a, 'infant'),
       a.ageNote ?? '—',
+      a.notice ?? '—',
       a.sourceIds.join('、') || '—',
     ].join(' | '),
   ),
