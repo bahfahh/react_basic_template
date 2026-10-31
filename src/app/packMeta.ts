@@ -1,9 +1,50 @@
-import { BedDouble, CalendarCheck, CreditCard, FileWarning, Landmark, Plane, Receipt, Ticket, type LucideIcon } from 'lucide-react';
+import { BedDouble, CalendarCheck, CreditCard, FileWarning, Landmark, Plane, PlaneLanding, Receipt, Ticket, TrainFront, TramFront, Umbrella, Wallet, type LucideIcon } from 'lucide-react';
+
+/** The journey a Japan trip goes through; packs are shown in this order. */
+export const STAGES = ['出發前', '抵達日本', '在日本', '離開日本', '回國後'] as const;
+export type Stage = (typeof STAGES)[number];
 
 /** Presentation-only details for each pack; the pack itself lives in the core registry. */
-export const PACK_META: Record<string, { icon: LucideIcon; short: string; placeholder?: string }> = {
+export const PACK_META: Record<string, { icon: LucideIcon; short: string; placeholder?: string; stage?: Stage; value?: '省錢' | '省時間' | '拿回錢' }> = {
+  'travel.jp-payment': {
+    icon: Wallet,
+    stage: '出發前',
+    value: '省錢',
+    short: '刷卡選日圓還是台幣、海外手續費、換匯和 IC 卡，在日本付錢不吃虧。',
+    placeholder: '例：下個月去東京 5 天，想知道刷卡、換現金還是用 Suica 比較划算',
+  },
+  'travel.jp-rail-pass': {
+    icon: TrainFront,
+    stage: '出發前',
+    value: '省錢',
+    short: 'JR Pass 或區域周遊券到底划不划算？依你的行程跟單買比。',
+    placeholder: '例：東京進大阪出，中間想去京都和廣島，共 8 天',
+  },
+  'travel.jp-airport-transfer': {
+    icon: PlaneLanding,
+    stage: '抵達日本',
+    value: '省時間',
+    short: '成田、羽田、關西等機場進市區，依目的地、行李、人數選最省或最快的。',
+    placeholder: '例：晚上 9 點到成田，2 個大人 2 個大行李，住新宿',
+  },
+  'travel.jp-tokyo-transit': {
+    icon: TramFront,
+    stage: '在日本',
+    value: '省錢',
+    short: '東京地鐵 24／48／72 小時券划算嗎？依你的行程跟刷 IC 卡比。',
+    placeholder: '例：東京 3 天，想去淺草、晴空塔、澀谷、新宿、台場',
+  },
+  'travel.tw-travel-inconvenience-claim': {
+    icon: Umbrella,
+    stage: '回國後',
+    value: '拿回錢',
+    short: '班機延誤、行李延誤或遺失？用信用卡附加的旅遊不便險把錢拿回來。',
+    placeholder: '例：從羽田回台北的班機延誤 5 小時，機票是用信用卡買的',
+  },
   'travel.jp-ticket-optimizer': {
     icon: Ticket,
+    stage: '在日本',
+    value: '省錢',
     short: '大阪、京都的交通和景點，單買、一日券還是周遊卡最省？',
     placeholder: '例：11/24 兩個大人住大阪，想去大阪城、梅田藍天大廈、道頓堀遊船',
   },
@@ -12,6 +53,8 @@ export const PACK_META: Record<string, { icon: LucideIcon; short: string; placeh
   'travel.multi-booking': { icon: CalendarCheck, short: '多個景點預約時段，一次排好不衝突。' },
   'travel.jp-tax-refund': {
     icon: Receipt,
+    stage: '離開日本',
+    value: '拿回錢',
     short: '11 月起日本改成出境後才退稅。購物、出境當天要做什麼、期限到哪天。',
     placeholder: '例：12/3 在大阪買了兩筆，12/8 從關西機場回台灣',
   },
