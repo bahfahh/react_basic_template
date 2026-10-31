@@ -55,10 +55,16 @@ function Header({ icon, title, subtitle, children }: { icon: ReactNode; title: s
   );
 }
 
-/** "**看時間**：……[S:x]" → "看時間"; otherwise the step without markup. */
+/** Short label for a step: its bold lead ("**看時間**：…"), the part before "：", or a clipped sentence. */
 const stepTitle = (s: string) => {
-  const bold = s.match(/^\*\*(.+?)\*\*/);
-  return (bold ? bold[1] : s).replace(/\[S:[\w-]+\]/g, '').replace(/\*\*/g, '').trim();
+  const plain = s.replace(/\[S:[\w-]+\]/g, '').trim();
+  const bold = plain.match(/^\*\*(.+?)\*\*/);
+  if (bold) return bold[1].trim();
+  const text = plain.replace(/\*\*/g, '');
+  const lead = text.split('：')[0].trim();
+  if (lead.length < text.length && lead.length <= 24) return lead;
+  const sentence = text.split(/[。；]/)[0].trim();
+  return sentence.length <= 40 ? sentence : `${sentence.slice(0, 38)}…`;
 };
 
 function ActivePack({ pack }: { pack: Pack }) {
