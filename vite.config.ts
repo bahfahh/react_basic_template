@@ -1,13 +1,16 @@
-// vite.config.ts or vite.config.js
-import path from "path"
-import react from "@vitejs/plugin-react"
-import { defineConfig } from "vite"
+import path from 'node:path';
+import react from '@vitejs/plugin-react';
+import { defineConfig } from 'vite';
 
-export default defineConfig({
+export default defineConfig(({ mode }) => ({
   plugins: [react()],
-  resolve: {
-    alias: {
-      "@": path.resolve(__dirname, "./src"),
+  base: mode === 'demo' ? './' : '/',
+  resolve: { alias: { '@': path.resolve(__dirname, './src') } },
+  build: { chunkSizeWarningLimit: 800 },
+  server: {
+    proxy: {
+      '/api': 'http://localhost:8787',
+      '/mcp': 'http://localhost:8787',
     },
   },
-})
+}));
