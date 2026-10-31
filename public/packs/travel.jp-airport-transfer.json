@@ -78,7 +78,7 @@
         "Narita"
       ],
       "search": "Narita Airport access to Tokyo train bus official",
-      "check": "尚未自動檢查"
+      "check": "2026-10-31：可直接讀取"
     },
     {
       "id": "skyliner",
@@ -95,7 +95,7 @@
         "Skyliner"
       ],
       "search": "Keisei Skyliner discount ticket foreign visitors official",
-      "check": "尚未自動檢查"
+      "check": "2026-10-31：可直接讀取"
     },
     {
       "id": "keisei-asakusa",
@@ -111,7 +111,7 @@
         "Asakusa"
       ],
       "search": "Keisei Narita Airport to Asakusa Access Express",
-      "check": "尚未自動檢查"
+      "check": "2026-10-31：可直接讀取"
     },
     {
       "id": "nex",
@@ -128,7 +128,7 @@
         "Narita Express"
       ],
       "search": "Narita Express official JR East",
-      "check": "尚未自動檢查"
+      "check": "2026-10-31：一般瀏覽器 擋自動讀取（請改用瀏覽器或搜尋）；AI 讀取 可直接讀取"
     },
     {
       "id": "nex-round",
@@ -146,7 +146,7 @@
         "Round Trip Ticket"
       ],
       "search": "N'EX TOKYO Round Trip Ticket official",
-      "check": "尚未自動檢查"
+      "check": "2026-10-31：一般瀏覽器 擋自動讀取（請改用瀏覽器或搜尋）；AI 讀取 可直接讀取"
     },
     {
       "id": "tyo-nrt",
@@ -164,7 +164,7 @@
         "TYO-NRT"
       ],
       "search": "Airport Bus TYO-NRT fare timetable",
-      "check": "尚未自動檢查"
+      "check": "2026-10-31：可直接讀取"
     },
     {
       "id": "limo",
@@ -182,7 +182,7 @@
         "Limousine"
       ],
       "search": "Airport Limousine Bus Narita Haneda official timetable fare",
-      "check": "尚未自動檢查"
+      "check": "2026-10-31：一般瀏覽器 可直接讀取；AI 讀取 擋自動讀取（請改用瀏覽器或搜尋）"
     },
     {
       "id": "haneda",
@@ -199,7 +199,7 @@
         "Keikyu"
       ],
       "search": "Haneda Airport access official Keikyu Monorail bus",
-      "check": "尚未自動檢查"
+      "check": "2026-10-31：打得開，但沒讀到預期文字（可能要用瀏覽器開，或頁面改版）"
     },
     {
       "id": "monorail",
@@ -216,7 +216,7 @@
         "Monorail"
       ],
       "search": "Tokyo Monorail Haneda Hamamatsucho fare official",
-      "check": "尚未自動檢查"
+      "check": "2026-10-31：可直接讀取"
     },
     {
       "id": "taxi",
@@ -234,7 +234,7 @@
         "Narita"
       ],
       "search": "成田空港 定額運賃 タクシー 東京 2026",
-      "check": "尚未自動檢查"
+      "check": "2026-10-31：打不開"
     },
     {
       "id": "kix-access",
@@ -250,7 +250,7 @@
         "Haruka"
       ],
       "search": "Kansai Airport access Osaka Kyoto official",
-      "check": "尚未自動檢查"
+      "check": "2026-10-31：擋自動讀取（請改用瀏覽器或搜尋）"
     },
     {
       "id": "kix-night",
@@ -266,7 +266,7 @@
         "Kansai"
       ],
       "search": "Kansai Airport late night bus access",
-      "check": "尚未自動檢查"
+      "check": "2026-10-31：擋自動讀取（請改用瀏覽器或搜尋）"
     },
     {
       "id": "kix-limo",
@@ -283,7 +283,7 @@
         "Limousine Bus"
       ],
       "search": "Kansai Airport Limousine Bus KATE Umeda Kyoto",
-      "check": "尚未自動檢查"
+      "check": "2026-10-31：擋自動讀取（請改用瀏覽器或搜尋）"
     },
     {
       "id": "haruka",
@@ -300,7 +300,7 @@
         "HARUKA"
       ],
       "search": "JR West HARUKA discount ticket foreign visitors",
-      "check": "尚未自動檢查"
+      "check": "2026-10-31：可直接讀取"
     },
     {
       "id": "rapit",
@@ -317,7 +317,7 @@
         "Rapi:t"
       ],
       "search": "Nankai Rapi:t ticket fare official",
-      "check": "尚未自動檢查"
+      "check": "2026-10-31：可直接讀取"
     },
     {
       "id": "meitetsu",
@@ -334,7 +334,7 @@
         "Centrair"
       ],
       "search": "Meitetsu Centrair airport access μSKY fare",
-      "check": "尚未自動檢查"
+      "check": "2026-10-31：打得開，但沒讀到預期文字（可能要用瀏覽器開，或頁面改版）"
     },
     {
       "id": "fukuoka",
@@ -351,7 +351,7 @@
         "Fukuoka"
       ],
       "search": "Fukuoka Airport international terminal to Hakata subway shuttle",
-      "check": "尚未自動檢查"
+      "check": "2026-10-31：可直接讀取"
     },
     {
       "id": "cts",
@@ -368,7 +368,7 @@
         "Sapporo"
       ],
       "search": "New Chitose Airport access Sapporo JR rapid airport bus official",
-      "check": "尚未自動檢查"
+      "check": "2026-10-31：可直接讀取"
     },
     {
       "id": "tap-list",
@@ -384,7 +384,7 @@
         "credit card"
       ],
       "search": "Japan credit card tap to ride railways list",
-      "check": "尚未自動檢查"
+      "check": "2026-10-31：可直接讀取"
     }
   ],
   "report": "## 推薦\n最省：〈方式〉 大人〈票價〉×〈人數〉＋兒童〈票價〉×〈人數〉＝〈全家總價〉（有來回票時寫來回總價），約〈分鐘〉，轉車〈次數〉\n最快／最方便：〈方式〉〈全家總價〉，約〈分鐘〉，轉車〈次數〉\n\n## 怎麼買、怎麼付\n（事先網路買／現場售票機／IC 卡／信用卡感應）\n\n## 時間\n- 今天查到的末班：〈方式〉〈時間〉（以當天官方時刻表為準）\n- 趕不上時的備案：〈依序〉\n\n## 注意（行李、轉車、計程車過路費與深夜加價）\n## 尚未確認的地方\n## 來源（網址＋查詢日）",

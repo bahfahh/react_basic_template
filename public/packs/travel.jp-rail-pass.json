@@ -78,7 +78,7 @@
         "Green"
       ],
       "search": "Japan Rail Pass official types and prices japanrailpass.net",
-      "check": "尚未自動檢查"
+      "check": "2026-10-31：可直接讀取"
     },
     {
       "id": "nozomi-supp",
@@ -96,7 +96,7 @@
         "Mizuho"
       ],
       "search": "JR Central Nozomi Mizuho supplement ticket Japan Rail Pass holders",
-      "check": "尚未自動檢查"
+      "check": "2026-10-31：可直接讀取"
     },
     {
       "id": "kansai-wide",
@@ -114,7 +114,7 @@
         "Area Pass"
       ],
       "search": "JR West Kansai WIDE Area Pass official",
-      "check": "尚未自動檢查"
+      "check": "2026-10-31：可直接讀取"
     },
     {
       "id": "kansai-hiroshima",
@@ -132,7 +132,7 @@
         "Area Pass"
       ],
       "search": "JR West Kansai-Hiroshima Area Pass official",
-      "check": "尚未自動檢查"
+      "check": "2026-10-31：可直接讀取"
     },
     {
       "id": "arch",
@@ -150,7 +150,7 @@
         "Arch Pass"
       ],
       "search": "JR West Hokuriku Arch Pass official",
-      "check": "尚未自動檢查"
+      "check": "2026-10-31：可直接讀取"
     },
     {
       "id": "tokyo-wide",
@@ -168,7 +168,7 @@
         "Wide Pass"
       ],
       "search": "JR TOKYO Wide Pass JR East official",
-      "check": "尚未自動檢查"
+      "check": "2026-10-31：一般瀏覽器 擋自動讀取（請改用瀏覽器或搜尋）；AI 讀取 可直接讀取"
     },
     {
       "id": "east-pass",
@@ -186,7 +186,7 @@
         "JR EAST PASS"
       ],
       "search": "JR EAST PASS official jreast",
-      "check": "尚未自動檢查"
+      "check": "2026-10-31：一般瀏覽器 擋自動讀取（請改用瀏覽器或搜尋）；AI 讀取 可直接讀取"
     },
     {
       "id": "kyushu-pass",
@@ -204,7 +204,7 @@
         "Kyushu"
       ],
       "search": "JR Kyushu Rail Pass official",
-      "check": "尚未自動檢查"
+      "check": "2026-10-31：可直接讀取"
     },
     {
       "id": "hokkaido",
@@ -221,7 +221,7 @@
         "Hokkaido"
       ],
       "search": "JR Hokkaido Rail Pass official price",
-      "check": "尚未自動檢查"
+      "check": "2026-10-31：可直接讀取"
     },
     {
       "id": "kansai-qr",
@@ -237,7 +237,7 @@
         "WEST QR"
       ],
       "search": "WEST QR Kansai Area Pass JR West how to use",
-      "check": "尚未自動檢查"
+      "check": "2026-10-31：擋自動讀取（請改用瀏覽器或搜尋）"
     },
     {
       "id": "haruka",
@@ -254,7 +254,7 @@
         "HARUKA"
       ],
       "search": "JR West HARUKA discount ticket foreign visitors",
-      "check": "尚未自動檢查"
+      "check": "2026-10-31：可直接讀取"
     },
     {
       "id": "fare-search",
@@ -270,7 +270,7 @@
         "乗換案内"
       ],
       "search": "〈出發站〉 〈到達站〉 新幹線 料金 指定席",
-      "check": "尚未自動檢查"
+      "check": "2026-10-31：一般瀏覽器 打得開，但沒讀到預期文字（可能要用瀏覽器開，或頁面改版）；AI 讀取 擋自動讀取（請改用瀏覽器或搜尋）"
     },
     {
       "id": "fare-table",
@@ -287,7 +287,7 @@
         "新幹線"
       ],
       "search": "新幹線 料金表 〈出發站〉 〈到達站〉",
-      "check": "尚未自動檢查"
+      "check": "2026-10-31：可直接讀取"
     }
   ],
   "report": "## 結論\n最省：〈方案〉，總價〈金額〉（有推估的區段寫「約」或「至少」），比〈次佳方案〉省〈金額〉\n價格查詢日：〈日期〉\n\n## 每段單買價\n| 日期 | 區段 | 車種／艙等 | 運賃＋特急料金 | 官方查到或推估 | 來源 |\n\n## 各方案比較\n| 方案 | 有效窗口 | 涵蓋哪些段 | 要另外付的 | 總價 | 比單買 |\n\n## 回本點\n（窗口內單買合計要超過多少才划算；還差多少）\n\n## 購買注意\n（資格、購買通路、兌換或啟用、加購券、劃位）\n\n## 推估與尚未確認的地方\n## 來源（網址＋查詢日）",

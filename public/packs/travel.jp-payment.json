@@ -73,7 +73,7 @@
         "國外交易服務費"
       ],
       "search": "〈銀行名〉 信用卡 國外交易服務費",
-      "check": "尚未自動檢查"
+      "check": "2026-10-31：打得開，但沒讀到預期文字（可能要用瀏覽器開，或頁面改版）"
     },
     {
       "id": "taishin-dcc",
@@ -90,7 +90,7 @@
         "動態貨幣轉換"
       ],
       "search": "動態貨幣轉換 DCC 信用卡 海外 選當地幣別 銀行",
-      "check": "尚未自動檢查"
+      "check": "2026-10-31：可直接讀取"
     },
     {
       "id": "bot-rate",
@@ -107,7 +107,7 @@
         "現金匯率"
       ],
       "search": "臺灣銀行 牌告匯率 日圓",
-      "check": "尚未自動檢查"
+      "check": "2026-10-31：一般瀏覽器 打得開，但沒讀到預期文字（可能要用瀏覽器開，或頁面改版）；AI 讀取 可直接讀取"
     },
     {
       "id": "fubon-atm",
@@ -124,7 +124,7 @@
         "跨國提款"
       ],
       "search": "〈銀行名〉 金融卡 跨國提款 手續費 日本",
-      "check": "尚未自動檢查"
+      "check": "2026-10-31：可直接讀取"
     },
     {
       "id": "atm-change",
@@ -140,7 +140,7 @@
         "金融卡"
       ],
       "search": "財金公司 晶片金融卡 日本 提款 終止",
-      "check": "尚未自動檢查"
+      "check": "2026-10-31：可直接讀取"
     },
     {
       "id": "sevenbank",
@@ -157,7 +157,7 @@
         "DCC"
       ],
       "search": "Seven Bank ATM overseas card DCC currency",
-      "check": "尚未自動檢查"
+      "check": "2026-10-31：可直接讀取"
     },
     {
       "id": "cash-advance",
@@ -174,7 +174,7 @@
         "預借現金"
       ],
       "search": "〈銀行名〉 信用卡 預借現金 手續費 利息",
-      "check": "尚未自動檢查"
+      "check": "2026-10-31：可直接讀取"
     },
     {
       "id": "suica",
@@ -191,7 +191,7 @@
         "Suica"
       ],
       "search": "JR East Suica deposit refund official",
-      "check": "尚未自動檢查"
+      "check": "2026-10-31：一般瀏覽器 擋自動讀取（請改用瀏覽器或搜尋）；AI 讀取 可直接讀取"
     },
     {
       "id": "welcome-suica",
@@ -208,7 +208,7 @@
         "Welcome Suica"
       ],
       "search": "Welcome Suica JR East official",
-      "check": "尚未自動檢查"
+      "check": "2026-10-31：一般瀏覽器 擋自動讀取（請改用瀏覽器或搜尋）；AI 讀取 可直接讀取"
     },
     {
       "id": "icoca",
@@ -225,7 +225,7 @@
         "ICOCA"
       ],
       "search": "ICOCA 払いもどし 手数料 JR西日本",
-      "check": "尚未自動檢查"
+      "check": "2026-10-31：可直接讀取"
     },
     {
       "id": "apple-wallet",
@@ -243,7 +243,7 @@
         "Apple Wallet"
       ],
       "search": "Apple support add Suica PASMO ICOCA Apple Wallet Japan",
-      "check": "尚未自動檢查"
+      "check": "2026-10-31：可直接讀取"
     },
     {
       "id": "tap-list",
@@ -260,7 +260,7 @@
         "credit card"
       ],
       "search": "Japan credit card tap to ride railways list",
-      "check": "尚未自動檢查"
+      "check": "2026-10-31：可直接讀取"
     },
     {
       "id": "toei-tap",
@@ -277,7 +277,7 @@
         "Tap-and-go"
       ],
       "search": "Toei Subway tap-and-go credit card payment",
-      "check": "尚未自動檢查"
+      "check": "2026-10-31：擋自動讀取（請改用瀏覽器或搜尋）"
     },
     {
       "id": "metro-tap",
@@ -294,7 +294,7 @@
         "クレジットカード"
       ],
       "search": "東京メトロ クレジットカード タッチ決済 乗車 関東 鉄道",
-      "check": "尚未自動檢查"
+      "check": "2026-10-31：一般瀏覽器 擋自動讀取（請改用瀏覽器或搜尋）；AI 讀取 可直接讀取"
     },
     {
       "id": "nankai-tap",
@@ -310,7 +310,7 @@
         "contactless"
       ],
       "search": "Nankai contactless credit card payment",
-      "check": "尚未自動檢查"
+      "check": "2026-10-31：打得開，但沒讀到預期文字（可能要用瀏覽器開，或頁面改版）"
     },
     {
       "id": "paypay-tw",
@@ -326,7 +326,7 @@
         "PayPay"
       ],
       "search": "全支付 台新Pay+ 日本 PayPay 付款",
-      "check": "尚未自動檢查"
+      "check": "2026-10-31：可直接讀取"
     }
   ],
   "report": "## 出發前要做的事\n| 卡片 | 海外交易手續費 | 當期日本回饋（要不要登錄、上限） | 已開海外刷卡／感應？ | 來源 |\n\n- 現金：依你的行程，大概要〈金額〉，原因〈哪些地方只收現金〉\n- 換匯：今天臺灣銀行現金賣出〈匯率〉、即期賣出〈匯率〉，現鈔每一萬日圓約多付〈金額〉\n- 提款備案：〈哪張卡可以在日本提款，手續費〉\n- IC 卡：建議〈哪一種〉，原因〈押金、退費、手機〉\n\n## 結帳與提款時\n- 一律選日圓；看到台幣金額請店家取消重刷\n- ATM 問要不要換算台幣，選日圓\n- 不要用信用卡預借現金\n\n## 交通怎麼付\n（哪些路線可以刷信用卡感應、哪些要用 IC 卡）\n\n## 尚未確認的地方\n## 來源（網址＋查詢日）",

@@ -74,7 +74,7 @@
         "Tokyo Subway Ticket"
       ],
       "search": "Tokyo Subway Ticket official price Tokyo Metro",
-      "check": "尚未自動檢查"
+      "check": "2026-10-31：一般瀏覽器 擋自動讀取（請改用瀏覽器或搜尋）；AI 讀取 可直接讀取"
     },
     {
       "id": "metro-1day",
@@ -91,7 +91,7 @@
         "24-hour"
       ],
       "search": "Tokyo Metro 24-hour Ticket official",
-      "check": "尚未自動檢查"
+      "check": "2026-10-31：一般瀏覽器 擋自動讀取（請改用瀏覽器或搜尋）；AI 讀取 可直接讀取"
     },
     {
       "id": "toei-tickets",
@@ -109,7 +109,7 @@
         "Toei"
       ],
       "search": "Toei One-Day Pass Tokyo Combination Ticket price",
-      "check": "尚未自動檢查"
+      "check": "2026-10-31：可直接讀取"
     },
     {
       "id": "jr-passes",
@@ -125,7 +125,7 @@
         "都区内パス"
       ],
       "search": "都区内パス JR東日本 価格 2026",
-      "check": "尚未自動檢查"
+      "check": "2026-10-31：可直接讀取"
     },
     {
       "id": "yurikamome",
@@ -142,7 +142,7 @@
         "Yurikamome"
       ],
       "search": "Yurikamome one-day pass fare official",
-      "check": "尚未自動檢查"
+      "check": "2026-10-31：可直接讀取"
     },
     {
       "id": "metro-fare",
@@ -158,7 +158,7 @@
         "運賃"
       ],
       "search": "東京メトロ 普通運賃 IC",
-      "check": "尚未自動檢查"
+      "check": "2026-10-31：一般瀏覽器 擋自動讀取（請改用瀏覽器或搜尋）；AI 讀取 可直接讀取"
     },
     {
       "id": "toei-fare",
@@ -173,7 +173,7 @@
         "運賃"
       ],
       "search": "都営地下鉄 普通運賃 IC",
-      "check": "尚未自動檢查"
+      "check": "2026-10-31：可直接讀取"
     },
     {
       "id": "metro-transfer",
@@ -189,7 +189,7 @@
         "Toei"
       ],
       "search": "Tokyo Metro Toei transfer discount fare",
-      "check": "尚未自動檢查"
+      "check": "2026-10-31：一般瀏覽器 擋自動讀取（請改用瀏覽器或搜尋）；AI 讀取 可直接讀取"
     },
     {
       "id": "tap",
@@ -206,7 +206,7 @@
         "Tap-and-go"
       ],
       "search": "Toei Subway tap-and-go credit card payment",
-      "check": "尚未自動檢查"
+      "check": "2026-10-31：擋自動讀取（請改用瀏覽器或搜尋）"
     },
     {
       "id": "tap-list",
@@ -221,7 +221,7 @@
         "credit card"
       ],
       "search": "Tokyo credit card tap to ride JR East Tokyo Metro",
-      "check": "尚未自動檢查"
+      "check": "2026-10-31：可直接讀取"
     },
     {
       "id": "fare-search",
@@ -237,7 +237,7 @@
         "乗換案内"
       ],
       "search": "〈出發站〉 〈到達站〉 IC 運賃",
-      "check": "尚未自動檢查"
+      "check": "2026-10-31：一般瀏覽器 打得開，但沒讀到預期文字（可能要用瀏覽器開，或頁面改版）；AI 讀取 擋自動讀取（請改用瀏覽器或搜尋）"
     }
   ],
   "report": "## 結論\n最省：〈方案〉，全程總價〈金額〉（最省就是刷 IC 卡時，寫出和次佳方案差多少）\n票價查詢日：〈日期〉\n\n## 每天的移動與票價\n| 日期 | 區段 | 公司 | 大人 IC 票價（查到或「約」） | 來源 |\n\n## 算式\n| 窗口 | S（地鐵） | J（JR） | O（其他） | IC 單買 | 各票券方案 | 最省 |\n\n## 不在券內、要另外付的\n## 怎麼買、怎麼付\n## 估算與尚未確認的地方\n## 來源（網址＋查詢日）",
