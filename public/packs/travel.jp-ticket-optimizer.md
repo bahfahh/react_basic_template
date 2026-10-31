@@ -1,4 +1,4 @@
-# 懶人包：日本票券省錢助手（大阪・京都）
+# 懶人包：大阪・京都交通票券省錢
 
 packId: travel.jp-ticket-optimizer ・ 版本 0.1.0 ・ 資料核對日 2026-10-31 ・ 資料（JSON）：https://raw.githubusercontent.com/bahfahh/react_basic_template/claude/react-prototype-a485u2/public/packs/travel.jp-ticket-optimizer.json
 

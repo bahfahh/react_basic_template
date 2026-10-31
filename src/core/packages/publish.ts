@@ -2,14 +2,19 @@ import { CATALOG } from '../catalog/data';
 import { compareTickets, SOURCE_FRESHNESS_DAYS } from '../optimizer/compare';
 import { findScenario } from '../scenarios';
 import type { Attraction, Catalog, CoverageRule, PriceRule, TicketProduct, TransitSystemId } from '../types';
+import { JP_AIRPORT_TRANSFER } from './content/jpAirportTransfer';
+import { JP_PAYMENT } from './content/jpPayment';
+import { JP_RAIL_PASS } from './content/jpRailPass';
+import { JP_TOKYO_TRANSIT } from './content/jpTokyoTransit';
 import { SUBSCRIPTION_CANCEL } from './content/subscriptionCancel';
+import { TRAVEL_INCONVENIENCE_CLAIM } from './content/travelInconvenienceClaim';
 import { JP_TAX_REFUND } from './content/jpTaxRefund';
 import { TW_RENT_SUBSIDY } from './content/twRentSubsidy';
 import { renderGuideJson, renderGuideMarkdown, type GuidePack } from './guides';
 import { PACKAGES, type PackageManifest } from './registry';
 
 export const GUIDES: Record<string, GuidePack> = Object.fromEntries(
-  [JP_TAX_REFUND, TW_RENT_SUBSIDY, SUBSCRIPTION_CANCEL].map((g) => [g.id, g]),
+  [JP_PAYMENT, JP_RAIL_PASS, JP_AIRPORT_TRANSFER, JP_TOKYO_TRANSIT, JP_TAX_REFUND, TRAVEL_INCONVENIENCE_CLAIM, TW_RENT_SUBSIDY, SUBSCRIPTION_CANCEL].map((g) => [g.id, g]),
 );
 
 /**

@@ -28,3 +28,14 @@
 ## 訂閱取消（finance.subscription-cancel）
 
 見 `src/core/packages/content/subscriptionCancel.ts` 的 `openQuestions`：串流是否屬 7 天解除權例外、數位發展部草案、各服務台灣退款條款、Amazon Prime Video、電信自助頁面、中文選單名稱。
+
+## 日本自由行新增的 5 個懶人包
+
+各檔案的 `openQuestions` 列出未確認的項目：
+- `jpPayment.ts`：0.5% 銀行手續費的官方規定、日本 ATM 手續費、JR 東西日本感應乘車、行動支付的匯差。
+- `jpRailPass.ts`：JR 官方網站舊價是否仍有效、14／21 日兒童價、WEST QR 規定、部分周遊券 2026 價格、東京↔京都等區段票價。
+- `jpAirportTransfer.ts`：N'EX 單程價、羽田利木津價格、計程車定額表、HARUKA 一般價、關西利木津、新千歲 JR 票價、末班車時間。
+- `jpTokyoTransit.ts`：部分區段票價、轉乘折扣兒童金額、感應扣款票價、晴空塔各日票價。
+- `travelInconvenienceClaim.ts`：日文收據、與航空公司補償的分攤、各銀行通知期限與客服電話、OTA 購票是否符合。
+
+要直接讀這些官方頁面，需另外允許：`www.keisei.co.jp`、`www.jreast.co.jp`、`www.westjr.co.jp`、`global.jr-central.co.jp`、`japanrailpass.net`、`www.kotsu.metro.tokyo.jp`、`www.tokyometro.jp`、`www.fubon.com`、`www.ctbcbank.com`、`www.esunbank.com`、`www.taishinbank.com.tw`。

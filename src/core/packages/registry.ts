@@ -68,7 +68,7 @@ const NOT_VERIFIED_PLATFORMS: CompatibilityEntry[] = [
 export const JP_TICKET_OPTIMIZER: PackageManifest = {
   schemaVersion: '1.0',
   id: 'travel.jp-ticket-optimizer',
-  title: '日本票券省錢助手（大阪・京都）',
+  title: '大阪・京都交通票券省錢',
   summary: '比較交通單買、一日券／周遊卡與混搭組合，算出同等權益下的最低總價，附官方來源與查詢日期，並協助準備購買（停在付款前）。',
   version: '0.1.0',
   status: 'active',
@@ -261,9 +261,84 @@ export const SUBSCRIPTION_CANCEL_PACKAGE = guide({
   limitations: ['部分服務的台灣退款條款未確認', '數位發展部自動續訂新規仍是草案'],
 });
 
+export const JP_PAYMENT_PACKAGE = guide({
+  id: 'travel.jp-payment',
+  title: '日本付款不吃虧',
+  summary: '刷卡選日圓、算清楚海外手續費、現金在哪換、IC 卡和信用卡感應怎麼選，在日本付錢不多花冤枉錢。',
+  category: 'travel-savings',
+  categoryLabel: '旅遊省錢',
+  jurisdictions: ['JP', 'TW'],
+  inputs: { required: ['trip_plan', 'cards_and_phone'], optional: ['ic_card', 'mobile_wallet', 'cash_amount'] },
+  outputs: ['before_trip_checklist', 'at_checkout_rules', 'cash_plan', 'ic_card_choice', 'transit_payment', 'open_questions_and_sources'],
+  prohibited: ['claim_card_cashback_unchecked', 'recommend_dcc', 'collect_passwords_or_card'],
+  scope: ['台灣發行的信用卡、金融卡在日本的付款與提款', 'IC 卡、信用卡感應乘車、可跨境的台灣行動支付'],
+  limitations: ['不比較各卡當期回饋活動', '日本 ATM 手續費與即時匯率未查證'],
+});
+
+export const JP_RAIL_PASS_PACKAGE = guide({
+  id: 'travel.jp-rail-pass',
+  title: 'JR Pass 划算嗎',
+  summary: '依你的行程，比較全國 JR Pass、區域周遊券和單買（含早鳥票），算出最省的方案與損益兩平點。',
+  category: 'travel-savings',
+  categoryLabel: '旅遊省錢',
+  jurisdictions: ['JP'],
+  inputs: { required: ['rail_legs', 'travelers', 'entry_status', 'purchase_channel'], optional: ['flexibility', 'green_car'] },
+  outputs: ['per_leg_fares', 'pass_comparison', 'break_even', 'purchase_notes', 'open_questions_and_sources'],
+  prohibited: ['claim_nozomi_included', 'use_outdated_prices', 'claim_unverified_discounts'],
+  scope: ['全國 JR Pass 與熱門區域周遊券（關西、北陸、東日本、九州、北海道）'],
+  limitations: ['部分區段票價未查到，需使用者自行查詢', 'JR 官方網站舊價是否仍適用未確認'],
+});
+
+export const JP_AIRPORT_TRANSFER_PACKAGE = guide({
+  id: 'travel.jp-airport-transfer',
+  title: '機場進市區交通',
+  summary: '成田、羽田、關西、中部、福岡、新千歲機場到市區，依目的地、時間、行李與人數選最省或最快的方式。',
+  category: 'travel-savings',
+  categoryLabel: '旅遊省時',
+  jurisdictions: ['JP'],
+  inputs: { required: ['airport_and_time', 'destination', 'party_and_luggage'], optional: ['priority', 'return_airport', 'payment_method'] },
+  outputs: ['cheapest_option', 'fastest_option', 'how_to_buy', 'late_night_notes', 'open_questions_and_sources'],
+  prohibited: ['use_outdated_prices', 'claim_exact_taxi_fare', 'claim_exact_last_train'],
+  scope: ['成田、羽田、關西、中部、福岡、新千歲六個機場'],
+  limitations: ['末班車時間未查證', '部分巴士與計程車價格未經官方確認'],
+});
+
+export const JP_TOKYO_TRANSIT_PACKAGE = guide({
+  id: 'travel.jp-tokyo-transit',
+  title: '東京交通票券省錢',
+  summary: '依你在東京每天的行程，比較刷 IC 卡和東京地鐵 24／48／72 小時券、各種一日券，算出最省的組合。',
+  category: 'travel-savings',
+  categoryLabel: '旅遊省錢',
+  jurisdictions: ['JP'],
+  inputs: { required: ['daily_itinerary', 'travelers', 'entry_status'], optional: ['arrival_departure_times', 'other_lines'] },
+  outputs: ['per_ride_fares', 'pass_comparison', 'not_covered', 'how_to_buy', 'open_questions_and_sources'],
+  prohibited: ['use_outdated_prices', 'claim_pass_covers_jr', 'claim_unverified_discounts'],
+  scope: ['東京 23 區內的 JR、東京 Metro、都營地鐵與百合海鷗號'],
+  limitations: ['部分區段票價依距離級距估算', '景點門票只列常見的幾個'],
+});
+
+export const TRAVEL_INCONVENIENCE_CLAIM_PACKAGE = guide({
+  id: 'travel.tw-travel-inconvenience-claim',
+  title: '旅遊不便險理賠',
+  summary: '班機延誤、取消、行李延誤或遺失、護照遺失時，用信用卡附加或另外買的旅遊不便險把錢拿回來：當下要拿的證明、可以花的錢、回國怎麼申請。',
+  category: 'money-recovery',
+  categoryLabel: '把錢拿回來',
+  jurisdictions: ['TW', 'JP'],
+  inputs: { required: ['incident', 'paying_card', 'claimants', 'delay_length', 'where_now'], optional: ['standalone_policy', 'airline_help', 'expenses'] },
+  outputs: ['eligibility_check', 'do_now_at_airport', 'claimable_items', 'documents', 'how_to_submit', 'complaint_path', 'open_questions_and_sources'],
+  prohibited: ['guarantee_claim_amount', 'confuse_travel_accident_insurance', 'collect_identity_numbers', 'submit_on_behalf'],
+  scope: ['台灣信用卡附加旅遊不便險與另外購買的旅遊不便險', '去日本的航班與行李事故'],
+  limitations: ['保額與條件依卡別、年度不同，以使用者的保險證為準', '日文收據是否需翻譯未確認'],
+});
+
 export const PACKAGES: PackageManifest[] = [
+  JP_PAYMENT_PACKAGE,
+  JP_RAIL_PASS_PACKAGE,
+  JP_AIRPORT_TRANSFER_PACKAGE,
+  JP_TOKYO_TRANSIT_PACKAGE,
   JP_TICKET_OPTIMIZER,
   JP_TAX_REFUND_PACKAGE,
+  TRAVEL_INCONVENIENCE_CLAIM_PACKAGE,
   TW_RENT_SUBSIDY_PACKAGE,
   SUBSCRIPTION_CANCEL_PACKAGE,
   planned('travel.flight-deal', '機票比價與訂票準備', 'travel-savings', '旅遊省錢', '比較同航線、票種、行李及退改條件的實際總價，準備訂票。', '即時價格與授權訂票 API；不承諾永遠最低價；停在付款前。'),

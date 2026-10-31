@@ -4,8 +4,13 @@
 
 ## 可用的懶人包
 
-- [日本票券省錢助手（大阪・京都）](https://raw.githubusercontent.com/bahfahh/react_basic_template/claude/react-prototype-a485u2/public/packs/travel.jp-ticket-optimizer.md): 比較交通單買、一日券／周遊卡與混搭組合，算出同等權益下的最低總價，附官方來源與查詢日期，並協助準備購買（停在付款前）。
+- [日本付款不吃虧](https://raw.githubusercontent.com/bahfahh/react_basic_template/claude/react-prototype-a485u2/public/packs/travel.jp-payment.md): 刷卡選日圓、算清楚海外手續費、現金在哪換、IC 卡和信用卡感應怎麼選，在日本付錢不多花冤枉錢。
+- [JR Pass 划算嗎](https://raw.githubusercontent.com/bahfahh/react_basic_template/claude/react-prototype-a485u2/public/packs/travel.jp-rail-pass.md): 依你的行程，比較全國 JR Pass、區域周遊券和單買（含早鳥票），算出最省的方案與損益兩平點。
+- [機場進市區交通](https://raw.githubusercontent.com/bahfahh/react_basic_template/claude/react-prototype-a485u2/public/packs/travel.jp-airport-transfer.md): 成田、羽田、關西、中部、福岡、新千歲機場到市區，依目的地、時間、行李與人數選最省或最快的方式。
+- [東京交通票券省錢](https://raw.githubusercontent.com/bahfahh/react_basic_template/claude/react-prototype-a485u2/public/packs/travel.jp-tokyo-transit.md): 依你在東京每天的行程，比較刷 IC 卡和東京地鐵 24／48／72 小時券、各種一日券，算出最省的組合。
+- [大阪・京都交通票券省錢](https://raw.githubusercontent.com/bahfahh/react_basic_template/claude/react-prototype-a485u2/public/packs/travel.jp-ticket-optimizer.md): 比較交通單買、一日券／周遊卡與混搭組合，算出同等權益下的最低總價，附官方來源與查詢日期，並協助準備購買（停在付款前）。
 - [日本退稅新制助手（2026-11 起）](https://raw.githubusercontent.com/bahfahh/react_basic_template/claude/react-prototype-a485u2/public/packs/travel.jp-tax-refund.md): 2026-11-01 起日本改成先付含稅價、出境時海關確認、之後才退稅。幫你判斷是否適用、整理購物與出境當天要做的事、算出期限。
+- [旅遊不便險理賠](https://raw.githubusercontent.com/bahfahh/react_basic_template/claude/react-prototype-a485u2/public/packs/travel.tw-travel-inconvenience-claim.md): 班機延誤、取消、行李延誤或遺失、護照遺失時，用信用卡附加或另外買的旅遊不便險把錢拿回來：當下要拿的證明、可以花的錢、回國怎麼申請。
 - [租金補貼初判助手（115 年度）](https://raw.githubusercontent.com/bahfahh/react_basic_template/claude/react-prototype-a485u2/public/packs/benefit.tw-rent-subsidy.md): 依公開的 115 年度中央擴大租金補貼規定，初步判斷你可能符合哪些條件、估算每月金額，並整理文件與申請步驟。
 - [訂閱取消助手](https://raw.githubusercontent.com/bahfahh/react_basic_template/claude/react-prototype-a485u2/public/packs/finance.subscription-cancel.md): 找出正在扣款的訂閱，照官方路徑在下次扣款前取消，並說明退款與申訴管道。
 
