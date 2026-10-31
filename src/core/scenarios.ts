@@ -139,6 +139,24 @@ export const SCENARIOS: Scenario[] = [
     }),
   },
   {
+    id: 'osaka-kyoto-family',
+    title: '親子：大阪一天＋京都一日遊',
+    summary: '2 位大人和 8 歲小孩住大阪：週二白天去大阪城、梅田藍天大廈、道頓堀遊船；週三搭阪急去京都清水寺、伏見稻荷、金閣寺，晚上回大阪。',
+    tests: ['不同人數與年齡', 'Pass 划算'],
+    expect: { status: 'plan_ready', recommended: 'optimized', passIncludes: ['osaka_amazing_1d', 'osaka_metro_1d'], savingsPositive: true },
+    build: (m) => ({
+      travelDates: range(m, 1, 2),
+      travelers: { adults: 2, childAges: [8] },
+      lodgingCity: 'osaka',
+      preferredTimes: 'daytime',
+      discountEligibility: { foreignPassport: true },
+      days: [
+        { date: d(m, 1), city: 'osaka', attractions: ['osaka_castle', 'umeda_sky', 'tombori_cruise'] },
+        { date: d(m, 2), city: 'kyoto', attractions: ['kiyomizu', 'fushimi_inari', 'kinkakuji'] },
+      ],
+    }),
+  },
+  {
     id: 'daytrip-no-passport',
     title: '住大阪、京都一日遊（日本居民）',
     summary: '2 位大人住大阪、週三到京都。訪日旅客限定的關西鐵路周遊券需外國護照，日本居民不符資格。',

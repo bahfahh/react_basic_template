@@ -47,6 +47,15 @@ describe('calculation rules', () => {
     expect(r.estimatedSavings).toBe(5320);
   });
 
+  it('family day trip matches the totals an agent got from the pack alone (blind test)', () => {
+    const r = ok('osaka-kyoto-family');
+    const total = (id: string) => r.strategies.find((s) => s.id === id)!.total;
+    expect(total('singles')).toBe(20470);
+    expect(total('pass_first')).toBe(16160);
+    expect(total('optimized')).toBe(14980);
+    expect(r.estimatedSavings).toBe(5490);
+  });
+
   it('only compares equivalent rights: every strategy covers the same demands', () => {
     for (const s of SCENARIOS.filter((x) => x.expect.status === 'plan_ready')) {
       const r = ok(s.id);

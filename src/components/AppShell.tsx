@@ -42,7 +42,7 @@ export function AppShell() {
       </main>
       <footer className="border-t">
         <p className="mx-auto max-w-5xl px-4 py-6 text-xs text-muted-foreground">
-          原型：交給 AI 的開啟連結目前是模擬的；懶人包網址放在 GitHub 上，AI 可以直接讀取。票價來自 2026-10-31 的搜尋摘錄，使用前需人工核對。
+          原型：交給 AI 的開啟連結目前是模擬的；懶人包網址放在 GitHub 上，AI 可以直接讀取。懶人包裡的資料來自 2026-10-31 的搜尋摘錄，每筆都附來源，使用前需人工核對官方頁面。
         </p>
       </footer>
     </div>

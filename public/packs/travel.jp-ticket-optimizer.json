@@ -417,7 +417,7 @@
         "status": "active",
         "version": "2026-10-31",
         "verification": "search_extract",
-        "confidence": "high",
+        "confidence": "medium",
         "notes": "大人 ¥410、兒童 ¥210（紙本與 IC 相同）；阪急計畫 2030 年度前漲價，尚未生效。"
       },
       {
@@ -459,7 +459,7 @@
         "status": "active",
         "version": "2026-10-31",
         "verification": "search_extract",
-        "confidence": "high",
+        "confidence": "medium",
         "notes": "大人 ¥150、兒童 ¥70。"
       },
       {
@@ -473,7 +473,7 @@
         "status": "active",
         "version": "2026-10-31",
         "verification": "search_extract",
-        "confidence": "high",
+        "confidence": "medium",
         "notes": "大人 ¥200、兒童 ¥100（JR 西日本 2025-04-01 京阪神運賃調整後）。"
       },
       {
@@ -1585,7 +1585,6 @@
           "只有大人票",
           "單純大阪↔京都來回通常不划算"
         ],
-        "mainPassFor": "intercity",
         "sourceIds": [
           "src_hankyu_oneday"
         ]
@@ -1686,6 +1685,21 @@
       "title": "大阪一日 3 景點",
       "summary": "2 位大人，週二白天在大阪跑大阪城天守閣、梅田藍天大廈、道頓堀遊船。",
       "dates": "2026-11-17",
+      "travelers": "大人 2",
+      "days": [
+        {
+          "date": "2026-11-17",
+          "dayType": "平日",
+          "attractions": [
+            "大阪城天守閣",
+            "梅田藍天大廈 空中庭園",
+            "道頓堀遊船"
+          ],
+          "rides": [
+            "大阪 Metro 4 段"
+          ]
+        }
+      ],
       "totals": {
         "singles": 12320,
         "pass_first": 7000,
@@ -1702,6 +1716,21 @@
       "title": "京都散步行程",
       "summary": "2 位大人住京都，一天只去伏見稻荷和清水寺；搭車段數少，一日券不划算。",
       "dates": "2026-11-17",
+      "travelers": "大人 2",
+      "days": [
+        {
+          "date": "2026-11-17",
+          "dayType": "平日",
+          "attractions": [
+            "伏見稻荷大社",
+            "清水寺"
+          ],
+          "rides": [
+            "JR 京都→稻荷 1 段",
+            "京都市巴士 2 段"
+          ]
+        }
+      ],
       "totals": {
         "singles": 2220,
         "pass_first": 3500,
@@ -1716,6 +1745,33 @@
       "title": "大阪連續兩天",
       "summary": "2 位大人，週四、週五都在大阪，景點分散在兩天。比較 2 日券、1 日券×2 與混搭。",
       "dates": "2026-11-19 至 2026-11-20",
+      "travelers": "大人 2",
+      "days": [
+        {
+          "date": "2026-11-19",
+          "dayType": "平日",
+          "attractions": [
+            "大阪城天守閣",
+            "大阪城御座船",
+            "道頓堀遊船"
+          ],
+          "rides": [
+            "大阪 Metro 3 段"
+          ]
+        },
+        {
+          "date": "2026-11-20",
+          "dayType": "平日",
+          "attractions": [
+            "梅田藍天大廈 空中庭園",
+            "通天閣",
+            "道頓堀・心齋橋散步"
+          ],
+          "rides": [
+            "大阪 Metro 4 段"
+          ]
+        }
+      ],
       "totals": {
         "singles": 20360,
         "pass_first": 14000,
@@ -1732,6 +1788,19 @@
       "title": "週六只搭地鐵",
       "summary": "1 位大人週六在大阪搭 4 段地鐵、去免門票的道頓堀與四天王寺周邊。週末地鐵一日券較便宜。",
       "dates": "2026-11-21",
+      "travelers": "大人 1",
+      "days": [
+        {
+          "date": "2026-11-21",
+          "dayType": "週末假日",
+          "attractions": [
+            "道頓堀・心齋橋散步"
+          ],
+          "rides": [
+            "大阪 Metro 4 段"
+          ]
+        }
+      ],
       "totals": {
         "singles": 960,
         "pass_first": 3500,
@@ -1742,6 +1811,52 @@
         "大阪地鐵一日券（Enjoy Eco Card）"
       ],
       "estimatedSavings": 340
+    },
+    {
+      "id": "osaka-kyoto-family",
+      "title": "親子：大阪一天＋京都一日遊",
+      "summary": "2 位大人和 8 歲小孩住大阪：週二白天去大阪城、梅田藍天大廈、道頓堀遊船；週三搭阪急去京都清水寺、伏見稻荷、金閣寺，晚上回大阪。",
+      "dates": "2026-11-17 至 2026-11-18",
+      "travelers": "大人 2、兒童 1",
+      "days": [
+        {
+          "date": "2026-11-17",
+          "dayType": "平日",
+          "attractions": [
+            "大阪城天守閣",
+            "梅田藍天大廈 空中庭園",
+            "道頓堀遊船"
+          ],
+          "rides": [
+            "大阪 Metro 4 段"
+          ]
+        },
+        {
+          "date": "2026-11-18",
+          "dayType": "平日",
+          "attractions": [
+            "清水寺",
+            "伏見稻荷大社",
+            "金閣寺"
+          ],
+          "rides": [
+            "京都市巴士 3 段",
+            "JR 京都→稻荷 1 段",
+            "阪急（大阪↔京都） 2 段"
+          ]
+        }
+      ],
+      "totals": {
+        "singles": 20470,
+        "pass_first": 16160,
+        "optimized": 14980
+      },
+      "recommended": "最佳混合",
+      "passes": [
+        "大阪周遊卡 1 日券",
+        "大阪地鐵一日券（Enjoy Eco Card）"
+      ],
+      "estimatedSavings": 5490
     }
   ]
 }
