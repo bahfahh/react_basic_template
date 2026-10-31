@@ -17,15 +17,31 @@ const prev: SourceStatus = JSON.parse(readFileSync(OUT, 'utf8'));
 const results: SourceStatus['results'] = only ? { ...prev.results } : {};
 const jobs = PACKS.filter((p) => !only || p.id === only).flatMap((p) => p.sources.map((s) => ({ p, s })));
 
-// Six sources at a time; each source is fetched as a browser, then as an AI fetcher.
-const queue = [...jobs];
+// One host at a time (sites rate-limit parallel requests), six hosts in parallel.
+// A failed fetch is retried once after a pause, so a single hiccup isn't reported as broken.
+const pause = (ms: number) => new Promise((r) => setTimeout(r, ms));
+async function checkTwice(url: string, expect: string[], ua: string) {
+  const first = await check(url, expect, ua);
+  if (first.verdict === 'ok' || (first.http && first.http >= 400 && first.http !== 429 && first.http !== 503)) return first;
+  await pause(3000);
+  return check(url, expect, ua);
+}
+const byHost = new Map<string, typeof jobs>();
+for (const j of jobs) {
+  const host = new URL(j.s.url).host;
+  byHost.set(host, [...(byHost.get(host) ?? []), j]);
+}
+const hosts = [...byHost.values()];
 await Promise.all(
   Array.from({ length: 6 }, async () => {
-    while (queue.length) {
-      const { p, s } = queue.shift()!;
-      const browser = await check(s.url, s.expect, AGENTS.browser);
-      const bot = await check(s.url, s.expect, AGENTS.bot);
-      results[statusKey(p.id, s.id)] = { url: s.url, browser, bot };
+    while (hosts.length) {
+      for (const { p, s } of hosts.shift()!) {
+        const browser = await checkTwice(s.url, s.expect, AGENTS.browser);
+        await pause(1000);
+        const bot = await checkTwice(s.url, s.expect, AGENTS.bot);
+        await pause(1000);
+        results[statusKey(p.id, s.id)] = { url: s.url, browser, bot };
+      }
     }
   }),
 );
