@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-10-31T12:06:16.905Z",
+  "checkedAt": "2026-10-31T12:10:46.058Z",
   "runner": "github-actions",
   "results": {
     "benefit.tw-income-tax#bls": {
@@ -64,13 +64,8 @@
         "http": 200
       },
       "bot": {
-        "verdict": "no_text",
-        "http": 200,
-        "missing": [
-          "免稅額",
-          "列舉扣除額",
-          "特別扣除額"
-        ]
+        "verdict": "ok",
+        "http": 200
       }
     },
     "benefit.tw-income-tax#law28": {
@@ -163,12 +158,8 @@
         "http": 200
       },
       "bot": {
-        "verdict": "no_text",
-        "http": 200,
-        "missing": [
-          "住宅法",
-          "公益出租人"
-        ]
+        "verdict": "ok",
+        "http": 200
       }
     },
     "benefit.tw-rent-subsidy#moi-landlord": {
@@ -206,8 +197,8 @@
         "http": 200
       },
       "bot": {
-        "verdict": "error",
-        "note": "Error: read ECONNRESET"
+        "verdict": "ok",
+        "http": 200
       }
     },
     "benefit.tw-subsidy-checkup#appliance": {
@@ -331,7 +322,7 @@
         "note": "轉址到 https://www.nlma.gov.tw/ch"
       },
       "bot": {
-        "verdict": "no_text",
+        "verdict": "blocked",
         "http": 200,
         "missing": [
           "租金補貼"
@@ -463,8 +454,8 @@
     "bills.subscription-cancel#law-19": {
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=J0170001&flno=19",
       "browser": {
-        "verdict": "error",
-        "note": "AggregateError"
+        "verdict": "ok",
+        "http": 200
       },
       "bot": {
         "verdict": "ok",
@@ -648,18 +639,12 @@
     "bills.tw-mobile-plan#np": {
       "url": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=K0060122",
       "browser": {
-        "verdict": "no_text",
-        "http": 200,
-        "missing": [
-          "電信事業號碼可攜服務管理辦法"
-        ]
+        "verdict": "ok",
+        "http": 200
       },
       "bot": {
-        "verdict": "no_text",
-        "http": 200,
-        "missing": [
-          "電信事業號碼可攜服務管理辦法"
-        ]
+        "verdict": "ok",
+        "http": 200
       }
     },
     "bills.tw-mobile-plan#twm-plans": {
@@ -1755,7 +1740,7 @@
       "url": "https://med.nhi.gov.tw/iwse5000/iwse5010s03.aspx",
       "browser": {
         "verdict": "error",
-        "note": "AggregateError"
+        "note": "Error: read ECONNRESET"
       },
       "bot": {
         "verdict": "error",
