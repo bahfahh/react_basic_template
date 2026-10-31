@@ -1,0 +1,184 @@
+{
+  "format": "lazypack/index-v2",
+  "sourcesCheckedAt": "2026-10-31T12:25:23.112Z",
+  "packs": [
+    {
+      "id": "travel.jp-rail-pass",
+      "title": "JR Pass 划算嗎",
+      "area": "出國玩（日本）",
+      "value": [
+        "省錢"
+      ],
+      "description": "依使用者的 JR 長途行程（新幹線、特急），到官方頁面查今天的價格，比較全國 JR Pass、區域周遊券和單買哪個最省，算出回本點，並提醒購買資格與加購。使用者問「JR Pass 划算嗎」「要不要買關西廣域周遊券」「東京到京都來回買 Pass 值得嗎」時使用。",
+      "url": "https://raw.githubusercontent.com/bahfahh/react_basic_template/claude/react-prototype-a485u2/public/packs/travel.jp-rail-pass.md",
+      "json": "https://raw.githubusercontent.com/bahfahh/react_basic_template/claude/react-prototype-a485u2/public/packs/travel.jp-rail-pass.json"
+    },
+    {
+      "id": "travel.jp-payment",
+      "title": "日本付款不吃虧",
+      "area": "出國玩（日本）",
+      "value": [
+        "省錢"
+      ],
+      "description": "幫要去日本的台灣旅客出發前排好付款方式（信用卡、現金、提款、IC 卡、行動支付），到銀行和交通公司的官方頁面查今天的費率與規定，並教結帳、提款時不吃虧。使用者問「在日本刷卡要選台幣還是日圓」「要換多少日圓」「Suica 怎麼買」「哪張卡海外手續費低」「地鐵能不能直接刷信用卡」時使用。",
+      "url": "https://raw.githubusercontent.com/bahfahh/react_basic_template/claude/react-prototype-a485u2/public/packs/travel.jp-payment.md",
+      "json": "https://raw.githubusercontent.com/bahfahh/react_basic_template/claude/react-prototype-a485u2/public/packs/travel.jp-payment.json"
+    },
+    {
+      "id": "travel.jp-airport-transfer",
+      "title": "機場進市區交通",
+      "area": "出國玩（日本）",
+      "value": [
+        "省錢",
+        "省時間"
+      ],
+      "description": "幫剛抵達（或要離開）日本的旅客，從成田、羽田、關西、中部、福岡、新千歲機場到飯店，依目的地、抵達時間、人數和行李，到官方頁面查今天的票價和末班時間，選出最省和最快的方式。使用者問「成田到新宿怎麼去最便宜」「關西機場到京都搭什麼」「晚上 11 點到羽田還有車嗎」時使用。",
+      "url": "https://raw.githubusercontent.com/bahfahh/react_basic_template/claude/react-prototype-a485u2/public/packs/travel.jp-airport-transfer.md",
+      "json": "https://raw.githubusercontent.com/bahfahh/react_basic_template/claude/react-prototype-a485u2/public/packs/travel.jp-airport-transfer.json"
+    },
+    {
+      "id": "travel.jp-tokyo-transit",
+      "title": "東京交通票券省錢",
+      "area": "出國玩（日本）",
+      "value": [
+        "省錢"
+      ],
+      "description": "依使用者在東京每天的行程，到官方頁面查今天的票價，比較刷 IC 卡、東京地鐵 24／48／72 小時券、各種一日券哪個最省，並寫出算式；也提醒哪些路線不在券的範圍內。使用者問「東京地鐵券划算嗎」「這幾天要買 72 小時券嗎」「去台場要另外付錢嗎」時使用。",
+      "url": "https://raw.githubusercontent.com/bahfahh/react_basic_template/claude/react-prototype-a485u2/public/packs/travel.jp-tokyo-transit.md",
+      "json": "https://raw.githubusercontent.com/bahfahh/react_basic_template/claude/react-prototype-a485u2/public/packs/travel.jp-tokyo-transit.json"
+    },
+    {
+      "id": "travel.jp-kansai-transit",
+      "title": "大阪・京都交通票券省錢",
+      "area": "出國玩（日本）",
+      "value": [
+        "省錢"
+      ],
+      "description": "依每天的行程，比較大阪、京都的交通與景點「全部單買」「通票優先」「最佳混搭」三種買法，現場查官方票價後算出最省的組合，停在付款前。使用者說「大阪周遊卡划算嗎」「京都要買一日券嗎」「大阪京都交通怎麼買最省」時用。",
+      "url": "https://raw.githubusercontent.com/bahfahh/react_basic_template/claude/react-prototype-a485u2/public/packs/travel.jp-kansai-transit.md",
+      "json": "https://raw.githubusercontent.com/bahfahh/react_basic_template/claude/react-prototype-a485u2/public/packs/travel.jp-kansai-transit.json"
+    },
+    {
+      "id": "travel.jp-tax-refund",
+      "title": "日本退稅",
+      "area": "出國玩（日本）",
+      "value": [
+        "拿回錢"
+      ],
+      "description": "依購物日期判斷適用舊制（結帳直接免稅）還是 2026-11-01 起的新制（リファンド方式：先付含稅、出境時海關確認後才退），整理購物時、出境當天和回國後要做的事與期限。使用者說「日本退稅怎麼辦」「新制退稅出境要做什麼」「退稅錢還沒收到」時用。",
+      "url": "https://raw.githubusercontent.com/bahfahh/react_basic_template/claude/react-prototype-a485u2/public/packs/travel.jp-tax-refund.md",
+      "json": "https://raw.githubusercontent.com/bahfahh/react_basic_template/claude/react-prototype-a485u2/public/packs/travel.jp-tax-refund.json"
+    },
+    {
+      "id": "travel.tw-travel-inconvenience-claim",
+      "title": "旅遊不便險理賠",
+      "area": "出國玩（日本）",
+      "value": [
+        "拿回錢"
+      ],
+      "description": "班機延誤或取消、行李延誤或遺失後，對照使用者自己的信用卡附加或另外投保的旅遊不便險條款，判斷能不能賠、算出每個人可申請的項目、備齊文件並趕在期限內申請；人還在機場或已經回國都適用。使用者說「班機延誤可以申請什麼」「信用卡不便險怎麼理賠」「行李晚到能賠嗎」時用。",
+      "url": "https://raw.githubusercontent.com/bahfahh/react_basic_template/claude/react-prototype-a485u2/public/packs/travel.tw-travel-inconvenience-claim.md",
+      "json": "https://raw.githubusercontent.com/bahfahh/react_basic_template/claude/react-prototype-a485u2/public/packs/travel.tw-travel-inconvenience-claim.json"
+    },
+    {
+      "id": "travel.tw-nhi-overseas-refund",
+      "title": "海外就醫健保核退",
+      "area": "出國玩（日本）",
+      "value": [
+        "拿回錢"
+      ],
+      "description": "幫有台灣健保、在國外或大陸地區因緊急傷病或緊急分娩自費就醫的人，判斷能不能申請健保「自墊醫療費用核退」、算出最晚送件日、備齊文件、用當季上限估可能退多少，並選擇申請方式。使用者說「在日本看急診可以申請健保嗎」「出國住院健保退多少」「健保核退要什麼文件」時使用。",
+      "url": "https://raw.githubusercontent.com/bahfahh/react_basic_template/claude/react-prototype-a485u2/public/packs/travel.tw-nhi-overseas-refund.md",
+      "json": "https://raw.githubusercontent.com/bahfahh/react_basic_template/claude/react-prototype-a485u2/public/packs/travel.tw-nhi-overseas-refund.json"
+    },
+    {
+      "id": "benefit.tw-subsidy-checkup",
+      "title": "我能領哪些補助",
+      "area": "補助與退稅",
+      "value": [
+        "拿回錢"
+      ],
+      "description": "幫台灣家庭做「補助健檢」：先問年齡、戶籍、家人、工作與保險、收入和住房，再到官方網頁現場查中央政府主要的補助、津貼與優惠，列出可能符合的方案、還要確認什麼、去哪裡申請和期限。使用者說「我可以領什麼補助」「生小孩有什麼錢可以領」「失業了有什麼補助」「家裡長輩要人照顧」「有沒有漏領的津貼」時使用。",
+      "url": "https://raw.githubusercontent.com/bahfahh/react_basic_template/claude/react-prototype-a485u2/public/packs/benefit.tw-subsidy-checkup.md",
+      "json": "https://raw.githubusercontent.com/bahfahh/react_basic_template/claude/react-prototype-a485u2/public/packs/benefit.tw-subsidy-checkup.json"
+    },
+    {
+      "id": "benefit.tw-rent-subsidy",
+      "title": "租金補貼",
+      "area": "補助與退稅",
+      "value": [
+        "拿回錢"
+      ],
+      "description": "幫在台灣租屋的人判斷是否可能符合中央「300億元中央擴大租金補貼」，到官方頁面查當年度的所得門檻和補貼額度來估算每月金額，並整理文件、申請方式與核定後要通報的事。使用者說「我租房可以領租金補貼嗎」「租補一個月多少」「租金補貼怎麼申請」「房東不讓我申請」時使用。",
+      "url": "https://raw.githubusercontent.com/bahfahh/react_basic_template/claude/react-prototype-a485u2/public/packs/benefit.tw-rent-subsidy.md",
+      "json": "https://raw.githubusercontent.com/bahfahh/react_basic_template/claude/react-prototype-a485u2/public/packs/benefit.tw-rent-subsidy.json"
+    },
+    {
+      "id": "benefit.tw-income-tax",
+      "title": "綜所稅省稅檢查",
+      "area": "補助與退稅",
+      "value": [
+        "省錢",
+        "拿回錢"
+      ],
+      "description": "幫台灣的上班族在報稅前或報稅季檢查綜合所得稅有沒有多繳：免稅額、標準或列舉扣除額、各項特別扣除額、基本生活費差額、夫妻分開計稅、股利計稅方式和扶養安排，所有金額都到財政部官方頁面現場查，再用官方工具試算。使用者說「報稅怎麼報最省」「爸媽給誰報扶養比較划算」「租屋可以扣稅嗎」「我是不是繳太多稅」「去年漏報可以退嗎」時使用。",
+      "url": "https://raw.githubusercontent.com/bahfahh/react_basic_template/claude/react-prototype-a485u2/public/packs/benefit.tw-income-tax.md",
+      "json": "https://raw.githubusercontent.com/bahfahh/react_basic_template/claude/react-prototype-a485u2/public/packs/benefit.tw-income-tax.json"
+    },
+    {
+      "id": "bills.tw-mobile-plan",
+      "title": "手機資費健檢",
+      "area": "每月帳單",
+      "value": [
+        "省錢"
+      ],
+      "description": "幫使用者檢查手機月租是不是付太多：依帳單上的方案和近 3 個月用量，現場查中華電信、台灣大哥大、遠傳（必要時加虛擬業者）目前的續約、攜碼、單辦門號方案，算出含違約金和一次性費用的期間總成本再比較。適用於「手機費太貴」「合約快到期，要續約還是攜碼」「有沒有更便宜的吃到飽」這類問題。",
+      "url": "https://raw.githubusercontent.com/bahfahh/react_basic_template/claude/react-prototype-a485u2/public/packs/bills.tw-mobile-plan.md",
+      "json": "https://raw.githubusercontent.com/bahfahh/react_basic_template/claude/react-prototype-a485u2/public/packs/bills.tw-mobile-plan.json"
+    },
+    {
+      "id": "bills.subscription-cancel",
+      "title": "取消訂閱、停止扣款",
+      "area": "每月帳單",
+      "value": [
+        "省錢"
+      ],
+      "description": "幫人找出 App Store、Google Play、電信帳單、PayPal 或信用卡上正在扣款的訂閱，照官方路徑在下次扣款前取消，必要時說明退款、信用卡爭議帳款與消費申訴管道。使用者說「怎麼取消訂閱」「每個月一直被扣款」「試用忘記取消」「取消了還被扣」「訂閱費可以退嗎」時使用。",
+      "url": "https://raw.githubusercontent.com/bahfahh/react_basic_template/claude/react-prototype-a485u2/public/packs/bills.subscription-cancel.md",
+      "json": "https://raw.githubusercontent.com/bahfahh/react_basic_template/claude/react-prototype-a485u2/public/packs/bills.subscription-cancel.json"
+    },
+    {
+      "id": "rights.tw-refund-cancel",
+      "title": "退貨與解約退費",
+      "area": "退費與解約",
+      "value": [
+        "拿回錢"
+      ],
+      "description": "幫使用者在退貨或解約時把該拿的錢拿回來：先判斷是網購郵購、健身房或教練課、補習班，還是其他預付服務，到全國法規資料庫等官方頁面現場查適用規定，用使用者的日期和金額算出大約能退多少，再擬好解約通知和申訴步驟。適用於「網購 7 天內可以退嗎」「健身房不讓我解約」「補習班退費怎麼算」「店家說拆封不退」這類問題。",
+      "url": "https://raw.githubusercontent.com/bahfahh/react_basic_template/claude/react-prototype-a485u2/public/packs/rights.tw-refund-cancel.md",
+      "json": "https://raw.githubusercontent.com/bahfahh/react_basic_template/claude/react-prototype-a485u2/public/packs/rights.tw-refund-cancel.json"
+    }
+  ],
+  "planned": [
+    {
+      "id": "travel.flight-deal",
+      "title": "機票比價",
+      "area": "出國玩（日本）"
+    },
+    {
+      "id": "travel.hotel-deal",
+      "title": "飯店比價",
+      "area": "出國玩（日本）"
+    },
+    {
+      "id": "bills.tw-electricity-plan",
+      "title": "電費方案比較",
+      "area": "每月帳單"
+    },
+    {
+      "id": "bills.tw-credit-card",
+      "title": "信用卡回饋比較",
+      "area": "每月帳單"
+    }
+  ]
+}

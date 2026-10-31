@@ -1,0 +1,39 @@
+# 懶人包 LazyPack
+
+> 一份懶人包就是一份「做事方法」：先問使用者什麼、到哪些官方網址即時查、怎麼比較、怎麼回報。
+> 懶人包不放價格和金額，請到每份懶人包列出的來源現場查。付款、登入、送出個資或申請前一定先問使用者。
+
+## 出國玩（日本）
+
+- [JR Pass 划算嗎](https://raw.githubusercontent.com/bahfahh/react_basic_template/claude/react-prototype-a485u2/public/packs/travel.jp-rail-pass.md)：全國 JR Pass、區域周遊券和單買，算哪個最省
+- [日本付款不吃虧](https://raw.githubusercontent.com/bahfahh/react_basic_template/claude/react-prototype-a485u2/public/packs/travel.jp-payment.md)：刷卡選日圓、手續費、提款、IC 卡一次排好
+- [機場進市區交通](https://raw.githubusercontent.com/bahfahh/react_basic_template/claude/react-prototype-a485u2/public/packs/travel.jp-airport-transfer.md)：成田、羽田、關西等機場到飯店，選最省或最快
+- [東京交通票券省錢](https://raw.githubusercontent.com/bahfahh/react_basic_template/claude/react-prototype-a485u2/public/packs/travel.jp-tokyo-transit.md)：刷 IC 卡還是買地鐵券？依每天行程算給你
+- [大阪・京都交通票券省錢](https://raw.githubusercontent.com/bahfahh/react_basic_template/claude/react-prototype-a485u2/public/packs/travel.jp-kansai-transit.md)：單買、一日券、周遊パス，算出每天最省的買法
+- [日本退稅](https://raw.githubusercontent.com/bahfahh/react_basic_template/claude/react-prototype-a485u2/public/packs/travel.jp-tax-refund.md)：新制退稅：購物、出境海關確認、領退款
+- [旅遊不便險理賠](https://raw.githubusercontent.com/bahfahh/react_basic_template/claude/react-prototype-a485u2/public/packs/travel.tw-travel-inconvenience-claim.md)：班機、行李延誤，用信用卡不便險申請理賠
+- [海外就醫健保核退](https://raw.githubusercontent.com/bahfahh/react_basic_template/claude/react-prototype-a485u2/public/packs/travel.tw-nhi-overseas-refund.md)：國外急診、住院自費，回國 6 個月內申請健保核退
+
+## 補助與退稅
+
+- [我能領哪些補助](https://raw.githubusercontent.com/bahfahh/react_basic_template/claude/react-prototype-a485u2/public/packs/benefit.tw-subsidy-checkup.md)：說說家裡狀況，盤點可能漏領的中央補助
+- [租金補貼](https://raw.githubusercontent.com/bahfahh/react_basic_template/claude/react-prototype-a485u2/public/packs/benefit.tw-rent-subsidy.md)：租屋族查資格、估金額、備文件，申請中央租金補貼
+- [綜所稅省稅檢查](https://raw.githubusercontent.com/bahfahh/react_basic_template/claude/react-prototype-a485u2/public/packs/benefit.tw-income-tax.md)：報稅前檢查扣除額、扶養與計稅方式，不多繳
+
+## 每月帳單
+
+- [手機資費健檢](https://raw.githubusercontent.com/bahfahh/react_basic_template/claude/react-prototype-a485u2/public/packs/bills.tw-mobile-plan.md)：用你的實際用量比三大電信方案，算含違約金的總成本
+- [取消訂閱、停止扣款](https://raw.githubusercontent.com/bahfahh/react_basic_template/claude/react-prototype-a485u2/public/packs/bills.subscription-cancel.md)：找出正在扣款的訂閱，趕在下次扣款前取消
+
+## 退費與解約
+
+- [退貨與解約退費](https://raw.githubusercontent.com/bahfahh/react_basic_template/claude/react-prototype-a485u2/public/packs/rights.tw-refund-cancel.md)：網購、健身房、補習班解約，依法算出能退多少
+
+## 規劃中
+
+- 機票比價：同航線、行李、退改條件下比實際總價。
+- 飯店比價：同日期、房型、取消政策下跨平台比價。
+- 電費方案比較：一般電價還是時間電價，用你的用電紀錄算。
+- 信用卡回饋比較：依你的消費習慣，算哪張卡回饋最多。
+
+全部清單（JSON）：https://raw.githubusercontent.com/bahfahh/react_basic_template/claude/react-prototype-a485u2/public/packs/index.json

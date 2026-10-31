@@ -1,0 +1,1752 @@
+{
+  "checkedAt": "2026-10-31T12:25:23.112Z",
+  "runner": "github-actions",
+  "results": {
+    "benefit.tw-income-tax#bls": {
+      "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=G0340144&flno=3",
+      "browser": {
+        "verdict": "ok",
+        "http": 200
+      },
+      "bot": {
+        "verdict": "ok",
+        "http": 200
+      }
+    },
+    "benefit.tw-income-tax#etax-items": {
+      "url": "https://www.etax.nat.gov.tw/etwmain/tax-info/understanding/tax-q-and-a/national/individual-income-tax/exemption-scope/filling/D9JGLGD",
+      "browser": {
+        "verdict": "ok",
+        "http": 200
+      },
+      "bot": {
+        "verdict": "ok",
+        "http": 200
+      }
+    },
+    "benefit.tw-income-tax#etax-manual": {
+      "url": "https://www.etax.nat.gov.tw/etwmain/tax-info/understanding/tax-saving-manual/national/individual-income-tax/k2Jbgrp",
+      "browser": {
+        "verdict": "ok",
+        "http": 200
+      },
+      "bot": {
+        "verdict": "ok",
+        "http": 200
+      }
+    },
+    "benefit.tw-income-tax#etax-spouse": {
+      "url": "https://www.etax.nat.gov.tw/etwmain/tax-info/understanding/tax-q-and-a/national/individual-income-tax/exemption-scope/rule/LE0K8lg",
+      "browser": {
+        "verdict": "ok",
+        "http": 200
+      },
+      "bot": {
+        "verdict": "ok",
+        "http": 200
+      }
+    },
+    "benefit.tw-income-tax#law15": {
+      "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=G0340003&flno=15",
+      "browser": {
+        "verdict": "ok",
+        "http": 200
+      },
+      "bot": {
+        "verdict": "ok",
+        "http": 200
+      }
+    },
+    "benefit.tw-income-tax#law17": {
+      "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=G0340003&flno=17",
+      "browser": {
+        "verdict": "ok",
+        "http": 200
+      },
+      "bot": {
+        "verdict": "ok",
+        "http": 200
+      }
+    },
+    "benefit.tw-income-tax#law28": {
+      "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=G0340001&flno=28",
+      "browser": {
+        "verdict": "ok",
+        "http": 200
+      },
+      "bot": {
+        "verdict": "ok",
+        "http": 200
+      }
+    },
+    "benefit.tw-income-tax#mof-amounts": {
+      "url": "https://www.mof.gov.tw/singlehtml/384fb3077bb349ea973e7fc6f13b6974?cntId=34b463dc8f1b49f29d440d92a6fd5139",
+      "browser": {
+        "verdict": "ok",
+        "http": 200
+      },
+      "bot": {
+        "verdict": "ok",
+        "http": 200
+      }
+    },
+    "benefit.tw-income-tax#portal": {
+      "url": "https://tax.nat.gov.tw/tax-comprehensive.html",
+      "browser": {
+        "verdict": "ok",
+        "http": 200
+      },
+      "bot": {
+        "verdict": "ok",
+        "http": 200
+      }
+    },
+    "benefit.tw-rent-subsidy#apply-online": {
+      "url": "https://has.nlma.gov.tw/subsidyOnline/house300e/",
+      "browser": {
+        "verdict": "no_text",
+        "http": 200,
+        "missing": [
+          "租金補貼"
+        ]
+      },
+      "bot": {
+        "verdict": "no_text",
+        "http": 200,
+        "missing": [
+          "租金補貼"
+        ]
+      }
+    },
+    "benefit.tw-rent-subsidy#ey-policy": {
+      "url": "https://www.ey.gov.tw/Page/5A8A0CB5B41DA11E/442e67f9-e22e-42c6-9df2-4d3fa9d10666",
+      "browser": {
+        "verdict": "ok",
+        "http": 200
+      },
+      "bot": {
+        "verdict": "ok",
+        "http": 200
+      }
+    },
+    "benefit.tw-rent-subsidy#gazette": {
+      "url": "https://gazette.nat.gov.tw/EG_FileManager/eguploadpub/eg031176/ch02/type3/gov10/num2/Eg.htm",
+      "browser": {
+        "verdict": "ok",
+        "http": 200
+      },
+      "bot": {
+        "verdict": "blocked",
+        "http": 403
+      }
+    },
+    "benefit.tw-rent-subsidy#gov-guide": {
+      "url": "https://www.gov.tw/News_Content_37_561179",
+      "browser": {
+        "verdict": "ok",
+        "http": 200
+      },
+      "bot": {
+        "verdict": "ok",
+        "http": 200
+      }
+    },
+    "benefit.tw-rent-subsidy#law-housing": {
+      "url": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=D0070195",
+      "browser": {
+        "verdict": "ok",
+        "http": 200
+      },
+      "bot": {
+        "verdict": "ok",
+        "http": 200
+      }
+    },
+    "benefit.tw-rent-subsidy#moi-landlord": {
+      "url": "https://www.moi.gov.tw/News_Content.aspx?n=4&s=263921",
+      "browser": {
+        "verdict": "ok",
+        "http": 200
+      },
+      "bot": {
+        "verdict": "ok",
+        "http": 200
+      }
+    },
+    "benefit.tw-rent-subsidy#pip-zone": {
+      "url": "https://pip.moi.gov.tw/V3/B/SCRB0102.aspx",
+      "browser": {
+        "verdict": "no_text",
+        "http": 200,
+        "missing": [
+          "租金補貼"
+        ]
+      },
+      "bot": {
+        "verdict": "no_text",
+        "http": 200,
+        "missing": [
+          "租金補貼"
+        ]
+      }
+    },
+    "benefit.tw-subsidy-checkup#1957": {
+      "url": "https://www.mohw.gov.tw/cp-3217-22804-1.html",
+      "browser": {
+        "verdict": "ok",
+        "http": 200
+      },
+      "bot": {
+        "verdict": "ok",
+        "http": 200
+      }
+    },
+    "benefit.tw-subsidy-checkup#appliance": {
+      "url": "https://save3000.moeaea.gov.tw/subsidy02/news/list.aspx",
+      "browser": {
+        "verdict": "ok",
+        "http": 200
+      },
+      "bot": {
+        "verdict": "ok",
+        "http": 200
+      }
+    },
+    "benefit.tw-subsidy-checkup#assist": {
+      "url": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=D0050078",
+      "browser": {
+        "verdict": "ok",
+        "http": 200
+      },
+      "bot": {
+        "verdict": "ok",
+        "http": 200
+      }
+    },
+    "benefit.tw-subsidy-checkup#birth": {
+      "url": "https://www.bli.gov.tw/0100086.html",
+      "browser": {
+        "verdict": "ok",
+        "http": 200
+      },
+      "bot": {
+        "verdict": "ok",
+        "http": 200
+      }
+    },
+    "benefit.tw-subsidy-checkup#childcare": {
+      "url": "https://www.mohw.gov.tw/cp-5130-58003-1.html",
+      "browser": {
+        "verdict": "ok",
+        "http": 200
+      },
+      "bot": {
+        "verdict": "ok",
+        "http": 200
+      }
+    },
+    "benefit.tw-subsidy-checkup#disab": {
+      "url": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=D0050189",
+      "browser": {
+        "verdict": "ok",
+        "http": 200
+      },
+      "bot": {
+        "verdict": "ok",
+        "http": 200
+      }
+    },
+    "benefit.tw-subsidy-checkup#esi-law": {
+      "url": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=N0050021",
+      "browser": {
+        "verdict": "ok",
+        "http": 200
+      },
+      "bot": {
+        "verdict": "ok",
+        "http": 200
+      }
+    },
+    "benefit.tw-subsidy-checkup#goodstax": {
+      "url": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=G0340076",
+      "browser": {
+        "verdict": "ok",
+        "http": 200
+      },
+      "bot": {
+        "verdict": "ok",
+        "http": 200
+      }
+    },
+    "benefit.tw-subsidy-checkup#ltc": {
+      "url": "https://1966.gov.tw/LTC/cp-6533-70777-207.html",
+      "browser": {
+        "verdict": "ok",
+        "http": 200
+      },
+      "bot": {
+        "verdict": "ok",
+        "http": 200
+      }
+    },
+    "benefit.tw-subsidy-checkup#nps": {
+      "url": "https://www.bli.gov.tw/0017173.html",
+      "browser": {
+        "verdict": "ok",
+        "http": 200
+      },
+      "bot": {
+        "verdict": "ok",
+        "http": 200
+      }
+    },
+    "benefit.tw-subsidy-checkup#parental": {
+      "url": "https://www.bli.gov.tw/0015728.html",
+      "browser": {
+        "verdict": "ok",
+        "http": 200
+      },
+      "bot": {
+        "verdict": "ok",
+        "http": 200
+      }
+    },
+    "benefit.tw-subsidy-checkup#rent": {
+      "url": "https://www.gov.tw/News_Content_37_561179",
+      "browser": {
+        "verdict": "ok",
+        "http": 200
+      },
+      "bot": {
+        "verdict": "ok",
+        "http": 200
+      }
+    },
+    "benefit.tw-subsidy-checkup#studentloan": {
+      "url": "https://www.edu.tw/helpdreams/cp.aspx?n=D862A99E08414877&s=04C0F2D009469151",
+      "browser": {
+        "verdict": "ok",
+        "http": 200
+      },
+      "bot": {
+        "verdict": "ok",
+        "http": 200
+      }
+    },
+    "benefit.tw-subsidy-checkup#unemp": {
+      "url": "https://www.bli.gov.tw/0015717.html",
+      "browser": {
+        "verdict": "ok",
+        "http": 200
+      },
+      "bot": {
+        "verdict": "ok",
+        "http": 200
+      }
+    },
+    "benefit.tw-subsidy-checkup#youthloan": {
+      "url": "https://www.nta.gov.tw/singlehtml/108",
+      "browser": {
+        "verdict": "ok",
+        "http": 200
+      },
+      "bot": {
+        "verdict": "ok",
+        "http": 200
+      }
+    },
+    "bills.subscription-cancel#apple-refund": {
+      "url": "https://support.apple.com/zh-tw/118223",
+      "browser": {
+        "verdict": "ok",
+        "http": 200
+      },
+      "bot": {
+        "verdict": "ok",
+        "http": 200
+      }
+    },
+    "bills.subscription-cancel#apple-subs": {
+      "url": "https://support.apple.com/zh-tw/118428",
+      "browser": {
+        "verdict": "ok",
+        "http": 200
+      },
+      "bot": {
+        "verdict": "ok",
+        "http": 200
+      }
+    },
+    "bills.subscription-cancel#cht-vas": {
+      "url": "https://www.cht.com.tw/home/consumer/mobservice/value-added/701",
+      "browser": {
+        "verdict": "ok",
+        "http": 200
+      },
+      "bot": {
+        "verdict": "ok",
+        "http": 200
+      }
+    },
+    "bills.subscription-cancel#cpc-complaint": {
+      "url": "https://cpc.ey.gov.tw/Page/71E988F034956960",
+      "browser": {
+        "verdict": "ok",
+        "http": 200
+      },
+      "bot": {
+        "verdict": "ok",
+        "http": 200
+      }
+    },
+    "bills.subscription-cancel#fubon-dispute": {
+      "url": "https://www.fubon.com/banking/personal/credit_card/Disputed_payment/Disputed_payment.htm",
+      "browser": {
+        "verdict": "ok",
+        "http": 200
+      },
+      "bot": {
+        "verdict": "ok",
+        "http": 200
+      }
+    },
+    "bills.subscription-cancel#google-refund": {
+      "url": "https://support.google.com/googleplay/answer/2479637?hl=zh-Hant",
+      "browser": {
+        "verdict": "ok",
+        "http": 200
+      },
+      "bot": {
+        "verdict": "ok",
+        "http": 200
+      }
+    },
+    "bills.subscription-cancel#google-subs": {
+      "url": "https://support.google.com/googleplay/answer/7018481?hl=zh-Hant",
+      "browser": {
+        "verdict": "ok",
+        "http": 200
+      },
+      "bot": {
+        "verdict": "ok",
+        "http": 200
+      }
+    },
+    "bills.subscription-cancel#kkbox-cancel": {
+      "url": "https://help.kkbox.com/tw/zh-tw/billing/cancel-change/296",
+      "browser": {
+        "verdict": "ok",
+        "http": 200
+      },
+      "bot": {
+        "verdict": "ok",
+        "http": 200
+      }
+    },
+    "bills.subscription-cancel#law-19": {
+      "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=J0170001&flno=19",
+      "browser": {
+        "verdict": "ok",
+        "http": 200
+      },
+      "bot": {
+        "verdict": "ok",
+        "http": 200
+      }
+    },
+    "bills.subscription-cancel#law-19-2": {
+      "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=J0170001&flno=19-2",
+      "browser": {
+        "verdict": "ok",
+        "http": 200
+      },
+      "bot": {
+        "verdict": "ok",
+        "http": 200
+      }
+    },
+    "bills.subscription-cancel#law-exception": {
+      "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=J0170012&flno=2",
+      "browser": {
+        "verdict": "ok",
+        "http": 200
+      },
+      "bot": {
+        "verdict": "ok",
+        "http": 200
+      }
+    },
+    "bills.subscription-cancel#netflix-cancel": {
+      "url": "https://help.netflix.com/zh-tw/node/407",
+      "browser": {
+        "verdict": "ok",
+        "http": 200
+      },
+      "bot": {
+        "verdict": "ok",
+        "http": 200
+      }
+    },
+    "bills.subscription-cancel#paypal-auto": {
+      "url": "https://www.paypal.com/tw/cshelp/article/help240",
+      "browser": {
+        "verdict": "ok",
+        "http": 200,
+        "note": "轉址到 https://www.paypal.com/tw/cshelp/article/%E4%BB%80%E9%BA%BC%E6%98%AF%E8%87%AA%E5%8B%95%E4%BB%98%E6%AC%BE%EF%BC%9F%E5%A6%82%E4%BD%95%E6%9B%B4%E6%96%B0%E6%88%96%E5%8F%96%E6%B6%88%E8%87%AA%E5%8B%95%E4%BB%98%E6%AC%BE%EF%BC%9F-help240"
+      },
+      "bot": {
+        "verdict": "blocked",
+        "http": 403
+      }
+    },
+    "bills.subscription-cancel#taishin-dispute": {
+      "url": "https://www.taishinbank.com.tw/TSB/personal/credit/-00001/card-spending-dispute/process/",
+      "browser": {
+        "verdict": "ok",
+        "http": 200
+      },
+      "bot": {
+        "verdict": "ok",
+        "http": 200
+      }
+    },
+    "bills.tw-mobile-plan#cht-friendly": {
+      "url": "https://www.cht.com.tw/home/campaign/5gwarmheart",
+      "browser": {
+        "verdict": "ok",
+        "http": 200
+      },
+      "bot": {
+        "verdict": "ok",
+        "http": 200
+      }
+    },
+    "bills.tw-mobile-plan#cht-new": {
+      "url": "https://www.cht.com.tw/home/campaign/5gnewstar",
+      "browser": {
+        "verdict": "ok",
+        "http": 200
+      },
+      "bot": {
+        "verdict": "ok",
+        "http": 200
+      }
+    },
+    "bills.tw-mobile-plan#cht-rate": {
+      "url": "https://www.cht.com.tw/home/campaign/5grate",
+      "browser": {
+        "verdict": "ok",
+        "http": 200
+      },
+      "bot": {
+        "verdict": "ok",
+        "http": 200
+      }
+    },
+    "bills.tw-mobile-plan#cht-renew": {
+      "url": "https://www.cht.com.tw/home/campaign/mobilerenew",
+      "browser": {
+        "verdict": "ok",
+        "http": 200
+      },
+      "bot": {
+        "verdict": "ok",
+        "http": 200
+      }
+    },
+    "bills.tw-mobile-plan#cht-terms": {
+      "url": "https://www.cht.com.tw/zh-tw/home/cht/rule-download/terms",
+      "browser": {
+        "verdict": "ok",
+        "http": 200
+      },
+      "bot": {
+        "verdict": "ok",
+        "http": 200
+      }
+    },
+    "bills.tw-mobile-plan#fet-5g": {
+      "url": "https://www.fetnet.net/content/cbu/tw/postpaid/rateplan/5g-bundle.html",
+      "browser": {
+        "verdict": "ok",
+        "http": 200
+      },
+      "bot": {
+        "verdict": "ok",
+        "http": 200
+      }
+    },
+    "bills.tw-mobile-plan#fet-estore": {
+      "url": "https://www.fetnet.net/estore/exclusive/5g.html",
+      "browser": {
+        "verdict": "ok",
+        "http": 200
+      },
+      "bot": {
+        "verdict": "ok",
+        "http": 200
+      }
+    },
+    "bills.tw-mobile-plan#fet-senior": {
+      "url": "https://www.fetnet.net/estore/exclusive/familyplan/parents.html",
+      "browser": {
+        "verdict": "ok",
+        "http": 200
+      },
+      "bot": {
+        "verdict": "ok",
+        "http": 200
+      }
+    },
+    "bills.tw-mobile-plan#merger": {
+      "url": "https://www.cna.com.tw/news/ahel/202311300092.aspx",
+      "browser": {
+        "verdict": "ok",
+        "http": 200
+      },
+      "bot": {
+        "verdict": "ok",
+        "http": 200
+      }
+    },
+    "bills.tw-mobile-plan#np": {
+      "url": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=K0060122",
+      "browser": {
+        "verdict": "ok",
+        "http": 200
+      },
+      "bot": {
+        "verdict": "ok",
+        "http": 200
+      }
+    },
+    "bills.tw-mobile-plan#twm-plans": {
+      "url": "https://www.taiwanmobile.com/mobile/postpaid/ratePlan/plan-5G-all.html",
+      "browser": {
+        "verdict": "ok",
+        "http": 200
+      },
+      "bot": {
+        "verdict": "ok",
+        "http": 200
+      }
+    },
+    "bills.tw-mobile-plan#twm-sim": {
+      "url": "https://www.taiwanmobile.com/cs/public/pageAction.do?method=enterPage&page=sim_np.html",
+      "browser": {
+        "verdict": "ok",
+        "http": 200,
+        "note": "轉址到 https://www.myfone.com.tw/mfo/estore/singlenumber"
+      },
+      "bot": {
+        "verdict": "ok",
+        "http": 200,
+        "note": "轉址到 https://www.myfone.com.tw/mfo/estore/singlenumber"
+      }
+    },
+    "bills.tw-mobile-plan#twm-terms": {
+      "url": "https://www.taiwanmobile.com/csonline/download/download.html",
+      "browser": {
+        "verdict": "ok",
+        "http": 200
+      },
+      "bot": {
+        "verdict": "ok",
+        "http": 200
+      }
+    },
+    "rights.tw-refund-cancel#appeal": {
+      "url": "https://appeal.cpc.ey.gov.tw/WWW/default.aspx",
+      "browser": {
+        "verdict": "ok",
+        "http": 200
+      },
+      "bot": {
+        "verdict": "ok",
+        "http": 200
+      }
+    },
+    "rights.tw-refund-cancel#contracts": {
+      "url": "https://cpc.ey.gov.tw/Page/31967FA5ED534142",
+      "browser": {
+        "verdict": "ok",
+        "http": 200
+      },
+      "bot": {
+        "verdict": "ok",
+        "http": 200
+      }
+    },
+    "rights.tw-refund-cancel#cpa": {
+      "url": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=J0170001",
+      "browser": {
+        "verdict": "ok",
+        "http": 200
+      },
+      "bot": {
+        "verdict": "ok",
+        "http": 200
+      }
+    },
+    "rights.tw-refund-cancel#cram": {
+      "url": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=H0080087",
+      "browser": {
+        "verdict": "ok",
+        "http": 200
+      },
+      "bot": {
+        "verdict": "ok",
+        "http": 200
+      }
+    },
+    "rights.tw-refund-cancel#exc": {
+      "url": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=J0170012",
+      "browser": {
+        "verdict": "ok",
+        "http": 200
+      },
+      "bot": {
+        "verdict": "ok",
+        "http": 200
+      }
+    },
+    "rights.tw-refund-cancel#gym": {
+      "url": "https://law.sports.gov.tw/LawContent.aspx?id=FL042360",
+      "browser": {
+        "verdict": "blocked",
+        "http": 403
+      },
+      "bot": {
+        "verdict": "blocked",
+        "http": 403
+      }
+    },
+    "rights.tw-refund-cancel#post": {
+      "url": "https://www.post.gov.tw/post/internet/Download/index.jsp?ID=220301",
+      "browser": {
+        "verdict": "ok",
+        "http": 200
+      },
+      "bot": {
+        "verdict": "ok",
+        "http": 200
+      }
+    },
+    "rights.tw-refund-cancel#process": {
+      "url": "https://cpc.ey.gov.tw/Page/71E988F034956960",
+      "browser": {
+        "verdict": "ok",
+        "http": 200
+      },
+      "bot": {
+        "verdict": "ok",
+        "http": 200
+      }
+    },
+    "travel.jp-airport-transfer#cts": {
+      "url": "https://www.new-chitose-airport.jp/en/access/",
+      "browser": {
+        "verdict": "ok",
+        "http": 200,
+        "note": "轉址到 https://www.hokkaido-airports.com/en/new-chitose/access/"
+      },
+      "bot": {
+        "verdict": "ok",
+        "http": 200,
+        "note": "轉址到 https://www.hokkaido-airports.com/en/new-chitose/access/"
+      }
+    },
+    "travel.jp-airport-transfer#fukuoka": {
+      "url": "https://www.japan.travel/en/plan/airport-access/fukuoka-airport/",
+      "browser": {
+        "verdict": "ok",
+        "http": 200
+      },
+      "bot": {
+        "verdict": "ok",
+        "http": 200
+      }
+    },
+    "travel.jp-airport-transfer#haneda": {
+      "url": "https://tokyo-haneda.com/en/access/train/index.html",
+      "browser": {
+        "verdict": "ok",
+        "http": 200
+      },
+      "bot": {
+        "verdict": "ok",
+        "http": 200
+      }
+    },
+    "travel.jp-airport-transfer#haruka": {
+      "url": "https://www.westjr.co.jp/travel-information/en/tickets-passes/oneway/haruka/",
+      "browser": {
+        "verdict": "ok",
+        "http": 200
+      },
+      "bot": {
+        "verdict": "ok",
+        "http": 200
+      }
+    },
+    "travel.jp-airport-transfer#keisei-asakusa": {
+      "url": "https://www.keisei.co.jp/keisei/tetudou/skyliner/us/directions/asakusa.php",
+      "browser": {
+        "verdict": "ok",
+        "http": 200
+      },
+      "bot": {
+        "verdict": "ok",
+        "http": 200
+      }
+    },
+    "travel.jp-airport-transfer#kix-access": {
+      "url": "https://www.nankai.co.jp/en_railway/traffic/kix.html",
+      "browser": {
+        "verdict": "ok",
+        "http": 200
+      },
+      "bot": {
+        "verdict": "ok",
+        "http": 200
+      }
+    },
+    "travel.jp-airport-transfer#kix-limo": {
+      "url": "https://www.kate.co.jp/en/timetable/detail/um",
+      "browser": {
+        "verdict": "ok",
+        "http": 200
+      },
+      "bot": {
+        "verdict": "ok",
+        "http": 200
+      }
+    },
+    "travel.jp-airport-transfer#kix-night": {
+      "url": "https://www.flypeach.com/lm/ai/airports/transit/kix_transit",
+      "browser": {
+        "verdict": "error",
+        "note": "The operation was aborted due to timeout"
+      },
+      "bot": {
+        "verdict": "ok",
+        "http": 200
+      }
+    },
+    "travel.jp-airport-transfer#limo": {
+      "url": "https://www.limousinebus.co.jp/en/",
+      "browser": {
+        "verdict": "ok",
+        "http": 200
+      },
+      "bot": {
+        "verdict": "blocked",
+        "http": 403
+      }
+    },
+    "travel.jp-airport-transfer#meitetsu": {
+      "url": "https://www.meitetsu.co.jp/eng/airport-access/index.html",
+      "browser": {
+        "verdict": "ok",
+        "http": 200
+      },
+      "bot": {
+        "verdict": "ok",
+        "http": 200
+      }
+    },
+    "travel.jp-airport-transfer#monorail": {
+      "url": "https://www.tokyo-monorail.co.jp/english/",
+      "browser": {
+        "verdict": "ok",
+        "http": 200
+      },
+      "bot": {
+        "verdict": "ok",
+        "http": 200
+      }
+    },
+    "travel.jp-airport-transfer#narita": {
+      "url": "https://www.narita-airport.jp/en/access/",
+      "browser": {
+        "verdict": "ok",
+        "http": 200
+      },
+      "bot": {
+        "verdict": "ok",
+        "http": 200
+      }
+    },
+    "travel.jp-airport-transfer#nex": {
+      "url": "https://www.jreast.co.jp/en/multi/nex/",
+      "browser": {
+        "verdict": "blocked",
+        "http": 403
+      },
+      "bot": {
+        "verdict": "ok",
+        "http": 200
+      }
+    },
+    "travel.jp-airport-transfer#nex-round": {
+      "url": "https://www.jreast.co.jp/en/multi/pass/nex.html",
+      "browser": {
+        "verdict": "blocked",
+        "http": 403
+      },
+      "bot": {
+        "verdict": "ok",
+        "http": 200
+      }
+    },
+    "travel.jp-airport-transfer#rapit": {
+      "url": "https://www.nankai.co.jp/en_railway/ticket/rapit",
+      "browser": {
+        "verdict": "ok",
+        "http": 200
+      },
+      "bot": {
+        "verdict": "ok",
+        "http": 200
+      }
+    },
+    "travel.jp-airport-transfer#skyliner": {
+      "url": "https://www.keisei.co.jp/keisei/tetudou/skyliner/us/tickets/coupon.php",
+      "browser": {
+        "verdict": "ok",
+        "http": 200
+      },
+      "bot": {
+        "verdict": "ok",
+        "http": 200
+      }
+    },
+    "travel.jp-airport-transfer#tap-list": {
+      "url": "https://www.japan-guide.com/e/e2359_credit_card_tap.html",
+      "browser": {
+        "verdict": "ok",
+        "http": 200
+      },
+      "bot": {
+        "verdict": "ok",
+        "http": 200
+      }
+    },
+    "travel.jp-airport-transfer#taxi": {
+      "url": "https://www.narita-airport.jp/en/access/taxi/",
+      "browser": {
+        "verdict": "ok",
+        "http": 200
+      },
+      "bot": {
+        "verdict": "ok",
+        "http": 200
+      }
+    },
+    "travel.jp-airport-transfer#tyo-nrt": {
+      "url": "https://tyo-nrt.com/en/flow",
+      "browser": {
+        "verdict": "ok",
+        "http": 200
+      },
+      "bot": {
+        "verdict": "ok",
+        "http": 200
+      }
+    },
+    "travel.jp-kansai-transit#amazing-faq": {
+      "url": "https://osaka-amazing-pass.com/faq.html",
+      "browser": {
+        "verdict": "ok",
+        "http": 200
+      },
+      "bot": {
+        "verdict": "ok",
+        "http": 200
+      }
+    },
+    "travel.jp-kansai-transit#amazing-free": {
+      "url": "https://osaka-amazing-pass.com/service_free.html",
+      "browser": {
+        "verdict": "ok",
+        "http": 200
+      },
+      "bot": {
+        "verdict": "ok",
+        "http": 200
+      }
+    },
+    "travel.jp-kansai-transit#enjoy-eco": {
+      "url": "https://subway.osakametro.co.jp/guide/page/enjoy-eco.php",
+      "browser": {
+        "verdict": "ok",
+        "http": 200
+      },
+      "bot": {
+        "verdict": "ok",
+        "http": 200
+      }
+    },
+    "travel.jp-kansai-transit#hankyu-1day": {
+      "url": "https://www.hankyu.co.jp/en/ticket/otoku/013806.html",
+      "browser": {
+        "verdict": "ok",
+        "http": 200
+      },
+      "bot": {
+        "verdict": "ok",
+        "http": 200
+      }
+    },
+    "travel.jp-kansai-transit#holidays": {
+      "url": "https://www8.cao.go.jp/chosei/shukujitsu/gaiyou.html",
+      "browser": {
+        "verdict": "ok",
+        "http": 200
+      },
+      "bot": {
+        "verdict": "ok",
+        "http": 200
+      }
+    },
+    "travel.jp-kansai-transit#kansai-passes": {
+      "url": "https://kyoto.travel/en/getting-around/tickets-and-passes-that-can-be-used-throughout-kansai-area/",
+      "browser": {
+        "verdict": "ok",
+        "http": 200
+      },
+      "bot": {
+        "verdict": "ok",
+        "http": 200
+      }
+    },
+    "travel.jp-kansai-transit#krp": {
+      "url": "https://www.surutto.com/kansai_rwpl/en/",
+      "browser": {
+        "verdict": "ok",
+        "http": 200
+      },
+      "bot": {
+        "verdict": "ok",
+        "http": 200
+      }
+    },
+    "travel.jp-kansai-transit#kyoto-1day": {
+      "url": "https://www.city.kyoto.lg.jp/kotsu/page/0000028378.html",
+      "browser": {
+        "verdict": "ok",
+        "http": 200
+      },
+      "bot": {
+        "verdict": "ok",
+        "http": 200
+      }
+    },
+    "travel.jp-kansai-transit#kyoto-tickets": {
+      "url": "https://www2.city.kyoto.lg.jp/tokei/trafficpolicy/kankochi/ticket/index.html",
+      "browser": {
+        "verdict": "ok",
+        "http": 200
+      },
+      "bot": {
+        "verdict": "ok",
+        "http": 200
+      }
+    },
+    "travel.jp-kansai-transit#metro-30h": {
+      "url": "https://subway.osakametro.co.jp/news/news/ticket/20260924_youokoshi_30hpass.php",
+      "browser": {
+        "verdict": "ok",
+        "http": 200
+      },
+      "bot": {
+        "verdict": "ok",
+        "http": 200
+      }
+    },
+    "travel.jp-payment#apple-wallet": {
+      "url": "https://support.apple.com/en-us/108772",
+      "browser": {
+        "verdict": "ok",
+        "http": 200
+      },
+      "bot": {
+        "verdict": "ok",
+        "http": 200
+      }
+    },
+    "travel.jp-payment#atm-change": {
+      "url": "https://www.gvm.com.tw/article/106807",
+      "browser": {
+        "verdict": "ok",
+        "http": 200
+      },
+      "bot": {
+        "verdict": "ok",
+        "http": 200
+      }
+    },
+    "travel.jp-payment#bot-rate": {
+      "url": "https://rate.bot.com.tw/xrt?Lang=zh-TW",
+      "browser": {
+        "verdict": "no_text",
+        "http": 200,
+        "missing": [
+          "日圓",
+          "現金匯率"
+        ]
+      },
+      "bot": {
+        "verdict": "ok",
+        "http": 200
+      }
+    },
+    "travel.jp-payment#cash-advance": {
+      "url": "https://www.fubon.com/banking/personal/credit_card/cash_advance/cash_advance.htm",
+      "browser": {
+        "verdict": "ok",
+        "http": 200
+      },
+      "bot": {
+        "verdict": "ok",
+        "http": 200
+      }
+    },
+    "travel.jp-payment#fubon-atm": {
+      "url": "https://www.fubon.com/banking/personal/deposit/Foreign_Drawings/Foreign_Drawings.htm",
+      "browser": {
+        "verdict": "ok",
+        "http": 200
+      },
+      "bot": {
+        "verdict": "ok",
+        "http": 200
+      }
+    },
+    "travel.jp-payment#icoca": {
+      "url": "https://www.jr-odekake.net/icoca/guide/refund.html",
+      "browser": {
+        "verdict": "ok",
+        "http": 200
+      },
+      "bot": {
+        "verdict": "ok",
+        "http": 200
+      }
+    },
+    "travel.jp-payment#metro-tap": {
+      "url": "https://www.tokyometro.jp/news/2026/222741.html",
+      "browser": {
+        "verdict": "blocked",
+        "http": 403
+      },
+      "bot": {
+        "verdict": "ok",
+        "http": 200
+      }
+    },
+    "travel.jp-payment#nankai-tap": {
+      "url": "https://www.nankai.co.jp/contents/contactless/",
+      "browser": {
+        "verdict": "ok",
+        "http": 200
+      },
+      "bot": {
+        "verdict": "ok",
+        "http": 200
+      }
+    },
+    "travel.jp-payment#paypay-tw": {
+      "url": "https://technews.tw/2026/02/03/paypay-jp/",
+      "browser": {
+        "verdict": "ok",
+        "http": 200
+      },
+      "bot": {
+        "verdict": "ok",
+        "http": 200
+      }
+    },
+    "travel.jp-payment#sevenbank": {
+      "url": "https://www.sevenbank.co.jp/intlcard/service2.html",
+      "browser": {
+        "verdict": "ok",
+        "http": 200
+      },
+      "bot": {
+        "verdict": "ok",
+        "http": 200
+      }
+    },
+    "travel.jp-payment#suica": {
+      "url": "https://www.jreast.co.jp/multi/en/pass/suica.html",
+      "browser": {
+        "verdict": "blocked",
+        "http": 403
+      },
+      "bot": {
+        "verdict": "ok",
+        "http": 200,
+        "note": "轉址到 https://www.jreast.co.jp/en/multi/pass/suica.html"
+      }
+    },
+    "travel.jp-payment#taishin-dcc": {
+      "url": "https://www.taishinbank.com.tw/TSB/personal/credit/intro/overview/future/ea39016a-2cd0-11f1-b50f-0050568c09e3",
+      "browser": {
+        "verdict": "ok",
+        "http": 200
+      },
+      "bot": {
+        "verdict": "ok",
+        "http": 200
+      }
+    },
+    "travel.jp-payment#taishin-fee": {
+      "url": "https://www.esunbank.com/zh-tw/about/faq/content?q=credit_card%2F018",
+      "browser": {
+        "verdict": "ok",
+        "http": 200
+      },
+      "bot": {
+        "verdict": "ok",
+        "http": 200
+      }
+    },
+    "travel.jp-payment#tap-list": {
+      "url": "https://www.japan-guide.com/e/e2359_credit_card_tap.html",
+      "browser": {
+        "verdict": "ok",
+        "http": 200
+      },
+      "bot": {
+        "verdict": "ok",
+        "http": 200
+      }
+    },
+    "travel.jp-payment#toei-tap": {
+      "url": "https://www.metro.tokyo.lg.jp/information/press/2025/12/2025121615",
+      "browser": {
+        "verdict": "ok",
+        "http": 200
+      },
+      "bot": {
+        "verdict": "ok",
+        "http": 200
+      }
+    },
+    "travel.jp-payment#welcome-suica": {
+      "url": "https://www.jreast.co.jp/multi/en/welcomesuica/purchase.html",
+      "browser": {
+        "verdict": "blocked",
+        "http": 403
+      },
+      "bot": {
+        "verdict": "ok",
+        "http": 200,
+        "note": "轉址到 https://www.jreast.co.jp/en/multi/welcomesuica/purchase.html"
+      }
+    },
+    "travel.jp-rail-pass#arch": {
+      "url": "https://www.westjr.co.jp/global/en/ticket/hokuriku-arch-pass/",
+      "browser": {
+        "verdict": "ok",
+        "http": 200,
+        "note": "轉址到 https://www.westjr.co.jp/travel-information/en/tickets-passes/other/hokuriku-arch-pass/"
+      },
+      "bot": {
+        "verdict": "ok",
+        "http": 200,
+        "note": "轉址到 https://www.westjr.co.jp/travel-information/en/tickets-passes/other/hokuriku-arch-pass/"
+      }
+    },
+    "travel.jp-rail-pass#east-pass": {
+      "url": "https://www.jreast.co.jp/en/multi/pass/eastpass.html",
+      "browser": {
+        "verdict": "blocked",
+        "http": 403
+      },
+      "bot": {
+        "verdict": "ok",
+        "http": 200
+      }
+    },
+    "travel.jp-rail-pass#fare-search": {
+      "url": "https://transit.yahoo.co.jp/search/result?from=%E6%9D%B1%E4%BA%AC&to=%E6%96%B0%E5%A4%A7%E9%98%AA",
+      "browser": {
+        "verdict": "ok",
+        "http": 200
+      },
+      "bot": {
+        "verdict": "ok",
+        "http": 200
+      }
+    },
+    "travel.jp-rail-pass#fare-table": {
+      "url": "https://shinkansen.tabiris.com/",
+      "browser": {
+        "verdict": "ok",
+        "http": 200
+      },
+      "bot": {
+        "verdict": "ok",
+        "http": 200
+      }
+    },
+    "travel.jp-rail-pass#haruka": {
+      "url": "https://www.westjr.co.jp/travel-information/en/tickets-passes/oneway/haruka/",
+      "browser": {
+        "verdict": "ok",
+        "http": 200
+      },
+      "bot": {
+        "verdict": "ok",
+        "http": 200
+      }
+    },
+    "travel.jp-rail-pass#hokkaido": {
+      "url": "https://www.jrhokkaido.co.jp/global/",
+      "browser": {
+        "verdict": "ok",
+        "http": 200
+      },
+      "bot": {
+        "verdict": "ok",
+        "http": 200
+      }
+    },
+    "travel.jp-rail-pass#jrp-price": {
+      "url": "https://japanrailpass.net/en/purchase/price",
+      "browser": {
+        "verdict": "ok",
+        "http": 200,
+        "note": "轉址到 https://japanrailpass.net/en/purchase/price/"
+      },
+      "bot": {
+        "verdict": "ok",
+        "http": 200,
+        "note": "轉址到 https://japanrailpass.net/en/purchase/price/"
+      }
+    },
+    "travel.jp-rail-pass#kansai-hiroshima": {
+      "url": "https://www.westjr.co.jp/travel-information/en/tickets-passes/jrwest-rail-pass/kansai_hiroshima/",
+      "browser": {
+        "verdict": "ok",
+        "http": 200
+      },
+      "bot": {
+        "verdict": "ok",
+        "http": 200
+      }
+    },
+    "travel.jp-rail-pass#kansai-qr": {
+      "url": "https://www.westjr.co.jp/global/en/ticket/westqr/kansaiarea/",
+      "browser": {
+        "verdict": "ok",
+        "http": 200
+      },
+      "bot": {
+        "verdict": "ok",
+        "http": 200
+      }
+    },
+    "travel.jp-rail-pass#kansai-wide": {
+      "url": "https://www.westjr.co.jp/travel-information/en/tickets-passes/jrwest-rail-pass/kansai_wide/",
+      "browser": {
+        "verdict": "ok",
+        "http": 200
+      },
+      "bot": {
+        "verdict": "ok",
+        "http": 200
+      }
+    },
+    "travel.jp-rail-pass#kyushu-pass": {
+      "url": "https://www.jrkyushu.co.jp/english/railpass/railpass.html",
+      "browser": {
+        "verdict": "ok",
+        "http": 200
+      },
+      "bot": {
+        "verdict": "ok",
+        "http": 200
+      }
+    },
+    "travel.jp-rail-pass#nozomi-supp": {
+      "url": "https://global.jr-central.co.jp/en/onlinebooking/contents/jrp_nozomi/",
+      "browser": {
+        "verdict": "ok",
+        "http": 200
+      },
+      "bot": {
+        "verdict": "ok",
+        "http": 200
+      }
+    },
+    "travel.jp-rail-pass#tokyo-wide": {
+      "url": "https://www.jreast.co.jp/en/multi/pass/tokyowidepass.html",
+      "browser": {
+        "verdict": "blocked",
+        "http": 403
+      },
+      "bot": {
+        "verdict": "ok",
+        "http": 200
+      }
+    },
+    "travel.jp-tax-refund#customs-detail": {
+      "url": "https://www.customs.go.jp/kaigairyoko/taxrefund/jpn.htm",
+      "browser": {
+        "verdict": "ok",
+        "http": 200
+      },
+      "bot": {
+        "verdict": "ok",
+        "http": 200
+      }
+    },
+    "travel.jp-tax-refund#customs-e": {
+      "url": "https://www.customs.go.jp/kaigairyoko/taxrefund.htm",
+      "browser": {
+        "verdict": "ok",
+        "http": 200
+      },
+      "bot": {
+        "verdict": "ok",
+        "http": 200
+      }
+    },
+    "travel.jp-tax-refund#jta-en": {
+      "url": "https://www.mlit.go.jp/kankocho/tax-free/page01_000001_00028.html",
+      "browser": {
+        "verdict": "ok",
+        "http": 200
+      },
+      "bot": {
+        "verdict": "ok",
+        "http": 200
+      }
+    },
+    "travel.jp-tax-refund#jta-faq": {
+      "url": "https://www.mlit.go.jp/kankocho/tax-free/page01_000001_00023.html",
+      "browser": {
+        "verdict": "ok",
+        "http": 200
+      },
+      "bot": {
+        "verdict": "ok",
+        "http": 200
+      }
+    },
+    "travel.jp-tax-refund#jta-refund": {
+      "url": "https://www.mlit.go.jp/kankocho/tax-free/page01_000001_00021.html",
+      "browser": {
+        "verdict": "ok",
+        "http": 200
+      },
+      "bot": {
+        "verdict": "ok",
+        "http": 200
+      }
+    },
+    "travel.jp-tax-refund#nta": {
+      "url": "https://www.nta.go.jp/publication/pamph/shohi/menzei/201805/format/002.htm",
+      "browser": {
+        "verdict": "ok",
+        "http": 200
+      },
+      "bot": {
+        "verdict": "ok",
+        "http": 200
+      }
+    },
+    "travel.jp-tokyo-transit#fare-search": {
+      "url": "https://transit.yahoo.co.jp/search/result?from=%E6%96%B0%E5%AE%BF&to=%E6%B5%85%E8%8D%89",
+      "browser": {
+        "verdict": "ok",
+        "http": 200
+      },
+      "bot": {
+        "verdict": "ok",
+        "http": 200
+      }
+    },
+    "travel.jp-tokyo-transit#jr-passes": {
+      "url": "https://travel.watch.impress.co.jp/docs/news/2092606.html",
+      "browser": {
+        "verdict": "ok",
+        "http": 200
+      },
+      "bot": {
+        "verdict": "ok",
+        "http": 200
+      }
+    },
+    "travel.jp-tokyo-transit#metro-1day": {
+      "url": "https://www.tokyometro.jp/lang_en/ticket/value/1day/index.html",
+      "browser": {
+        "verdict": "blocked",
+        "http": 403
+      },
+      "bot": {
+        "verdict": "ok",
+        "http": 200
+      }
+    },
+    "travel.jp-tokyo-transit#metro-fare": {
+      "url": "https://www.tokyometro.jp/ticket/types/regular/index.html",
+      "browser": {
+        "verdict": "blocked",
+        "http": 403
+      },
+      "bot": {
+        "verdict": "ok",
+        "http": 200
+      }
+    },
+    "travel.jp-tokyo-transit#metro-transfer": {
+      "url": "https://www.tokyometro.jp/lang_en/ticket/types/connection/index.html",
+      "browser": {
+        "verdict": "blocked",
+        "http": 403
+      },
+      "bot": {
+        "verdict": "ok",
+        "http": 200
+      }
+    },
+    "travel.jp-tokyo-transit#tap": {
+      "url": "https://www.metro.tokyo.lg.jp/information/press/2025/12/2025121615",
+      "browser": {
+        "verdict": "ok",
+        "http": 200
+      },
+      "bot": {
+        "verdict": "ok",
+        "http": 200
+      }
+    },
+    "travel.jp-tokyo-transit#tap-list": {
+      "url": "https://www.japan-guide.com/e/e2359_credit_card_tap.html",
+      "browser": {
+        "verdict": "ok",
+        "http": 200
+      },
+      "bot": {
+        "verdict": "ok",
+        "http": 200
+      }
+    },
+    "travel.jp-tokyo-transit#toei-fare": {
+      "url": "https://www.kotsu.metro.tokyo.jp/subway/fare/regular.html",
+      "browser": {
+        "verdict": "ok",
+        "http": 200
+      },
+      "bot": {
+        "verdict": "ok",
+        "http": 200
+      }
+    },
+    "travel.jp-tokyo-transit#toei-tickets": {
+      "url": "https://www.kotsu.metro.tokyo.jp/eng/tickets/value.html",
+      "browser": {
+        "verdict": "ok",
+        "http": 200,
+        "note": "轉址到 https://www.kotsu.metro.tokyo.jp/eng/"
+      },
+      "bot": {
+        "verdict": "ok",
+        "http": 200,
+        "note": "轉址到 https://www.kotsu.metro.tokyo.jp/eng/"
+      }
+    },
+    "travel.jp-tokyo-transit#tst": {
+      "url": "https://www.tokyometro.jp/lang_en/ticket/value/travel/index.html",
+      "browser": {
+        "verdict": "blocked",
+        "http": 403
+      },
+      "bot": {
+        "verdict": "ok",
+        "http": 200
+      }
+    },
+    "travel.jp-tokyo-transit#yurikamome": {
+      "url": "https://www.yurikamome.co.jp/en/",
+      "browser": {
+        "verdict": "ok",
+        "http": 200
+      },
+      "bot": {
+        "verdict": "ok",
+        "http": 200
+      }
+    },
+    "travel.tw-nhi-overseas-refund#law-55": {
+      "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=L0060001&flno=55",
+      "browser": {
+        "verdict": "ok",
+        "http": 200
+      },
+      "bot": {
+        "verdict": "ok",
+        "http": 200
+      }
+    },
+    "travel.tw-nhi-overseas-refund#law-56": {
+      "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=L0060001&flno=56",
+      "browser": {
+        "verdict": "ok",
+        "http": 200
+      },
+      "bot": {
+        "verdict": "ok",
+        "http": 200
+      }
+    },
+    "travel.tw-nhi-overseas-refund#law-reg": {
+      "url": "https://law.moj.gov.tw/LawClass/LawAll.aspx?PCode=L0060005",
+      "browser": {
+        "verdict": "ok",
+        "http": 200
+      },
+      "bot": {
+        "verdict": "ok",
+        "http": 200
+      }
+    },
+    "travel.tw-nhi-overseas-refund#nhi-cap": {
+      "url": "https://www.nhi.gov.tw/ch/cp-5183-4df08-2742-1.html",
+      "browser": {
+        "verdict": "blocked",
+        "http": 403
+      },
+      "bot": {
+        "verdict": "blocked",
+        "http": 403
+      }
+    },
+    "travel.tw-nhi-overseas-refund#nhi-guide": {
+      "url": "https://www.nhi.gov.tw/ch/cp-5177-07552-2741-1.html",
+      "browser": {
+        "verdict": "blocked",
+        "http": 403
+      },
+      "bot": {
+        "verdict": "blocked",
+        "http": 403
+      }
+    },
+    "travel.tw-nhi-overseas-refund#nhi-intro": {
+      "url": "https://www.nhi.gov.tw/ch/cp-5938-d33aa-2740-1.html",
+      "browser": {
+        "verdict": "blocked",
+        "http": 403
+      },
+      "bot": {
+        "verdict": "blocked",
+        "http": 403
+      }
+    },
+    "travel.tw-nhi-overseas-refund#nhi-online": {
+      "url": "https://med.nhi.gov.tw/iwse5000/iwse5010s03.aspx",
+      "browser": {
+        "verdict": "error",
+        "note": "Error: read ECONNRESET"
+      },
+      "bot": {
+        "verdict": "error",
+        "note": "Error: read ECONNRESET"
+      }
+    },
+    "travel.tw-travel-inconvenience-claim#cathay-card": {
+      "url": "https://www.cathaybk.com.tw/cathaybk/personal/credit-card/cards/rights/travel-insurance/",
+      "browser": {
+        "verdict": "ok",
+        "http": 200,
+        "note": "轉址到 https://www.cathay-cube.com.tw/cathaybk/personal/product/credit-card/rights/travel-insurance"
+      },
+      "bot": {
+        "verdict": "error",
+        "note": "The operation was aborted due to timeout"
+      }
+    },
+    "travel.tw-travel-inconvenience-claim#cathay-ins": {
+      "url": "https://www.cathay-ins.com.tw/cathayins/personal/claim/creditcardins/",
+      "browser": {
+        "verdict": "ok",
+        "http": 200
+      },
+      "bot": {
+        "verdict": "ok",
+        "http": 200
+      }
+    },
+    "travel.tw-travel-inconvenience-claim#ctbc-incon": {
+      "url": "https://www.ctbcbank.com/twrbo/zh_tw/cc_index/cc_additional/cc_add_index/cc_add_ins_incon.html",
+      "browser": {
+        "verdict": "ok",
+        "http": 200
+      },
+      "bot": {
+        "verdict": "ok",
+        "http": 200
+      }
+    },
+    "travel.tw-travel-inconvenience-claim#foi": {
+      "url": "https://www.foi.org.tw/article.aspx?Arti=44&Lang=1",
+      "browser": {
+        "verdict": "ok",
+        "http": 200
+      },
+      "bot": {
+        "verdict": "ok",
+        "http": 200
+      }
+    },
+    "travel.tw-travel-inconvenience-claim#foi-law": {
+      "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=G0380226&flno=13",
+      "browser": {
+        "verdict": "ok",
+        "http": 200
+      },
+      "bot": {
+        "verdict": "ok",
+        "http": 200
+      }
+    },
+    "travel.tw-travel-inconvenience-claim#fubon-claims": {
+      "url": "https://www.fubon.com/banking/Personal/credit_card/trip_insurance/trip_insurance.htm",
+      "browser": {
+        "verdict": "ok",
+        "http": 200
+      },
+      "bot": {
+        "verdict": "ok",
+        "http": 200
+      }
+    },
+    "travel.tw-travel-inconvenience-claim#law-34": {
+      "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=G0390002&flno=34",
+      "browser": {
+        "verdict": "ok",
+        "http": 200
+      },
+      "bot": {
+        "verdict": "ok",
+        "http": 200
+      }
+    },
+    "travel.tw-travel-inconvenience-claim#law-65": {
+      "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=G0390002&flno=65",
+      "browser": {
+        "verdict": "ok",
+        "http": 200
+      },
+      "bot": {
+        "verdict": "ok",
+        "http": 200
+      }
+    }
+  }
+}
