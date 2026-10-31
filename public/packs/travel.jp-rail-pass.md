@@ -135,13 +135,13 @@ updated: 2026-10-31
 - 打不開時搜尋：「JR Hokkaido Rail Pass official price」
 - 自動檢查：2026-10-31：可直接讀取
 
-### [S:kansai-qr] 大阪觀光局：關西鐵路周遊券整理（含 WEST QR）
+### [S:kansai-qr] JR 西日本：WEST QR 關西地區周遊券
 
-- 網址：https://explore.osaka/kansai-rail-passes/
-- 單位：大阪観光局（非官方，僅供參考，要再找官方確認）
+- 網址：https://www.westjr.co.jp/global/en/ticket/westqr/kansaiarea/
+- 單位：JR西日本（官方）
 - 查什麼：WEST QR 關西地區周遊券的購買通路與使用方式；紙本券是否還在賣
 - 打不開時搜尋：「WEST QR Kansai Area Pass JR West how to use」
-- 自動檢查：2026-10-31：擋自動讀取（請改用瀏覽器或搜尋）
+- 自動檢查：尚未自動檢查
 
 ### [S:haruka] JR 西日本：HARUKA 外國旅客優惠單程票
 
@@ -151,13 +151,13 @@ updated: 2026-10-31
 - 打不開時搜尋：「JR West HARUKA discount ticket foreign visitors」
 - 自動檢查：2026-10-31：可直接讀取
 
-### [S:fare-search] ジョルダン 乗換案内（站到站運賃、特急料金）
+### [S:fare-search] Yahoo!乗換案内（站到站票價）
 
-- 網址：https://www.jorudan.co.jp/norikae/
-- 單位：ジョルダン（非官方，僅供參考，要再找官方確認）
-- 查什麼：兩站之間的運賃＋指定席特急料金（指定搭乘日期）；車種與所需時間
-- 打不開時搜尋：「〈出發站〉 〈到達站〉 新幹線 料金 指定席」
-- 自動檢查：2026-10-31：一般瀏覽器 打得開，但沒讀到預期文字（可能要用瀏覽器開，或頁面改版）；AI 讀取 擋自動讀取（請改用瀏覽器或搜尋）
+- 網址：https://transit.yahoo.co.jp/search/result?from=%E6%9D%B1%E4%BA%AC&to=%E6%96%B0%E5%A4%A7%E9%98%AA
+- 單位：LINEヤフー（非官方，僅供參考，要再找官方確認）
+- 查什麼：站到站的運賃、IC 運賃與特急料金（把網址裡 from=、to= 換成日文站名再開）
+- 打不開時搜尋：「Yahoo 乗換案内 東京 新大阪 運賃」
+- 自動檢查：尚未自動檢查
 
 ### [S:fare-table] 新幹線料金表（整理網站）
 

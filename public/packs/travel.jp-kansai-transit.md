@@ -118,13 +118,13 @@ updated: 2026-10-31
 - 打不開時搜尋：「京都観光に便利な乗車券 京都市」
 - 自動檢查：2026-10-31：可直接讀取
 
-### [S:hankyu-1day] 阪急・阪神 1dayパス
+### [S:hankyu-1day] 阪急電鐵：一日券（One-Day Pass）
 
-- 網址：https://enjoy-osaka-kyoto-kobe.com/ja/ticket/hankyu-hanshin-1day-pass/
-- 單位：阪急阪神（ENJOY OSAKA KYOTO KOBE）（官方）
+- 網址：https://www.hankyu.co.jp/en/ticket/otoku/013806.html
+- 單位：阪急電鐵（官方）
 - 查什麼：阪急、阪神目前販售哪幾種一日券、販售與使用期間；價格、涵蓋路線；購買方式（是否只限線上、信用卡）
 - 打不開時搜尋：「阪急 1dayパス 公式」
-- 自動檢查：2026-10-31：擋自動讀取（請改用瀏覽器或搜尋）
+- 自動檢查：尚未自動檢查
 
 ### [S:krp] KANSAI RAILWAY PASS LITE
 

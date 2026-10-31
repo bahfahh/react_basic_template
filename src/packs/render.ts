@@ -1,4 +1,4 @@
-import { AREAS, type Pack, type PlannedPack, type SourceCheck, type SourceStatus, type Verdict } from './types';
+import { AREAS, type LiveSource, type Pack, type PlannedPack, type SourceCheck, type SourceStatus, type Verdict } from './types';
 
 /** Rules every pack carries, whatever the topic. */
 export const COMMON_RULES = [
@@ -35,6 +35,12 @@ export function bestVerdict(c: SourceCheck | undefined): Verdict | null {
 
 export const statusKey = (packId: string, sourceId: string) => `${packId}#${sourceId}`;
 
+/** The last check of this source, or undefined when it was never checked at its current URL. */
+export function sourceCheck(status: SourceStatus, packId: string, s: LiveSource): SourceCheck | undefined {
+  const c = status.results[statusKey(packId, s.id)];
+  return c && c.url === s.url ? c : undefined;
+}
+
 const bullets = (xs: string[]) => xs.map((x) => `- ${x}`).join('\n');
 
 export function renderPackMarkdown(p: Pack, all: Pack[], status: SourceStatus, baseUrl: string): string {
@@ -47,7 +53,7 @@ export function renderPackMarkdown(p: Pack, all: Pack[], status: SourceStatus, b
 - 單位：${s.owner}（${s.official ? '官方' : '非官方，僅供參考，要再找官方確認'}）
 - 查什麼：${s.find.join('；')}
 - 打不開時搜尋：「${s.search}」
-- 自動檢查：${checkText(status.results[statusKey(p.id, s.id)], status.checkedAt)}`,
+- 自動檢查：${checkText(sourceCheck(status, p.id, s), status.checkedAt)}`,
     )
     .join('\n\n');
 
@@ -129,7 +135,7 @@ export function renderPackJson(p: Pack, all: Pack[], status: SourceStatus, baseU
     steps: p.steps,
     ...(p.compare ? { compare: p.compare } : {}),
     knowhow: p.knowhow,
-    sources: p.sources.map((s) => ({ ...s, check: checkText(status.results[statusKey(p.id, s.id)], status.checkedAt) })),
+    sources: p.sources.map((s) => ({ ...s, check: checkText(sourceCheck(status, p.id, s), status.checkedAt) })),
     report: p.report.trim(),
     related: (p.related ?? []).map((r) => ({ ...r, title: all.find((x) => x.id === r.id)?.title ?? r.id, url: `${baseUrl}${r.id}.md` })),
     rules: COMMON_RULES,

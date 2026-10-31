@@ -61,13 +61,13 @@ updated: 2026-10-31
 
 ## 即時查詢來源
 
-### [S:taishin-fee] 台新銀行：國外交易服務費說明
+### [S:taishin-fee] 玉山銀行：國外交易服務費常見問題
 
-- 網址：https://www.taishinbank.com.tw/TSB/personal/credit/intro/rights/notice/right0904/
-- 單位：台新銀行（官方）
+- 網址：https://www.esunbank.com/zh-tw/about/faq/content?q=credit_card%2F018
+- 單位：玉山銀行（官方）
 - 查什麼：國外交易服務費比例（國際組織＋銀行）；匯率以哪一天、誰的匯率計算；哪些交易算國外交易（含在台灣刷外幣、刷台幣的海外交易）
 - 打不開時搜尋：「〈銀行名〉 信用卡 國外交易服務費」
-- 自動檢查：2026-10-31：打得開，但沒讀到預期文字（可能要用瀏覽器開，或頁面改版）
+- 自動檢查：尚未自動檢查
 
 ### [S:taishin-dcc] 台新銀行：動態貨幣轉換（DCC）說明
 
@@ -157,13 +157,13 @@ updated: 2026-10-31
 - 打不開時搜尋：「Japan credit card tap to ride railways list」
 - 自動檢查：2026-10-31：可直接讀取
 
-### [S:toei-tap] 東京都交通局：都營地鐵信用卡感應乘車
+### [S:toei-tap] 東京都：都營地下鐵信用卡感應乘車（2025-12 新聞稿）
 
-- 網址：https://www.kotsu.metro.tokyo.jp/eng/guides/contactless/
-- 單位：東京都交通局（官方）
+- 網址：https://www.metro.tokyo.lg.jp/information/press/2025/12/2025121615
+- 單位：東京都（官方）
 - 查什麼：可用的卡別；扣款方式（大人票價、兒童能不能用）；怎麼查乘車紀錄
 - 打不開時搜尋：「Toei Subway tap-and-go credit card payment」
-- 自動檢查：2026-10-31：擋自動讀取（請改用瀏覽器或搜尋）
+- 自動檢查：尚未自動檢查
 
 ### [S:metro-tap] 東京 Metro：關東各鐵路信用卡感應乘車公告
 
@@ -175,11 +175,11 @@ updated: 2026-10-31
 
 ### [S:nankai-tap] 南海電鐵：信用卡感應乘車
 
-- 網址：https://www.nankai.co.jp/contents/contactless/en/
+- 網址：https://www.nankai.co.jp/contents/contactless/
 - 單位：南海電鐵（官方）
 - 查什麼：可用的車站與卡別；每日上限或優惠
 - 打不開時搜尋：「Nankai contactless credit card payment」
-- 自動檢查：2026-10-31：打得開，但沒讀到預期文字（可能要用瀏覽器開，或頁面改版）
+- 自動檢查：尚未自動檢查
 
 ### [S:paypay-tw] 科技新報：台灣錢包可在日本 PayPay 商店付款
 

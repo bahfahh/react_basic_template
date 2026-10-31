@@ -82,21 +82,21 @@ updated: 2026-10-31
 - 打不開時搜尋：「Japan Tourism Agency What is the Refund Method tax-free」
 - 自動檢查：2026-10-31：可直接讀取
 
-### [S:customs-e] Tax Exemption (Refund) Program for Foreign Visitors
+### [S:customs-e] 日本海關：Tax Exemption (Refund) Program
 
-- 網址：https://www.customs.go.jp/kaigairyoko/taxrefund_e.html
+- 網址：https://www.customs.go.jp/kaigairyoko/taxrefund.htm
 - 單位：税関（Japan Customs）（官方）
 - 查什麼：出境時在哪裡、怎麼做海關確認（終端機、Visit Japan Web）；綠色、紅色判定後要做什麼；終端機設置地點，哪些機場港口沒有常設
 - 打不開時搜尋：「Japan Customs tax refund kiosk departure foreign visitors」
-- 自動檢查：2026-10-31：打不開
+- 自動檢查：尚未自動檢查
 
-### [S:customs-detail] Customs Procedure Details（Tax Exemption (Refund) Program）
+### [S:customs-detail] 日本海關：免稅制度（出境時的確認手續）
 
-- 網址：https://www.customs.go.jp/kaigairyoko/tetsuzukishousai_e.html
+- 網址：https://www.customs.go.jp/kaigairyoko/taxrefund/jpn.htm
 - 單位：税関（Japan Customs）（官方）
 - 查什麼：海關確認的詳細步驟；託運行李、轉乘國內線時的注意事項
 - 打不開時搜尋：「Japan Customs Procedure Details Tax Exemption Refund Program」
-- 自動檢查：2026-10-31：打不開
+- 自動檢查：尚未自動檢查
 
 ### [S:nta] 輸出物品販売場制度（リファンド方式）
 

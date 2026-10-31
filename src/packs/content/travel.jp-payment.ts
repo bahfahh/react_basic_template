@@ -56,10 +56,10 @@ export default {
   sources: [
     {
       id: 'taishin-fee',
-      name: '台新銀行：國外交易服務費說明',
-      owner: '台新銀行',
+      name: '玉山銀行：國外交易服務費常見問題',
+      owner: '玉山銀行',
       official: true,
-      url: 'https://www.taishinbank.com.tw/TSB/personal/credit/intro/rights/notice/right0904/',
+      url: 'https://www.esunbank.com/zh-tw/about/faq/content?q=credit_card%2F018',
       find: ['國外交易服務費比例（國際組織＋銀行）', '匯率以哪一天、誰的匯率計算', '哪些交易算國外交易（含在台灣刷外幣、刷台幣的海外交易）'],
       expect: ['國外交易服務費'],
       search: '〈銀行名〉 信用卡 國外交易服務費',
@@ -176,12 +176,12 @@ export default {
     },
     {
       id: 'toei-tap',
-      name: '東京都交通局：都營地鐵信用卡感應乘車',
-      owner: '東京都交通局',
+      name: '東京都：都營地下鐵信用卡感應乘車（2025-12 新聞稿）',
+      owner: '東京都',
       official: true,
-      url: 'https://www.kotsu.metro.tokyo.jp/eng/guides/contactless/',
+      url: 'https://www.metro.tokyo.lg.jp/information/press/2025/12/2025121615',
       find: ['可用的卡別', '扣款方式（大人票價、兒童能不能用）', '怎麼查乘車紀錄'],
-      expect: ['Tap-and-go'],
+      expect: ['タッチ決済', '都営地下鉄'],
       search: 'Toei Subway tap-and-go credit card payment',
     },
     {
@@ -199,9 +199,9 @@ export default {
       name: '南海電鐵：信用卡感應乘車',
       owner: '南海電鐵',
       official: true,
-      url: 'https://www.nankai.co.jp/contents/contactless/en/',
+      url: 'https://www.nankai.co.jp/contents/contactless/',
       find: ['可用的車站與卡別', '每日上限或優惠'],
-      expect: ['contactless'],
+      expect: ['タッチ決済'],
       search: 'Nankai contactless credit card payment',
     },
     {

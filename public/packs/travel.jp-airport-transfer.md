@@ -119,13 +119,13 @@ updated: 2026-10-31
 - 打不開時搜尋：「Airport Limousine Bus Narita Haneda official timetable fare」
 - 自動檢查：2026-10-31：一般瀏覽器 可直接讀取；AI 讀取 擋自動讀取（請改用瀏覽器或搜尋）
 
-### [S:haneda] 羽田機場：交通資訊
+### [S:haneda] 羽田機場：電車交通（京急、單軌電車）
 
-- 網址：https://tokyo-haneda.com/en/access/index.html
+- 網址：https://tokyo-haneda.com/en/access/train/index.html
 - 單位：日本空港ビルデング（官方）
 - 查什麼：京急、東京單軌電車、巴士各到哪裡；各航廈的車站與巴士乘車處；深夜、清晨的交通
 - 打不開時搜尋：「Haneda Airport access official Keikyu Monorail bus」
-- 自動檢查：2026-10-31：打得開，但沒讀到預期文字（可能要用瀏覽器開，或頁面改版）
+- 自動檢查：尚未自動檢查
 
 ### [S:monorail] 東京單軌電車（英文）
 
@@ -135,37 +135,37 @@ updated: 2026-10-31
 - 打不開時搜尋：「Tokyo Monorail Haneda Hamamatsucho fare official」
 - 自動檢查：2026-10-31：可直接讀取
 
-### [S:taxi] 東京計程車協會：成田機場定額運費
+### [S:taxi] 成田機場：計程車與定額運費
 
-- 網址：https://www.taxi-tokyo.or.jp/english/teigaku/narita.html
-- 單位：東京ハイヤー・タクシー協会（官方）
+- 網址：https://www.narita-airport.jp/en/access/taxi/
+- 單位：成田國際機場（官方）
 - 查什麼：目的地所屬的定額區與每台價格；過路費、深夜加價怎麼算；乘車方式或預約條件；同網站的羽田定額運費
 - 打不開時搜尋：「成田空港 定額運賃 タクシー 東京 2026」
-- 自動檢查：2026-10-31：打不開
+- 自動檢查：尚未自動檢查
 
-### [S:kix-access] 關西國際機場：交通常見問題
+### [S:kix-access] 南海電鐵：關西機場站（往難波）
 
-- 網址：https://www.kansai-airport.or.jp/en/access/faq
-- 單位：関西エアポート（官方）
-- 查什麼：到大阪、京都、新大阪的方式；JR、南海車站與巴士乘車處
+- 網址：https://www.nankai.co.jp/en_railway/traffic/kix.html
+- 單位：南海電鐵（官方）
+- 查什麼：關西機場站往難波、新今宮、天下茶屋的列車種類；乘車處與購票方式
 - 打不開時搜尋：「Kansai Airport access Osaka Kyoto official」
-- 自動檢查：2026-10-31：擋自動讀取（請改用瀏覽器或搜尋）
+- 自動檢查：尚未自動檢查
 
-### [S:kix-night] 關西國際機場：清晨與深夜交通
+### [S:kix-night] Peach：關西機場深夜、清晨交通
 
-- 網址：https://www.kansai-airport.or.jp/en/morning-midnight/access
-- 單位：関西エアポート（官方）
+- 網址：https://www.flypeach.com/lm/ai/airports/transit/kix_transit
+- 單位：Peach Aviation（非官方，僅供參考，要再找官方確認）
 - 查什麼：深夜巴士的路線、時間與票價；末班電車時間
 - 打不開時搜尋：「Kansai Airport late night bus access」
-- 自動檢查：2026-10-31：擋自動讀取（請改用瀏覽器或搜尋）
+- 自動檢查：尚未自動檢查
 
-### [S:kix-limo] 關西國際機場：利木津巴士
+### [S:kix-limo] 關西空港交通：利木津巴士（往大阪站，其他路線從路線列表找）
 
-- 網址：https://www.kansai-airport.or.jp/en/node/3532
-- 單位：関西エアポート（官方）
-- 查什麼：到梅田、難波、京都等的路線；票價（大人／兒童）與時刻表連結；付款方式
+- 網址：https://www.kate.co.jp/en/timetable/detail/um
+- 單位：關西空港交通（官方）
+- 查什麼：往大阪站（梅田）的時刻與票價（大人／兒童）；其他路線（難波、京都等）的時刻表連結；付款方式
 - 打不開時搜尋：「Kansai Airport Limousine Bus KATE Umeda Kyoto」
-- 自動檢查：2026-10-31：擋自動讀取（請改用瀏覽器或搜尋）
+- 自動檢查：尚未自動檢查
 
 ### [S:haruka] JR 西日本：HARUKA 外國旅客優惠單程票
 

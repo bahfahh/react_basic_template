@@ -1,7 +1,7 @@
 import { useMemo, useRef, useState, type ReactNode } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import { ArrowLeft, Check, Copy, ExternalLink } from 'lucide-react';
-import { AREAS, bestVerdict, findPack, findPlanned, SOURCE_STATUS, statusKey, type Pack, type Verdict } from '@/packs';
+import { AREAS, bestVerdict, findPack, findPlanned, SOURCE_STATUS, sourceCheck, type Pack, type Verdict } from '@/packs';
 import { AGENTS } from '@/app/agents';
 import { packUrl } from '@/app/config';
 import { newHandoffCode, saveHandoff } from '@/app/handoffs';
@@ -69,7 +69,7 @@ const stepTitle = (s: string) => {
 
 function ActivePack({ pack }: { pack: Pack }) {
   const Icon = iconFor(pack.icon);
-  const verdicts = pack.sources.map((s) => bestVerdict(SOURCE_STATUS.results[statusKey(pack.id, s.id)]));
+  const verdicts = pack.sources.map((s) => bestVerdict(sourceCheck(SOURCE_STATUS, pack.id, s)));
   const readable = verdicts.filter((v) => v === 'ok').length;
   return (
     <div className="space-y-6">

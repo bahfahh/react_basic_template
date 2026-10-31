@@ -106,36 +106,37 @@
     },
     {
       "id": "customs-e",
-      "name": "Tax Exemption (Refund) Program for Foreign Visitors",
+      "name": "日本海關：Tax Exemption (Refund) Program",
       "owner": "税関（Japan Customs）",
       "official": true,
-      "url": "https://www.customs.go.jp/kaigairyoko/taxrefund_e.html",
+      "url": "https://www.customs.go.jp/kaigairyoko/taxrefund.htm",
       "find": [
         "出境時在哪裡、怎麼做海關確認（終端機、Visit Japan Web）",
         "綠色、紅色判定後要做什麼",
         "終端機設置地點，哪些機場港口沒有常設"
       ],
       "expect": [
-        "Customs"
+        "Tax Exemption",
+        "Refund"
       ],
       "search": "Japan Customs tax refund kiosk departure foreign visitors",
-      "check": "2026-10-31：打不開"
+      "check": "尚未自動檢查"
     },
     {
       "id": "customs-detail",
-      "name": "Customs Procedure Details（Tax Exemption (Refund) Program）",
+      "name": "日本海關：免稅制度（出境時的確認手續）",
       "owner": "税関（Japan Customs）",
       "official": true,
-      "url": "https://www.customs.go.jp/kaigairyoko/tetsuzukishousai_e.html",
+      "url": "https://www.customs.go.jp/kaigairyoko/taxrefund/jpn.htm",
       "find": [
         "海關確認的詳細步驟",
         "託運行李、轉乘國內線時的注意事項"
       ],
       "expect": [
-        "Customs Procedure Details"
+        "免税制度"
       ],
       "search": "Japan Customs Procedure Details Tax Exemption Refund Program",
-      "check": "2026-10-31：打不開"
+      "check": "尚未自動檢查"
     },
     {
       "id": "nta",

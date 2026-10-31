@@ -134,12 +134,12 @@ export default {
     },
     {
       id: 'hankyu-1day',
-      name: '阪急・阪神 1dayパス',
-      owner: '阪急阪神（ENJOY OSAKA KYOTO KOBE）',
+      name: '阪急電鐵：一日券（One-Day Pass）',
+      owner: '阪急電鐵',
       official: true,
-      url: 'https://enjoy-osaka-kyoto-kobe.com/ja/ticket/hankyu-hanshin-1day-pass/',
+      url: 'https://www.hankyu.co.jp/en/ticket/otoku/013806.html',
       find: ['阪急、阪神目前販售哪幾種一日券、販售與使用期間', '價格、涵蓋路線', '購買方式（是否只限線上、信用卡）'],
-      expect: ['1dayパス'],
+      expect: ['One-Day Pass'],
       search: '阪急 1dayパス 公式',
     },
     {

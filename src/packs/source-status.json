@@ -617,25 +617,6 @@
         "http": 200
       }
     },
-    "bills.tw-mobile-plan#mvno": {
-      "url": "https://www.circles.life/tw/plan-page/",
-      "browser": {
-        "verdict": "no_text",
-        "http": 200,
-        "missing": [
-          "行動方案"
-        ],
-        "note": "轉址到 https://www.circles.life/sg/"
-      },
-      "bot": {
-        "verdict": "no_text",
-        "http": 200,
-        "missing": [
-          "行動方案"
-        ],
-        "note": "轉址到 https://www.circles.life/sg/"
-      }
-    },
     "bills.tw-mobile-plan#np": {
       "url": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=K0060122",
       "browser": {
@@ -768,25 +749,6 @@
       "bot": {
         "verdict": "ok",
         "http": 200
-      }
-    },
-    "rights.tw-refund-cancel#trainer": {
-      "url": "https://edu.law.moe.gov.tw/LawContent.aspx?id=GL002125",
-      "browser": {
-        "verdict": "no_text",
-        "http": 200,
-        "missing": [
-          "健身教練服務定型化契約應記載及不得記載事項"
-        ],
-        "note": "轉址到 https://edu.law.moe.gov.tw/ErrorMsg.aspx?msg=CL001"
-      },
-      "bot": {
-        "verdict": "no_text",
-        "http": 200,
-        "missing": [
-          "健身教練服務定型化契約應記載及不得記載事項"
-        ],
-        "note": "轉址到 https://edu.law.moe.gov.tw/ErrorMsg.aspx?msg=CL001"
       }
     },
     "travel.jp-airport-transfer#cts": {
@@ -1802,17 +1764,6 @@
     },
     "travel.tw-travel-inconvenience-claim#foi-law": {
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=G0380226&flno=13",
-      "browser": {
-        "verdict": "ok",
-        "http": 200
-      },
-      "bot": {
-        "verdict": "ok",
-        "http": 200
-      }
-    },
-    "travel.tw-travel-inconvenience-claim#fubon-card": {
-      "url": "https://www.fubon.com/banking/personal/credit_card/trip_insurance/trip_insurance.htm",
       "browser": {
         "verdict": "ok",
         "http": 200

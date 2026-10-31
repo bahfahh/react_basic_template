@@ -18,7 +18,7 @@ import subscriptionCancel from './content/bills.subscription-cancel';
 import refundCancel from './content/rights.tw-refund-cancel';
 
 export * from './types';
-export { bestVerdict, checkText, COMMON_RULES, lintPack, statusKey } from './render';
+export { bestVerdict, checkText, COMMON_RULES, lintPack, sourceCheck, statusKey } from './render';
 
 const ALL: Pack[] = [
   jpRailPass,

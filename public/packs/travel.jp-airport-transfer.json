@@ -186,20 +186,21 @@
     },
     {
       "id": "haneda",
-      "name": "羽田機場：交通資訊",
+      "name": "羽田機場：電車交通（京急、單軌電車）",
       "owner": "日本空港ビルデング",
       "official": true,
-      "url": "https://tokyo-haneda.com/en/access/index.html",
+      "url": "https://tokyo-haneda.com/en/access/train/index.html",
       "find": [
         "京急、東京單軌電車、巴士各到哪裡",
         "各航廈的車站與巴士乘車處",
         "深夜、清晨的交通"
       ],
       "expect": [
-        "Keikyu"
+        "Keikyu",
+        "Monorail"
       ],
       "search": "Haneda Airport access official Keikyu Monorail bus",
-      "check": "2026-10-31：打得開，但沒讀到預期文字（可能要用瀏覽器開，或頁面改版）"
+      "check": "尚未自動檢查"
     },
     {
       "id": "monorail",
@@ -220,10 +221,10 @@
     },
     {
       "id": "taxi",
-      "name": "東京計程車協會：成田機場定額運費",
-      "owner": "東京ハイヤー・タクシー協会",
+      "name": "成田機場：計程車與定額運費",
+      "owner": "成田國際機場",
       "official": true,
-      "url": "https://www.taxi-tokyo.or.jp/english/teigaku/narita.html",
+      "url": "https://www.narita-airport.jp/en/access/taxi/",
       "find": [
         "目的地所屬的定額區與每台價格",
         "過路費、深夜加價怎麼算",
@@ -231,59 +232,61 @@
         "同網站的羽田定額運費"
       ],
       "expect": [
-        "Narita"
+        "Taxi",
+        "Fixed"
       ],
       "search": "成田空港 定額運賃 タクシー 東京 2026",
-      "check": "2026-10-31：打不開"
+      "check": "尚未自動檢查"
     },
     {
       "id": "kix-access",
-      "name": "關西國際機場：交通常見問題",
-      "owner": "関西エアポート",
+      "name": "南海電鐵：關西機場站（往難波）",
+      "owner": "南海電鐵",
       "official": true,
-      "url": "https://www.kansai-airport.or.jp/en/access/faq",
+      "url": "https://www.nankai.co.jp/en_railway/traffic/kix.html",
       "find": [
-        "到大阪、京都、新大阪的方式",
-        "JR、南海車站與巴士乘車處"
+        "關西機場站往難波、新今宮、天下茶屋的列車種類",
+        "乘車處與購票方式"
       ],
       "expect": [
-        "Haruka"
+        "Kansai-Airport"
       ],
       "search": "Kansai Airport access Osaka Kyoto official",
-      "check": "2026-10-31：擋自動讀取（請改用瀏覽器或搜尋）"
+      "check": "尚未自動檢查"
     },
     {
       "id": "kix-night",
-      "name": "關西國際機場：清晨與深夜交通",
-      "owner": "関西エアポート",
-      "official": true,
-      "url": "https://www.kansai-airport.or.jp/en/morning-midnight/access",
+      "name": "Peach：關西機場深夜、清晨交通",
+      "owner": "Peach Aviation",
+      "official": false,
+      "url": "https://www.flypeach.com/lm/ai/airports/transit/kix_transit",
       "find": [
         "深夜巴士的路線、時間與票價",
         "末班電車時間"
       ],
       "expect": [
-        "Kansai"
+        "深夜",
+        "関西空港"
       ],
       "search": "Kansai Airport late night bus access",
-      "check": "2026-10-31：擋自動讀取（請改用瀏覽器或搜尋）"
+      "check": "尚未自動檢查"
     },
     {
       "id": "kix-limo",
-      "name": "關西國際機場：利木津巴士",
-      "owner": "関西エアポート",
+      "name": "關西空港交通：利木津巴士（往大阪站，其他路線從路線列表找）",
+      "owner": "關西空港交通",
       "official": true,
-      "url": "https://www.kansai-airport.or.jp/en/node/3532",
+      "url": "https://www.kate.co.jp/en/timetable/detail/um",
       "find": [
-        "到梅田、難波、京都等的路線",
-        "票價（大人／兒童）與時刻表連結",
+        "往大阪站（梅田）的時刻與票價（大人／兒童）",
+        "其他路線（難波、京都等）的時刻表連結",
         "付款方式"
       ],
       "expect": [
-        "Limousine Bus"
+        "Osaka Sta"
       ],
       "search": "Kansai Airport Limousine Bus KATE Umeda Kyoto",
-      "check": "2026-10-31：擋自動讀取（請改用瀏覽器或搜尋）"
+      "check": "尚未自動檢查"
     },
     {
       "id": "haruka",
@@ -331,7 +334,7 @@
         "末班時間"
       ],
       "expect": [
-        "Centrair"
+        "Airport"
       ],
       "search": "Meitetsu Centrair airport access μSKY fare",
       "check": "2026-10-31：打得開，但沒讀到預期文字（可能要用瀏覽器開，或頁面改版）"

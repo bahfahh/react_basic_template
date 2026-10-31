@@ -123,13 +123,13 @@ updated: 2026-10-31
 - 打不開時搜尋：「Tokyo Metro Toei transfer discount fare」
 - 自動檢查：2026-10-31：一般瀏覽器 擋自動讀取（請改用瀏覽器或搜尋）；AI 讀取 可直接讀取
 
-### [S:tap] 東京都交通局：都營地鐵信用卡感應乘車
+### [S:tap] 東京都：都營地下鐵信用卡感應乘車（2025-12 新聞稿）
 
-- 網址：https://www.kotsu.metro.tokyo.jp/eng/guides/contactless/
-- 單位：東京都交通局（官方）
+- 網址：https://www.metro.tokyo.lg.jp/information/press/2025/12/2025121615
+- 單位：東京都（官方）
 - 查什麼：可用的卡別；扣款方式（大人票價、兒童能不能用）；怎麼查乘車紀錄
 - 打不開時搜尋：「Toei Subway tap-and-go credit card payment」
-- 自動檢查：2026-10-31：擋自動讀取（請改用瀏覽器或搜尋）
+- 自動檢查：尚未自動檢查
 
 ### [S:tap-list] japan-guide：日本各鐵路信用卡感應乘車一覽
 
@@ -139,13 +139,13 @@ updated: 2026-10-31
 - 打不開時搜尋：「Tokyo credit card tap to ride JR East Tokyo Metro」
 - 自動檢查：2026-10-31：可直接讀取
 
-### [S:fare-search] ジョルダン 乗換案内（站到站 IC 票價）
+### [S:fare-search] Yahoo!乗換案内（站到站 IC 票價）
 
-- 網址：https://www.jorudan.co.jp/norikae/
-- 單位：ジョルダン（非官方，僅供參考，要再找官方確認）
-- 查什麼：兩站之間的 IC 票價（大人）、路線與轉乘；同一段 JR 和地鐵的票價差
-- 打不開時搜尋：「〈出發站〉 〈到達站〉 IC 運賃」
-- 自動檢查：2026-10-31：一般瀏覽器 打得開，但沒讀到預期文字（可能要用瀏覽器開，或頁面改版）；AI 讀取 擋自動讀取（請改用瀏覽器或搜尋）
+- 網址：https://transit.yahoo.co.jp/search/result?from=%E6%96%B0%E5%AE%BF&to=%E6%B5%85%E8%8D%89
+- 單位：LINEヤフー（非官方，僅供參考，要再找官方確認）
+- 查什麼：站到站的運賃、IC 運賃與特急料金（把網址裡 from=、to= 換成日文站名再開）
+- 打不開時搜尋：「Yahoo 乗換案内 新宿 浅草 IC運賃」
+- 自動檢查：尚未自動檢查
 
 ## 回報格式
 
