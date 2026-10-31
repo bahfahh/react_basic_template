@@ -1,7 +1,111 @@
 {
-  "checkedAt": "2026-10-31T12:04:46.305Z",
+  "checkedAt": "2026-10-31T12:06:16.905Z",
   "runner": "github-actions",
   "results": {
+    "benefit.tw-income-tax#bls": {
+      "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=G0340144&flno=3",
+      "browser": {
+        "verdict": "ok",
+        "http": 200
+      },
+      "bot": {
+        "verdict": "ok",
+        "http": 200
+      }
+    },
+    "benefit.tw-income-tax#etax-items": {
+      "url": "https://www.etax.nat.gov.tw/etwmain/tax-info/understanding/tax-q-and-a/national/individual-income-tax/exemption-scope/filling/D9JGLGD",
+      "browser": {
+        "verdict": "ok",
+        "http": 200
+      },
+      "bot": {
+        "verdict": "ok",
+        "http": 200
+      }
+    },
+    "benefit.tw-income-tax#etax-manual": {
+      "url": "https://www.etax.nat.gov.tw/etwmain/tax-info/understanding/tax-saving-manual/national/individual-income-tax/k2Jbgrp",
+      "browser": {
+        "verdict": "ok",
+        "http": 200
+      },
+      "bot": {
+        "verdict": "ok",
+        "http": 200
+      }
+    },
+    "benefit.tw-income-tax#etax-spouse": {
+      "url": "https://www.etax.nat.gov.tw/etwmain/tax-info/understanding/tax-q-and-a/national/individual-income-tax/exemption-scope/rule/LE0K8lg",
+      "browser": {
+        "verdict": "ok",
+        "http": 200
+      },
+      "bot": {
+        "verdict": "ok",
+        "http": 200
+      }
+    },
+    "benefit.tw-income-tax#law15": {
+      "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=G0340003&flno=15",
+      "browser": {
+        "verdict": "ok",
+        "http": 200
+      },
+      "bot": {
+        "verdict": "ok",
+        "http": 200
+      }
+    },
+    "benefit.tw-income-tax#law17": {
+      "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=G0340003&flno=17",
+      "browser": {
+        "verdict": "ok",
+        "http": 200
+      },
+      "bot": {
+        "verdict": "no_text",
+        "http": 200,
+        "missing": [
+          "免稅額",
+          "列舉扣除額",
+          "特別扣除額"
+        ]
+      }
+    },
+    "benefit.tw-income-tax#law28": {
+      "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=G0340001&flno=28",
+      "browser": {
+        "verdict": "ok",
+        "http": 200
+      },
+      "bot": {
+        "verdict": "ok",
+        "http": 200
+      }
+    },
+    "benefit.tw-income-tax#mof-amounts": {
+      "url": "https://www.mof.gov.tw/singlehtml/384fb3077bb349ea973e7fc6f13b6974?cntId=34b463dc8f1b49f29d440d92a6fd5139",
+      "browser": {
+        "verdict": "ok",
+        "http": 200
+      },
+      "bot": {
+        "verdict": "ok",
+        "http": 200
+      }
+    },
+    "benefit.tw-income-tax#portal": {
+      "url": "https://tax.nat.gov.tw/tax-comprehensive.html",
+      "browser": {
+        "verdict": "ok",
+        "http": 200
+      },
+      "bot": {
+        "verdict": "ok",
+        "http": 200
+      }
+    },
     "benefit.tw-rent-subsidy#apply-online": {
       "url": "https://has.nlma.gov.tw/subsidyOnline/house300e/",
       "browser": {
@@ -59,8 +163,12 @@
         "http": 200
       },
       "bot": {
-        "verdict": "ok",
-        "http": 200
+        "verdict": "no_text",
+        "http": 200,
+        "missing": [
+          "住宅法",
+          "公益出租人"
+        ]
       }
     },
     "benefit.tw-rent-subsidy#moi-landlord": {
@@ -89,6 +197,179 @@
         "missing": [
           "租金補貼"
         ]
+      }
+    },
+    "benefit.tw-subsidy-checkup#1957": {
+      "url": "https://www.mohw.gov.tw/cp-3217-22804-1.html",
+      "browser": {
+        "verdict": "ok",
+        "http": 200
+      },
+      "bot": {
+        "verdict": "error",
+        "note": "Error: read ECONNRESET"
+      }
+    },
+    "benefit.tw-subsidy-checkup#appliance": {
+      "url": "https://save3000.moeaea.gov.tw/subsidy02/news/list.aspx",
+      "browser": {
+        "verdict": "ok",
+        "http": 200
+      },
+      "bot": {
+        "verdict": "ok",
+        "http": 200
+      }
+    },
+    "benefit.tw-subsidy-checkup#assist": {
+      "url": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=D0050078",
+      "browser": {
+        "verdict": "ok",
+        "http": 200
+      },
+      "bot": {
+        "verdict": "ok",
+        "http": 200
+      }
+    },
+    "benefit.tw-subsidy-checkup#birth": {
+      "url": "https://www.bli.gov.tw/0100086.html",
+      "browser": {
+        "verdict": "ok",
+        "http": 200
+      },
+      "bot": {
+        "verdict": "ok",
+        "http": 200
+      }
+    },
+    "benefit.tw-subsidy-checkup#childcare": {
+      "url": "https://www.mohw.gov.tw/cp-5130-58003-1.html",
+      "browser": {
+        "verdict": "ok",
+        "http": 200
+      },
+      "bot": {
+        "verdict": "ok",
+        "http": 200
+      }
+    },
+    "benefit.tw-subsidy-checkup#disab": {
+      "url": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=D0050189",
+      "browser": {
+        "verdict": "ok",
+        "http": 200
+      },
+      "bot": {
+        "verdict": "ok",
+        "http": 200
+      }
+    },
+    "benefit.tw-subsidy-checkup#esi-law": {
+      "url": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=N0050021",
+      "browser": {
+        "verdict": "ok",
+        "http": 200
+      },
+      "bot": {
+        "verdict": "ok",
+        "http": 200
+      }
+    },
+    "benefit.tw-subsidy-checkup#goodstax": {
+      "url": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=G0340076",
+      "browser": {
+        "verdict": "ok",
+        "http": 200
+      },
+      "bot": {
+        "verdict": "ok",
+        "http": 200
+      }
+    },
+    "benefit.tw-subsidy-checkup#ltc": {
+      "url": "https://1966.gov.tw/LTC/cp-6533-70777-207.html",
+      "browser": {
+        "verdict": "ok",
+        "http": 200
+      },
+      "bot": {
+        "verdict": "ok",
+        "http": 200
+      }
+    },
+    "benefit.tw-subsidy-checkup#nps": {
+      "url": "https://www.bli.gov.tw/0017173.html",
+      "browser": {
+        "verdict": "ok",
+        "http": 200
+      },
+      "bot": {
+        "verdict": "ok",
+        "http": 200
+      }
+    },
+    "benefit.tw-subsidy-checkup#parental": {
+      "url": "https://www.bli.gov.tw/0015728.html",
+      "browser": {
+        "verdict": "ok",
+        "http": 200
+      },
+      "bot": {
+        "verdict": "ok",
+        "http": 200
+      }
+    },
+    "benefit.tw-subsidy-checkup#rent": {
+      "url": "https://www.nlma.gov.tw/%E6%9C%80%E6%96%B0%E6%B6%88%E6%81%AF/%E6%B3%95%E8%A6%8F%E5%85%AC%E5%91%8A/29-%E4%BD%8F%E5%AE%85%E7%AF%87/37314-%E4%B8%89%E7%99%BE%E5%84%84%E5%85%83%E4%B8%AD%E5%A4%AE%E6%93%B4%E5%A4%A7%E7%A7%9F%E9%87%91%E8%A3%9C%E8%B2%BC%E5%B0%88%E6%A1%88%E8%A8%88%E7%95%AB%E4%BD%9C%E6%A5%AD%E8%A6%8F%E5%AE%9A.html",
+      "browser": {
+        "verdict": "blocked",
+        "http": 200,
+        "missing": [
+          "租金補貼"
+        ],
+        "note": "轉址到 https://www.nlma.gov.tw/ch"
+      },
+      "bot": {
+        "verdict": "no_text",
+        "http": 200,
+        "missing": [
+          "租金補貼"
+        ],
+        "note": "轉址到 https://www.nlma.gov.tw/ch"
+      }
+    },
+    "benefit.tw-subsidy-checkup#studentloan": {
+      "url": "https://www.edu.tw/helpdreams/cp.aspx?n=D862A99E08414877&s=04C0F2D009469151",
+      "browser": {
+        "verdict": "ok",
+        "http": 200
+      },
+      "bot": {
+        "verdict": "ok",
+        "http": 200
+      }
+    },
+    "benefit.tw-subsidy-checkup#unemp": {
+      "url": "https://www.bli.gov.tw/0015717.html",
+      "browser": {
+        "verdict": "ok",
+        "http": 200
+      },
+      "bot": {
+        "verdict": "ok",
+        "http": 200
+      }
+    },
+    "benefit.tw-subsidy-checkup#youthloan": {
+      "url": "https://www.nta.gov.tw/singlehtml/108",
+      "browser": {
+        "verdict": "ok",
+        "http": 200
+      },
+      "bot": {
+        "verdict": "ok",
+        "http": 200
       }
     },
     "bills.subscription-cancel#apple-refund": {
@@ -182,8 +463,8 @@
     "bills.subscription-cancel#law-19": {
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=J0170001&flno=19",
       "browser": {
-        "verdict": "ok",
-        "http": 200
+        "verdict": "error",
+        "note": "AggregateError"
       },
       "bot": {
         "verdict": "ok",
@@ -193,28 +474,19 @@
     "bills.subscription-cancel#law-19-2": {
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=J0170001&flno=19-2",
       "browser": {
-        "verdict": "no_text",
-        "http": 200,
-        "missing": [
-          "十五日"
-        ]
+        "verdict": "ok",
+        "http": 200
       },
       "bot": {
-        "verdict": "no_text",
-        "http": 200,
-        "missing": [
-          "十五日"
-        ]
+        "verdict": "ok",
+        "http": 200
       }
     },
     "bills.subscription-cancel#law-exception": {
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=J0170012&flno=2",
       "browser": {
-        "verdict": "no_text",
-        "http": 200,
-        "missing": [
-          "數位內容"
-        ]
+        "verdict": "ok",
+        "http": 200
       },
       "bot": {
         "verdict": "ok",
@@ -240,9 +512,8 @@
         "note": "轉址到 https://www.paypal.com/tw/cshelp/article/%E4%BB%80%E9%BA%BC%E6%98%AF%E8%87%AA%E5%8B%95%E4%BB%98%E6%AC%BE%EF%BC%9F%E5%A6%82%E4%BD%95%E6%9B%B4%E6%96%B0%E6%88%96%E5%8F%96%E6%B6%88%E8%87%AA%E5%8B%95%E4%BB%98%E6%AC%BE%EF%BC%9F-help240"
       },
       "bot": {
-        "verdict": "ok",
-        "http": 200,
-        "note": "轉址到 https://www.paypal.com/tw/cshelp/article/%E4%BB%80%E9%BA%BC%E6%98%AF%E8%87%AA%E5%8B%95%E4%BB%98%E6%AC%BE%EF%BC%9F%E5%A6%82%E4%BD%95%E6%9B%B4%E6%96%B0%E6%88%96%E5%8F%96%E6%B6%88%E8%87%AA%E5%8B%95%E4%BB%98%E6%AC%BE%EF%BC%9F-help240"
+        "verdict": "blocked",
+        "http": 403
       }
     },
     "bills.subscription-cancel#taishin-dispute": {
@@ -377,12 +648,18 @@
     "bills.tw-mobile-plan#np": {
       "url": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=K0060122",
       "browser": {
-        "verdict": "ok",
-        "http": 200
+        "verdict": "no_text",
+        "http": 200,
+        "missing": [
+          "電信事業號碼可攜服務管理辦法"
+        ]
       },
       "bot": {
-        "verdict": "ok",
-        "http": 200
+        "verdict": "no_text",
+        "http": 200,
+        "missing": [
+          "電信事業號碼可攜服務管理辦法"
+        ]
       }
     },
     "bills.tw-mobile-plan#twm-plans": {
@@ -1478,7 +1755,7 @@
       "url": "https://med.nhi.gov.tw/iwse5000/iwse5010s03.aspx",
       "browser": {
         "verdict": "error",
-        "note": "Error: read ECONNRESET"
+        "note": "AggregateError"
       },
       "bot": {
         "verdict": "error",
