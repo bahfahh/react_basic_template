@@ -1,0 +1,47 @@
+import {
+  BedDouble,
+  CalendarX,
+  CreditCard,
+  FileText,
+  HandCoins,
+  House,
+  Landmark,
+  Plane,
+  PlaneLanding,
+  Receipt,
+  Scale,
+  Smartphone,
+  Stethoscope,
+  Ticket,
+  TrainFront,
+  TramFront,
+  Umbrella,
+  Wallet,
+  Zap,
+  type LucideIcon,
+} from 'lucide-react';
+
+/** Packs name their icon with a plain key so the pack data stays UI-free. */
+const ICONS: Record<string, LucideIcon> = {
+  train: TrainFront,
+  tram: TramFront,
+  'plane-landing': PlaneLanding,
+  plane: Plane,
+  bed: BedDouble,
+  wallet: Wallet,
+  receipt: Receipt,
+  ticket: Ticket,
+  umbrella: Umbrella,
+  stethoscope: Stethoscope,
+  landmark: Landmark,
+  'hand-coins': HandCoins,
+  smartphone: Smartphone,
+  'calendar-x': CalendarX,
+  scale: Scale,
+  'file-text': FileText,
+  home: House,
+  zap: Zap,
+  'credit-card': CreditCard,
+};
+
+export const iconFor = (key: string): LucideIcon => ICONS[key] ?? FileText;

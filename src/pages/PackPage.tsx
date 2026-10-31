@@ -1,79 +1,102 @@
-import { useMemo, useRef, useState } from 'react';
+import { useMemo, useRef, useState, type ReactNode } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import { ArrowLeft, Check, Copy, ExternalLink } from 'lucide-react';
-import { CATALOG, findPackage, type PackageManifest } from '@/core';
+import { AREAS, bestVerdict, findPack, findPlanned, SOURCE_STATUS, statusKey, type Pack, type Verdict } from '@/packs';
 import { AGENTS } from '@/app/agents';
 import { packUrl } from '@/app/config';
 import { newHandoffCode, saveHandoff } from '@/app/handoffs';
-import { LABELS, PACK_META } from '@/app/packMeta';
+import { iconFor } from '@/app/icons';
 import { Badge, Button, buttonClass, Card, CardBody, CardHeader, inputClass, Notice } from '@/components/ui';
 import { copyText } from '@/lib/format';
 import { cn } from '@/lib/utils';
+import { VALUE_TONE } from './HomePage';
 import { NotFoundPage } from './NotFoundPage';
-
-const label = (k: string) => LABELS[k] ?? k;
-const dataCheckedAt = [...new Set(CATALOG.sources.map((s) => s.checkedAt))].sort().at(-1);
 
 export function PackPage() {
   const { id = '' } = useParams();
-  const pkg = findPackage(id);
-  if (!pkg) return <NotFoundPage />;
-  const meta = PACK_META[pkg.id];
-  const Icon = meta?.icon;
-  const active = pkg.status === 'active';
-
+  const pack = findPack(id);
+  if (pack) return <ActivePack pack={pack} />;
+  const planned = findPlanned(id);
+  if (!planned) return <NotFoundPage />;
+  const Icon = iconFor(planned.icon);
   return (
     <div className="space-y-6">
-      <Link to="/" className="inline-flex items-center gap-1 text-sm text-muted-foreground hover:text-foreground">
-        <ArrowLeft className="h-4 w-4" aria-hidden />
-        全部懶人包
-      </Link>
-
-      <header className="flex items-start gap-4">
-        {Icon && (
-          <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-primary-soft text-primary">
-            <Icon className="h-6 w-6" aria-hidden />
-          </span>
-        )}
-        <div className="min-w-0">
-          <h1 className="text-2xl font-black tracking-tight sm:text-3xl">{pkg.title}</h1>
-          <p className="mt-2 max-w-2xl text-muted-foreground">{pkg.summary}</p>
-          <div className="mt-3 flex flex-wrap gap-1.5">
-            <Badge tone={active ? 'success' : 'neutral'}>{active ? '可以用' : '準備中'}</Badge>
-            {active && <Badge>v{pkg.version}</Badge>}
-            {active && dataCheckedAt && <Badge>資料核對 {dataCheckedAt}</Badge>}
-          </div>
-        </div>
-      </header>
-
-      {active ? (
-        <div className="grid grid-cols-1 gap-6 lg:grid-cols-[minmax(0,1.2fr)_minmax(0,1fr)]">
-          <HandoffCard pkg={pkg} placeholder={meta?.placeholder} />
-          <div className="space-y-4">
-            <ListCard title="AI 會幫你做" items={pkg.outputs?.map(label) ?? []} />
-            <ListCard
-              title="會問你的資料"
-              items={[...(pkg.inputs?.required.map((k) => `${label(k)}（必填）`) ?? []), ...(pkg.inputs?.optional.filter((k) => !['origin', 'flexibility'].includes(k)).map(label) ?? [])]}
-            />
-            <ListCard title="一定先問你" items={pkg.humanApproval.map(label)} />
-            <ListCard title="絕對不做" items={pkg.prohibited.map(label)} />
-          </div>
-          <PackUrlCard pkg={pkg} />
-        </div>
-      ) : (
-        <Notice tone="info" title="這個懶人包還在準備中">
-          <p>{pkg.agentCan}</p>
-          {pkg.blockers && <p className="mt-1 text-muted-foreground">要先解決：{pkg.blockers}</p>}
-        </Notice>
-      )}
+      <BackLink />
+      <Header icon={<Icon className="h-6 w-6" aria-hidden />} title={planned.title} subtitle={planned.short}>
+        <Badge>規劃中</Badge>
+        <Badge>{AREAS[planned.area].title}</Badge>
+      </Header>
+      <Notice tone="info" title="這個懶人包還在準備中">
+        <p>還沒做的原因：{planned.blocker}</p>
+      </Notice>
     </div>
   );
 }
 
-function buildMessage(pkg: PackageManifest, notes: string, code: string): string {
+function BackLink() {
+  return (
+    <Link to="/" className="inline-flex items-center gap-1 text-sm text-muted-foreground hover:text-foreground">
+      <ArrowLeft className="h-4 w-4" aria-hidden />
+      全部懶人包
+    </Link>
+  );
+}
+
+function Header({ icon, title, subtitle, children }: { icon: ReactNode; title: string; subtitle: string; children?: ReactNode }) {
+  return (
+    <header className="flex items-start gap-4">
+      <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-primary-soft text-primary">{icon}</span>
+      <div className="min-w-0">
+        <h1 className="text-2xl font-black tracking-tight sm:text-3xl">{title}</h1>
+        <p className="mt-2 max-w-2xl text-muted-foreground">{subtitle}</p>
+        <div className="mt-3 flex flex-wrap gap-1.5">{children}</div>
+      </div>
+    </header>
+  );
+}
+
+/** "**看時間**：……[S:x]" → "看時間"; otherwise the step without markup. */
+const stepTitle = (s: string) => {
+  const bold = s.match(/^\*\*(.+?)\*\*/);
+  return (bold ? bold[1] : s).replace(/\[S:[\w-]+\]/g, '').replace(/\*\*/g, '').trim();
+};
+
+function ActivePack({ pack }: { pack: Pack }) {
+  const Icon = iconFor(pack.icon);
+  const verdicts = pack.sources.map((s) => bestVerdict(SOURCE_STATUS.results[statusKey(pack.id, s.id)]));
+  const readable = verdicts.filter((v) => v === 'ok').length;
+  return (
+    <div className="space-y-6">
+      <BackLink />
+      <Header icon={<Icon className="h-6 w-6" aria-hidden />} title={pack.title} subtitle={pack.short}>
+        {pack.value.map((v) => (
+          <Badge key={v} tone={VALUE_TONE[v]}>
+            {v}
+          </Badge>
+        ))}
+        <Badge>{pack.stage ? `${AREAS[pack.area].title}・${pack.stage}` : AREAS[pack.area].title}</Badge>
+        <Badge tone={SOURCE_STATUS.checkedAt ? (readable === pack.sources.length ? 'success' : 'warning') : 'neutral'}>
+          {SOURCE_STATUS.checkedAt ? `來源 ${readable}/${pack.sources.length} 可直接讀取` : `${pack.sources.length} 個來源，尚未自動檢查`}
+        </Badge>
+      </Header>
+
+      <div className="grid grid-cols-1 gap-6 lg:grid-cols-[minmax(0,1.2fr)_minmax(0,1fr)]">
+        <HandoffCard pack={pack} />
+        <div className="space-y-4">
+          <ListCard title="會先問你" items={pack.ask.required} />
+          <ListCard title="AI 會怎麼做" items={pack.steps.map(stepTitle)} ordered />
+        </div>
+        <SourcesCard pack={pack} verdicts={verdicts} />
+        <PackUrlCard pack={pack} />
+      </div>
+    </div>
+  );
+}
+
+function buildMessage(pack: Pack, notes: string, code: string): string {
   return [
     '請讀取這個懶人包，照裡面的步驟幫我處理：',
-    packUrl(pkg.id),
+    packUrl(pack.id),
     '',
     `我的情況：${notes.trim() || '（請先問我需要的資料）'}`,
     `交辦編號：${code}`,
@@ -81,23 +104,23 @@ function buildMessage(pkg: PackageManifest, notes: string, code: string): string
   ].join('\n');
 }
 
-function HandoffCard({ pkg, placeholder }: { pkg: PackageManifest; placeholder?: string }) {
+function HandoffCard({ pack }: { pack: Pack }) {
   const [agentId, setAgentId] = useState(AGENTS[0].id);
   const [notes, setNotes] = useState('');
   const [code, setCode] = useState(newHandoffCode);
   const [done, setDone] = useState<{ code: string; copied: boolean } | null>(null);
   const messageRef = useRef<HTMLTextAreaElement>(null);
   const agent = AGENTS.find((a) => a.id === agentId)!;
-  const message = useMemo(() => buildMessage(pkg, notes, code), [pkg, notes, code]);
+  const message = useMemo(() => buildMessage(pack, notes, code), [pack, notes, code]);
 
   const record = (copied: boolean) => {
-    saveHandoff({ id: code, code, packId: pkg.id, packTitle: pkg.title, agentName: agent.name, message, at: new Date().toISOString() });
+    saveHandoff({ id: code, code, packId: pack.id, packTitle: pack.title, agentName: agent.name, message, at: new Date().toISOString() });
     setDone({ code, copied });
   };
 
   return (
     <Card className="lg:row-span-2 lg:self-start">
-      <CardHeader title="交給 AI" description="選你的 agent，把下面這段訊息交給它。AI 會讀取懶人包網址，照著步驟接手。" />
+      <CardHeader title="交給 AI" description="選你的 agent，把下面這段訊息交給它。AI 會讀取懶人包網址，照著步驟上網查、幫你比較。" />
       <CardBody className="space-y-4">
         <div className="grid grid-cols-2 gap-2 sm:grid-cols-4" role="radiogroup" aria-label="選擇 agent">
           {AGENTS.map((a) => (
@@ -123,7 +146,7 @@ function HandoffCard({ pkg, placeholder }: { pkg: PackageManifest; placeholder?:
             rows={3}
             value={notes}
             onChange={(e) => setNotes(e.target.value)}
-            placeholder={placeholder}
+            placeholder={pack.placeholder}
             className={cn(inputClass, 'h-auto py-2')}
           />
           <p className="text-xs text-muted-foreground">不寫也可以，AI 會先問你。請不要寫密碼、OTP、卡號或證件號碼。</p>
@@ -179,16 +202,20 @@ function HandoffCard({ pkg, placeholder }: { pkg: PackageManifest; placeholder?:
   );
 }
 
-function ListCard({ title, items }: { title: string; items: string[] }) {
+function ListCard({ title, items, ordered }: { title: string; items: string[]; ordered?: boolean }) {
   return (
     <Card>
       <CardHeader title={title} />
       <CardBody>
         <ul className="space-y-1.5 text-sm">
-          {items.map((i) => (
-            <li key={i} className="flex gap-2">
-              <Check className="mt-0.5 h-4 w-4 shrink-0 text-primary" aria-hidden />
-              {i}
+          {items.map((item, i) => (
+            <li key={item} className="flex gap-2">
+              {ordered ? (
+                <span className="w-4 shrink-0 text-right font-semibold text-primary">{i + 1}</span>
+              ) : (
+                <Check className="mt-0.5 h-4 w-4 shrink-0 text-primary" aria-hidden />
+              )}
+              <span className="min-w-0">{item}</span>
             </li>
           ))}
         </ul>
@@ -197,15 +224,61 @@ function ListCard({ title, items }: { title: string; items: string[] }) {
   );
 }
 
-function PackUrlCard({ pkg }: { pkg: PackageManifest }) {
+const VERDICT_BADGE: Record<Verdict, { tone: 'success' | 'warning' | 'danger'; text: string }> = {
+  ok: { tone: 'success', text: '可直接讀取' },
+  no_text: { tone: 'warning', text: '可能要用瀏覽器' },
+  blocked: { tone: 'warning', text: '擋自動讀取' },
+  error: { tone: 'danger', text: '打不開' },
+};
+
+function SourcesCard({ pack, verdicts }: { pack: Pack; verdicts: Array<Verdict | null> }) {
+  const day = SOURCE_STATUS.checkedAt?.slice(0, 10);
+  return (
+    <Card className="lg:col-span-2">
+      <CardHeader
+        title="AI 會即時查這些地方"
+        description={
+          day
+            ? `懶人包不放價格和金額，AI 每次都到這些頁面查最新的。${day} 自動檢查過這些網址能不能讀。`
+            : '懶人包不放價格和金額，AI 每次都到這些頁面查最新的。網址還沒有自動檢查過。'
+        }
+      />
+      <CardBody>
+        <ul className="divide-y">
+          {pack.sources.map((s, i) => {
+            const v = verdicts[i];
+            return (
+              <li key={s.id} className="flex flex-col gap-1 py-2.5 sm:flex-row sm:items-center sm:justify-between sm:gap-4">
+                <div className="min-w-0">
+                  <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-sm font-medium hover:text-primary hover:underline">
+                    {s.name}
+                  </a>
+                  <p className="text-xs text-muted-foreground">
+                    {s.owner}・查：{s.find.join('、')}
+                  </p>
+                </div>
+                <div className="flex shrink-0 gap-1.5">
+                  {!s.official && <Badge>非官方</Badge>}
+                  {v && <Badge tone={VERDICT_BADGE[v].tone}>{VERDICT_BADGE[v].text}</Badge>}
+                </div>
+              </li>
+            );
+          })}
+        </ul>
+      </CardBody>
+    </Card>
+  );
+}
+
+function PackUrlCard({ pack }: { pack: Pack }) {
   const [copied, setCopied] = useState(false);
   const urls = [
-    { label: '任務說明（AI 讀這個）', url: packUrl(pkg.id, 'md') },
-    { label: '資料（JSON）', url: packUrl(pkg.id, 'json') },
+    { label: '做事方法（AI 讀這個）', url: packUrl(pack.id, 'md') },
+    { label: '同內容 JSON', url: packUrl(pack.id, 'json') },
   ];
   return (
     <Card className="lg:col-span-2">
-      <CardHeader title="懶人包網址" description="任何能上網的 AI 都可以直接讀這個網址：裡面有步驟、規則、票價資料與來源。" />
+      <CardHeader title="懶人包網址" description="任何能上網的 AI 都可以直接讀這個網址，格式和 Claude 的 skill 類似：什麼時候用、先問什麼、去哪裡查、怎麼比較、怎麼回報。" />
       <CardBody className="space-y-2">
         {urls.map((u, i) => (
           <div key={u.url} className="flex flex-col gap-2 rounded-xl border p-3 sm:flex-row sm:items-center sm:justify-between">

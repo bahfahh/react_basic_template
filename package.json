@@ -5,19 +5,16 @@
   "type": "module",
   "scripts": {
     "dev": "npm run packs && vite",
-    "dev:api": "tsx watch server/index.ts",
-    "start:api": "tsx server/index.ts",
     "packs": "tsx scripts/build-packs.ts",
     "build": "npm run packs && tsc -b && vite build",
     "build:demo": "npm run packs && tsc -b && vite build --mode demo",
     "preview": "vite preview",
     "test": "vitest run",
     "typecheck": "tsc -b",
-    "export:schemas": "tsx scripts/export-package-artifacts.ts",
-    "mcp:smoke": "tsx scripts/mcp-smoke.ts"
+    "check:sources": "tsx scripts/check-sources.ts",
+    "validate": "tsx scripts/validate-pack.ts"
   },
   "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.32.2",
     "clsx": "^2.1.1",
     "lucide-react": "^0.503.0",
     "react": "18.3.1",

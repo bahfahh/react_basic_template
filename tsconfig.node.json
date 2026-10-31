@@ -10,11 +10,12 @@
     "isolatedModules": true,
     "moduleDetection": "force",
     "noEmit": true,
+    "resolveJsonModule": true,
     "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
     "types": ["node"]
   },
-  "include": ["vite.config.ts", "vitest.config.ts", "server", "scripts", "tests"]
+  "include": ["vite.config.ts", "vitest.config.ts", "scripts", "tests"]
 }

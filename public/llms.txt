@@ -1,22 +1,37 @@
 # 懶人包 LazyPack
 
-> 懶人包是給 AI agent 讀的任務說明。讀取下方的懶人包網址，照裡面的步驟幫使用者完成；付款、登入、送出個資前先停下來問使用者。
+> 一份懶人包就是一份「做事方法」：先問使用者什麼、到哪些官方網址即時查、怎麼比較、怎麼回報。
+> 懶人包不放價格和金額，請到每份懶人包列出的來源現場查。付款、登入、送出個資或申請前一定先問使用者。
 
-## 可用的懶人包
+## 出國玩（日本）
 
-- [日本付款不吃虧](https://raw.githubusercontent.com/bahfahh/react_basic_template/claude/react-prototype-a485u2/public/packs/travel.jp-payment.md): 刷卡選日圓、算清楚海外手續費、現金在哪換、IC 卡和信用卡感應怎麼選，在日本付錢不多花冤枉錢。
-- [JR Pass 划算嗎](https://raw.githubusercontent.com/bahfahh/react_basic_template/claude/react-prototype-a485u2/public/packs/travel.jp-rail-pass.md): 依你的行程，比較全國 JR Pass、區域周遊券和單買（含早鳥票），算出最省的方案與損益兩平點。
-- [機場進市區交通](https://raw.githubusercontent.com/bahfahh/react_basic_template/claude/react-prototype-a485u2/public/packs/travel.jp-airport-transfer.md): 成田、羽田、關西、中部、福岡、新千歲機場到市區，依目的地、時間、行李與人數選最省或最快的方式。
-- [東京交通票券省錢](https://raw.githubusercontent.com/bahfahh/react_basic_template/claude/react-prototype-a485u2/public/packs/travel.jp-tokyo-transit.md): 依你在東京每天的行程，比較刷 IC 卡和東京地鐵 24／48／72 小時券、各種一日券，算出最省的組合。
-- [大阪・京都交通票券省錢](https://raw.githubusercontent.com/bahfahh/react_basic_template/claude/react-prototype-a485u2/public/packs/travel.jp-ticket-optimizer.md): 比較交通單買、一日券／周遊卡與混搭組合，算出同等權益下的最低總價，附官方來源與查詢日期，並協助準備購買（停在付款前）。
-- [日本退稅新制助手（2026-11 起）](https://raw.githubusercontent.com/bahfahh/react_basic_template/claude/react-prototype-a485u2/public/packs/travel.jp-tax-refund.md): 2026-11-01 起日本改成先付含稅價、出境時海關確認、之後才退稅。幫你判斷是否適用、整理購物與出境當天要做的事、算出期限。
-- [旅遊不便險理賠](https://raw.githubusercontent.com/bahfahh/react_basic_template/claude/react-prototype-a485u2/public/packs/travel.tw-travel-inconvenience-claim.md): 班機延誤、取消、行李延誤或遺失、護照遺失時，用信用卡附加或另外買的旅遊不便險把錢拿回來：當下要拿的證明、可以花的錢、回國怎麼申請。
-- [租金補貼初判助手（115 年度）](https://raw.githubusercontent.com/bahfahh/react_basic_template/claude/react-prototype-a485u2/public/packs/benefit.tw-rent-subsidy.md): 依公開的 115 年度中央擴大租金補貼規定，初步判斷你可能符合哪些條件、估算每月金額，並整理文件與申請步驟。
-- [訂閱取消助手](https://raw.githubusercontent.com/bahfahh/react_basic_template/claude/react-prototype-a485u2/public/packs/finance.subscription-cancel.md): 找出正在扣款的訂閱，照官方路徑在下次扣款前取消，並說明退款與申訴管道。
+- [JR Pass 划算嗎](https://raw.githubusercontent.com/bahfahh/react_basic_template/claude/react-prototype-a485u2/public/packs/travel.jp-rail-pass.md)：全國 JR Pass、區域周遊券和單買，算哪個最省
+- [日本付款不吃虧](https://raw.githubusercontent.com/bahfahh/react_basic_template/claude/react-prototype-a485u2/public/packs/travel.jp-payment.md)：刷卡選日圓、手續費、提款、IC 卡一次排好
+- [機場進市區交通](https://raw.githubusercontent.com/bahfahh/react_basic_template/claude/react-prototype-a485u2/public/packs/travel.jp-airport-transfer.md)：成田、羽田、關西等機場到飯店，選最省或最快
+- [東京交通票券省錢](https://raw.githubusercontent.com/bahfahh/react_basic_template/claude/react-prototype-a485u2/public/packs/travel.jp-tokyo-transit.md)：刷 IC 卡還是買地鐵券？依每天行程算給你
+- [大阪・京都交通票券省錢](https://raw.githubusercontent.com/bahfahh/react_basic_template/claude/react-prototype-a485u2/public/packs/travel.jp-kansai-transit.md)：單買、一日券、周遊パス，算出每天最省的買法
+- [日本退稅](https://raw.githubusercontent.com/bahfahh/react_basic_template/claude/react-prototype-a485u2/public/packs/travel.jp-tax-refund.md)：新制退稅：購物、出境海關確認、領退款
+- [旅遊不便險理賠](https://raw.githubusercontent.com/bahfahh/react_basic_template/claude/react-prototype-a485u2/public/packs/travel.tw-travel-inconvenience-claim.md)：班機、行李延誤，用信用卡不便險申請理賠
+- [海外就醫健保核退](https://raw.githubusercontent.com/bahfahh/react_basic_template/claude/react-prototype-a485u2/public/packs/travel.tw-nhi-overseas-refund.md)：國外急診、住院自費，回國 6 個月內申請健保核退
+
+## 補助與退稅
+
+- [租金補貼](https://raw.githubusercontent.com/bahfahh/react_basic_template/claude/react-prototype-a485u2/public/packs/benefit.tw-rent-subsidy.md)：租屋族查資格、估金額、備文件，申請中央租金補貼
+
+## 每月帳單
+
+- [手機資費健檢](https://raw.githubusercontent.com/bahfahh/react_basic_template/claude/react-prototype-a485u2/public/packs/bills.tw-mobile-plan.md)：用你的實際用量比三大電信方案，算含違約金的總成本
+- [取消訂閱、停止扣款](https://raw.githubusercontent.com/bahfahh/react_basic_template/claude/react-prototype-a485u2/public/packs/bills.subscription-cancel.md)：找出正在扣款的訂閱，趕在下次扣款前取消
+
+## 退費與解約
+
+- [退貨與解約退費](https://raw.githubusercontent.com/bahfahh/react_basic_template/claude/react-prototype-a485u2/public/packs/rights.tw-refund-cancel.md)：網購、健身房、補習班解約，依法算出能退多少
 
 ## 規劃中
 
-- 機票比價與訂票準備（travel.flight-deal）：尚未開放
-- 住宿跨平台比價（travel.hotel-deal）：尚未開放
-- 景點多站點預約（travel.multi-booking）：尚未開放
-- 航班異動索賠準備（travel.flight-claim）：尚未開放
+- 機票比價：同航線、行李、退改條件下比實際總價。
+- 飯店比價：同日期、房型、取消政策下跨平台比價。
+- 電費方案比較：一般電價還是時間電價，用你的用電紀錄算。
+- 信用卡回饋比較：依你的消費習慣，算哪張卡回饋最多。
+
+全部清單（JSON）：https://raw.githubusercontent.com/bahfahh/react_basic_template/claude/react-prototype-a485u2/public/packs/index.json

@@ -7,10 +7,4 @@ export default defineConfig(({ mode }) => ({
   base: mode === 'demo' ? './' : '/',
   resolve: { alias: { '@': path.resolve(__dirname, './src') } },
   build: { chunkSizeWarningLimit: 800 },
-  server: {
-    proxy: {
-      '/api': 'http://localhost:8787',
-      '/mcp': 'http://localhost:8787',
-    },
-  },
 }));
