@@ -1,37 +1,24 @@
 import { BrowserRouter, HashRouter, MemoryRouter, Route, Routes } from 'react-router-dom';
-import { ApiProvider } from '@/api/ApiProvider';
 import { AppShell } from '@/components/AppShell';
-import { AdminPage } from '@/pages/AdminPage';
-import { DevelopersPage } from '@/pages/DevelopersPage';
-import { IntakePage } from '@/pages/IntakePage';
-import { LandingPage } from '@/pages/LandingPage';
-import { MarketplacePage } from '@/pages/MarketplacePage';
+import { HandoffsPage } from '@/pages/HandoffsPage';
+import { HomePage } from '@/pages/HomePage';
 import { NotFoundPage } from '@/pages/NotFoundPage';
-import { PackagePage } from '@/pages/PackagePage';
-import { TaskListPage } from '@/pages/TaskListPage';
-import { TaskPage } from '@/pages/TaskPage';
+import { PackPage } from '@/pages/PackPage';
 
 // Embedded demo hosts may not allow path-style hashes, so the demo build keeps routing in memory.
 const Router = { hash: HashRouter, memory: MemoryRouter, browser: BrowserRouter }[import.meta.env.VITE_ROUTER ?? 'browser'];
 
 export default function App() {
   return (
-    <ApiProvider>
-      <Router>
-        <Routes>
-          <Route element={<AppShell />}>
-            <Route index element={<LandingPage />} />
-            <Route path="start" element={<IntakePage />} />
-            <Route path="tasks" element={<TaskListPage />} />
-            <Route path="tasks/:id" element={<TaskPage />} />
-            <Route path="marketplace" element={<MarketplacePage />} />
-            <Route path="marketplace/:id" element={<PackagePage />} />
-            <Route path="developers" element={<DevelopersPage />} />
-            <Route path="admin" element={<AdminPage />} />
-            <Route path="*" element={<NotFoundPage />} />
-          </Route>
-        </Routes>
-      </Router>
-    </ApiProvider>
+    <Router>
+      <Routes>
+        <Route element={<AppShell />}>
+          <Route index element={<HomePage />} />
+          <Route path="p/:id" element={<PackPage />} />
+          <Route path="handoffs" element={<HandoffsPage />} />
+          <Route path="*" element={<NotFoundPage />} />
+        </Route>
+      </Routes>
+    </Router>
   );
 }

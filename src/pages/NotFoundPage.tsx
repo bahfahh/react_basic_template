@@ -1,17 +1,13 @@
 import { Link } from 'react-router-dom';
-import { buttonClass, EmptyState } from '@/components/ui';
+import { buttonClass } from '@/components/ui';
 
 export function NotFoundPage() {
   return (
-    <EmptyState
-      title="找不到這個頁面"
-      action={
-        <Link to="/" className={buttonClass('outline')}>
-          回首頁
-        </Link>
-      }
-    >
-      連結可能已失效，或任務屬於其他帳號。
-    </EmptyState>
+    <div className="rounded-2xl border border-dashed p-10 text-center">
+      <p className="font-semibold">找不到這個頁面</p>
+      <Link to="/" className={`${buttonClass('outline')} mt-4`}>
+        回懶人包
+      </Link>
+    </div>
   );
 }

@@ -1,0 +1,17 @@
+# 懶人包 LazyPack
+
+> 懶人包是給 AI agent 讀的省錢任務說明。讀取下方的懶人包網址，照裡面的步驟幫使用者完成；付款、登入、送出個資前先停下來問使用者。
+
+## 可用的懶人包
+
+- [日本票券省錢助手（大阪・京都）](https://raw.githubusercontent.com/bahfahh/react_basic_template/claude/react-prototype-a485u2/public/packs/travel.jp-ticket-optimizer.md): 比較交通單買、一日券／周遊卡與混搭組合，算出同等權益下的最低總價，附官方來源與查詢日期，並協助準備購買（停在付款前）。
+
+## 規劃中
+
+- 機票比價與訂票準備（travel.flight-deal）：尚未開放
+- 住宿跨平台比價（travel.hotel-deal）：尚未開放
+- 景點多站點預約（travel.multi-booking）：尚未開放
+- 日本退稅準備（travel.jp-tax-refund）：尚未開放
+- 訂閱取消助手（finance.subscription-cancel）：尚未開放
+- 補助資格初判（benefit.eligibility）：尚未開放
+- 航班異動索賠準備（travel.flight-claim）：尚未開放
