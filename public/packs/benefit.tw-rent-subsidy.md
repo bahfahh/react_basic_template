@@ -149,6 +149,11 @@ updated: 2026-10-31
 ## 來源與查詢日
 ```
 
+## 相關懶人包
+
+- [我能領哪些補助](https://raw.githubusercontent.com/bahfahh/react_basic_template/claude/react-prototype-a485u2/public/packs/benefit.tw-subsidy-checkup.md)：順便看看還能領哪些補助
+- [綜所稅省稅檢查](https://raw.githubusercontent.com/bahfahh/react_basic_template/claude/react-prototype-a485u2/public/packs/benefit.tw-income-tax.md)：報稅時查房屋租金支出特別扣除額能不能用、和租金補貼怎麼搭
+
 ## 安全規則
 
 - 數字（價格、金額、門檻、期限）一律在「即時查詢來源」現場查，附上網址和你查的日期。查不到就說查不到，不要用記憶或舊資料補上。

@@ -12,6 +12,8 @@ on:
       - 'src/packs/content/**'
       - 'src/packs/ids.ts'
       - 'scripts/check-sources.ts'
+      - 'scripts/lib/**'
+      - 'scripts/probe-urls.txt'
       - '.github/workflows/check-sources.yml'
 
 permissions:
@@ -32,6 +34,8 @@ jobs:
           node-version: 22
           cache: npm
       - run: npm ci
+      - name: Try candidate URLs (scripts/probe-urls.txt)
+        run: npm run -s probe
       - run: npm run check:sources
       - run: npm run packs
       - name: Commit results

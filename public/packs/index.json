@@ -92,6 +92,17 @@
       "json": "https://raw.githubusercontent.com/bahfahh/react_basic_template/claude/react-prototype-a485u2/public/packs/travel.tw-nhi-overseas-refund.json"
     },
     {
+      "id": "benefit.tw-subsidy-checkup",
+      "title": "我能領哪些補助",
+      "area": "補助與退稅",
+      "value": [
+        "拿回錢"
+      ],
+      "description": "幫台灣家庭做「補助健檢」：先問年齡、戶籍、家人、工作與保險、收入和住房，再到官方網頁現場查中央政府主要的補助、津貼與優惠，列出可能符合的方案、還要確認什麼、去哪裡申請和期限。使用者說「我可以領什麼補助」「生小孩有什麼錢可以領」「失業了有什麼補助」「家裡長輩要人照顧」「有沒有漏領的津貼」時使用。",
+      "url": "https://raw.githubusercontent.com/bahfahh/react_basic_template/claude/react-prototype-a485u2/public/packs/benefit.tw-subsidy-checkup.md",
+      "json": "https://raw.githubusercontent.com/bahfahh/react_basic_template/claude/react-prototype-a485u2/public/packs/benefit.tw-subsidy-checkup.json"
+    },
+    {
       "id": "benefit.tw-rent-subsidy",
       "title": "租金補貼",
       "area": "補助與退稅",
@@ -101,6 +112,18 @@
       "description": "幫在台灣租屋的人判斷是否可能符合中央「300億元中央擴大租金補貼」，到官方頁面查當年度的所得門檻和補貼額度來估算每月金額，並整理文件、申請方式與核定後要通報的事。使用者說「我租房可以領租金補貼嗎」「租補一個月多少」「租金補貼怎麼申請」「房東不讓我申請」時使用。",
       "url": "https://raw.githubusercontent.com/bahfahh/react_basic_template/claude/react-prototype-a485u2/public/packs/benefit.tw-rent-subsidy.md",
       "json": "https://raw.githubusercontent.com/bahfahh/react_basic_template/claude/react-prototype-a485u2/public/packs/benefit.tw-rent-subsidy.json"
+    },
+    {
+      "id": "benefit.tw-income-tax",
+      "title": "綜所稅省稅檢查",
+      "area": "補助與退稅",
+      "value": [
+        "省錢",
+        "拿回錢"
+      ],
+      "description": "幫台灣的上班族在報稅前或報稅季檢查綜合所得稅有沒有多繳：免稅額、標準或列舉扣除額、各項特別扣除額、基本生活費差額、夫妻分開計稅、股利計稅方式和扶養安排，所有金額都到財政部官方頁面現場查，再用官方工具試算。使用者說「報稅怎麼報最省」「爸媽給誰報扶養比較划算」「租屋可以扣稅嗎」「我是不是繳太多稅」「去年漏報可以退嗎」時使用。",
+      "url": "https://raw.githubusercontent.com/bahfahh/react_basic_template/claude/react-prototype-a485u2/public/packs/benefit.tw-income-tax.md",
+      "json": "https://raw.githubusercontent.com/bahfahh/react_basic_template/claude/react-prototype-a485u2/public/packs/benefit.tw-income-tax.json"
     },
     {
       "id": "bills.tw-mobile-plan",

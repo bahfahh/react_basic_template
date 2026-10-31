@@ -16,7 +16,9 @@
 
 ## 補助與退稅
 
+- [我能領哪些補助](https://raw.githubusercontent.com/bahfahh/react_basic_template/claude/react-prototype-a485u2/public/packs/benefit.tw-subsidy-checkup.md)：說說家裡狀況，盤點可能漏領的中央補助
 - [租金補貼](https://raw.githubusercontent.com/bahfahh/react_basic_template/claude/react-prototype-a485u2/public/packs/benefit.tw-rent-subsidy.md)：租屋族查資格、估金額、備文件，申請中央租金補貼
+- [綜所稅省稅檢查](https://raw.githubusercontent.com/bahfahh/react_basic_template/claude/react-prototype-a485u2/public/packs/benefit.tw-income-tax.md)：報稅前檢查扣除額、扶養與計稅方式，不多繳
 
 ## 每月帳單
 

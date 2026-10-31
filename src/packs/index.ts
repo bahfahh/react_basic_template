@@ -10,7 +10,9 @@ import jpKansaiTransit from './content/travel.jp-kansai-transit';
 import jpTaxRefund from './content/travel.jp-tax-refund';
 import travelClaim from './content/travel.tw-travel-inconvenience-claim';
 import nhiOverseas from './content/travel.tw-nhi-overseas-refund';
+import subsidyCheckup from './content/benefit.tw-subsidy-checkup';
 import rentSubsidy from './content/benefit.tw-rent-subsidy';
+import incomeTax from './content/benefit.tw-income-tax';
 import mobilePlan from './content/bills.tw-mobile-plan';
 import subscriptionCancel from './content/bills.subscription-cancel';
 import refundCancel from './content/rights.tw-refund-cancel';
@@ -27,7 +29,9 @@ const ALL: Pack[] = [
   jpTaxRefund,
   travelClaim,
   nhiOverseas,
+  subsidyCheckup,
   rentSubsidy,
+  incomeTax,
   mobilePlan,
   subscriptionCancel,
   refundCancel,
@@ -37,8 +41,7 @@ const ALL: Pack[] = [
 export const PACKS: Pack[] = PACK_IDS.map(({ id }) => {
   const p = ALL.find((x) => x.id === id);
   if (!p) throw new Error(`pack ${id} has no content file`);
-  // Temporary: two benefit packs are still being written; drop links to them until they land.
-  return { ...p, related: p.related?.filter((r) => PACK_IDS.some((x) => x.id === r.id)) };
+  return p;
 });
 
 export const PLANNED: PlannedPack[] = [

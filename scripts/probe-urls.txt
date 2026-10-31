@@ -1,0 +1,1 @@
+# Candidate URLs to try: url | expected words (comma-separated). Checked on GitHub Actions.
